@@ -1,0 +1,370 @@
+[
+  {
+    "proyecto": "viral-01-pantalla-es",
+    "status": 0,
+    "calibracion": {
+      "duracionOriginal": 101.28,
+      "duracionCalibrada": 84.5,
+      "pausaEntreFrases": 0.136,
+      "atempo": 1.175,
+      "frases": [
+        {
+          "n": 1,
+          "inicio": 0.06,
+          "fin": 5.641,
+          "clave": "dedo",
+          "texto": "La pantalla de tu celular reacciona al toque más leve de tu dedo, pero ignora un bolígrafo aunque presiones con fuerza."
+        },
+        {
+          "n": 2,
+          "inicio": 5.853,
+          "fin": 12.591,
+          "clave": "electricidad",
+          "texto": "¿Entonces qué está sintiendo realmente? En realidad no siente presión: detecta la electricidad que hay en tu cuerpo."
+        },
+        {
+          "n": 3,
+          "inicio": 12.804,
+          "fin": 17.602,
+          "clave": "guantes",
+          "texto": "Imagina que afuera hace mucho frío e intentas contestar una llamada urgente con los guantes puestos."
+        },
+        {
+          "n": 4,
+          "inicio": 17.814,
+          "fin": 23.123,
+          "clave": "cuadrícula",
+          "texto": "Debajo del cristal de tu pantalla hay una cuadrícula invisible: filas hacia un lado y columnas hacia el otro."
+        },
+        {
+          "n": 5,
+          "inicio": 23.335,
+          "fin": 28.372,
+          "clave": "carga",
+          "texto": "En cada punto donde una fila cruza una columna, el teléfono sostiene una diminuta carga eléctrica."
+        },
+        {
+          "n": 6,
+          "inicio": 28.584,
+          "fin": 33.484,
+          "clave": "segundo",
+          "texto": "Y revisa cada uno de esos cruces una y otra vez, ciento veinte veces por segundo."
+        },
+        {
+          "n": 7,
+          "inicio": 33.697,
+          "fin": 37.781,
+          "clave": "conduce",
+          "texto": "Tu cuerpo está lleno de agua con sal, así que conduce la electricidad de forma natural."
+        },
+        {
+          "n": 8,
+          "inicio": 37.993,
+          "fin": 42.995,
+          "clave": "cristal",
+          "texto": "Cuando la yema de tu dedo se acerca al cristal, absorbe una pequeña parte de esa carga justo debajo."
+        },
+        {
+          "n": 9,
+          "inicio": 43.208,
+          "fin": 47.836,
+          "clave": "exacta",
+          "texto": "El teléfono detecta la caída exacta en esos cruces y dice al instante: tocaron justo aquí."
+        },
+        {
+          "n": 10,
+          "inicio": 48.049,
+          "fin": 52.54,
+          "clave": "zoom",
+          "texto": "Y como revisa cada cruce por separado, puede seguir dos dedos a la vez cuando haces zoom."
+        },
+        {
+          "n": 11,
+          "inicio": 52.753,
+          "fin": 57.245,
+          "clave": "lana",
+          "texto": "Un guante de lana no conduce nada y mantiene tu piel demasiado lejos de la superficie del vidrio."
+        },
+        {
+          "n": 12,
+          "inicio": 57.458,
+          "fin": 62.358,
+          "clave": "nadie",
+          "texto": "Aunque presiones fuerte, la carga nunca cambia; para el teléfono, nadie tocó la pantalla."
+        },
+        {
+          "n": 13,
+          "inicio": 62.57,
+          "fin": 67.607,
+          "clave": "lluvia",
+          "texto": "Por eso también tu pantalla se vuelve loca bajo la lluvia: el agua conduce y cada gota parece un dedo."
+        },
+        {
+          "n": 14,
+          "inicio": 67.819,
+          "fin": 73.06,
+          "clave": "conductores",
+          "texto": "Y por eso funcionan los guantes táctiles: tienen hilos conductores tejidos en la punta que conectan tu piel."
+        },
+        {
+          "n": 15,
+          "inicio": 73.272,
+          "fin": 78.513,
+          "clave": "nunca",
+          "texto": "Así que tu celular nunca sintió tu dedo: solo sintió que una diminuta carga eléctrica desapareció."
+        },
+        {
+          "n": 16,
+          "inicio": 78.725,
+          "fin": 83.353,
+          "clave": "mojadas",
+          "texto": "Envía este video a esa persona a la que siempre se le vuelve loca la pantalla con las manos mojadas."
+        }
+      ]
+    },
+    "stderr": ""
+  },
+  {
+    "proyecto": "viral-02-teclado-es",
+    "status": 0,
+    "calibracion": {
+      "duracionOriginal": 94.48,
+      "duracionCalibrada": 78.57,
+      "pausaEntreFrases": 0.133,
+      "atempo": 1.199,
+      "frases": [
+        {
+          "n": 1,
+          "inicio": 0.06,
+          "fin": 5.063,
+          "clave": "teclado",
+          "texto": "Cada tecla en el teclado de tu celular es más pequeña que tu dedo, y aun así aciertas casi siempre."
+        },
+        {
+          "n": 2,
+          "inicio": 5.272,
+          "fin": 9.074,
+          "clave": "posible",
+          "texto": "¿Cómo es eso posible cuando escribes tan rápido sin siquiera mirar cada letra?"
+        },
+        {
+          "n": 3,
+          "inicio": 9.283,
+          "fin": 13.285,
+          "clave": "tocando",
+          "texto": "Porque las teclas que ves en la pantalla no son las teclas que realmente estás tocando."
+        },
+        {
+          "n": 4,
+          "inicio": 13.494,
+          "fin": 17.063,
+          "clave": "tamaño",
+          "texto": "Y las que tocas cambian de tamaño en secreto mientras escribes cada palabra."
+        },
+        {
+          "n": 5,
+          "inicio": 17.271,
+          "fin": 22.375,
+          "clave": "invisible",
+          "texto": "Detrás de cada letra existe una zona invisible, y esa zona es la que de verdad atrapa tu dedo."
+        },
+        {
+          "n": 6,
+          "inicio": 22.583,
+          "fin": 27.32,
+          "clave": "mensaje",
+          "texto": "Imagina que le escribes un mensaje a un amigo y acabas de teclear las letras H, O y L."
+        },
+        {
+          "n": 7,
+          "inicio": 27.528,
+          "fin": 31.398,
+          "clave": "apuesta",
+          "texto": "En ese instante, tu teléfono hace una apuesta matemática sobre cuál será la siguiente letra."
+        },
+        {
+          "n": 8,
+          "inicio": 31.606,
+          "fin": 37.477,
+          "clave": "real",
+          "texto": "Como HOLA es una palabra real y HOLW no existe, calcula un noventa y seis por ciento para la A."
+        },
+        {
+          "n": 9,
+          "inicio": 37.685,
+          "fin": 42.221,
+          "clave": "expande",
+          "texto": "Así que antes de que baje tu dedo, la zona invisible de la A se expande y comprime a las vecinas."
+        },
+        {
+          "n": 10,
+          "inicio": 42.43,
+          "fin": 46.232,
+          "clave": "nada",
+          "texto": "En la pantalla nada se mueve y cada tecla luce exactamente igual que siempre."
+        },
+        {
+          "n": 11,
+          "inicio": 46.441,
+          "fin": 51.678,
+          "clave": "pulgar",
+          "texto": "Pero si tu pulgar aterriza desviado, a mitad de camino entre la A y la S, el teléfono escribe la A."
+        },
+        {
+          "n": 12,
+          "inicio": 51.886,
+          "fin": 56.623,
+          "clave": "recalcula",
+          "texto": "En cuanto entra esa letra, el sistema recalcula todo el diccionario y redibuja el mapa para la siguiente."
+        },
+        {
+          "n": 13,
+          "inicio": 56.831,
+          "fin": 62.502,
+          "clave": "sistema",
+          "texto": "Este sistema nació en dos mil siete porque un botón cómodo requería cuarenta y cuatro píxeles en una pantalla diminuta."
+        },
+        {
+          "n": 14,
+          "inicio": 62.698,
+          "fin": 67.568,
+          "clave": "truco",
+          "texto": "Además incluye un segundo truco: la letra solo se confirma al levantar tu dedo de la pantalla."
+        },
+        {
+          "n": 15,
+          "inicio": 67.776,
+          "fin": 72.946,
+          "clave": "objetivo",
+          "texto": "No es que tengas mejor puntería: tu teclado mueve el objetivo en silencio hacia donde iba a caer tu dedo."
+        },
+        {
+          "n": 16,
+          "inicio": 73.155,
+          "fin": 77.424,
+          "clave": "culpa",
+          "texto": "Comparte este video con el amigo que siempre le echa la culpa al autocorrector por cada error."
+        }
+      ]
+    },
+    "stderr": ""
+  },
+  {
+    "proyecto": "viral-03-bateria-es",
+    "status": 0,
+    "calibracion": {
+      "duracionOriginal": 101.92,
+      "duracionCalibrada": 89.9,
+      "pausaEntreFrases": 0.145,
+      "atempo": 1.1,
+      "frases": [
+        {
+          "n": 1,
+          "inicio": 0.06,
+          "fin": 6.316,
+          "clave": "falso",
+          "texto": "¿Dejar tu laptop enchufada todo el día destruye su batería? No, eso es completamente falso."
+        },
+        {
+          "n": 2,
+          "inicio": 6.543,
+          "fin": 11.708,
+          "clave": "dentro",
+          "texto": "Para entender qué es lo que realmente desgasta una batería, primero debes ver cómo funciona por dentro."
+        },
+        {
+          "n": 3,
+          "inicio": 11.935,
+          "fin": 17.1,
+          "clave": "litio",
+          "texto": "En su interior, miles de iones de litio viajan desde el ánodo hacia el cátodo cruzando un separador."
+        },
+        {
+          "n": 4,
+          "inicio": 17.327,
+          "fin": 23.074,
+          "clave": "corriente",
+          "texto": "Sus electrones no pueden cruzar por dentro, así que toman un desvío por tu laptop generando corriente eléctrica."
+        },
+        {
+          "n": 5,
+          "inicio": 23.301,
+          "fin": 29.484,
+          "clave": "regresan",
+          "texto": "Cuando casi todos completan ese viaje, la batería se agota; y al enchufarla, todos regresan al inicio."
+        },
+        {
+          "n": 6,
+          "inicio": 29.711,
+          "fin": 34.949,
+          "clave": "atrapados",
+          "texto": "En la práctica, algunos iones quedan atrapados por reacciones químicas en el ánodo y ya no pueden moverse."
+        },
+        {
+          "n": 7,
+          "inicio": 35.176,
+          "fin": 40.85,
+          "clave": "capacidad",
+          "texto": "Menos litio libre para moverse significa menos iones viajando y una capacidad cada vez más pequeña."
+        },
+        {
+          "n": 8,
+          "inicio": 41.077,
+          "fin": 47.551,
+          "clave": "calor",
+          "texto": "Además, esas reacciones crean una costra microscópica que frena los iones, y el calor acelera todo el proceso."
+        },
+        {
+          "n": 9,
+          "inicio": 47.778,
+          "fin": 53.598,
+          "clave": "ventiladores",
+          "texto": "Dejar una laptop en un auto caliente en verano o sobre la cama tapando sus ventiladores cocina la batería rápido."
+        },
+        {
+          "n": 10,
+          "inicio": 53.825,
+          "fin": 59.644,
+          "clave": "extremos",
+          "texto": "Lo segundo que más la daña son los extremos: al cien por ciento, los iones quedan apretados a máxima tensión."
+        },
+        {
+          "n": 11,
+          "inicio": 59.872,
+          "fin": 65.109,
+          "clave": "ochenta",
+          "texto": "En cambio, mantenerse alrededor del veinte al ochenta por ciento es donde la celda trabaja más cómoda."
+        },
+        {
+          "n": 12,
+          "inicio": 65.336,
+          "fin": 71.447,
+          "clave": "modernas",
+          "texto": "¿Entonces si está siempre enchufada se queda al cien por ciento desgastándose? No en las laptops modernas."
+        },
+        {
+          "n": 13,
+          "inicio": 71.674,
+          "fin": 76.839,
+          "clave": "cable",
+          "texto": "En cuanto detecta que llegó a su meta, desconecta la batería sola y funciona con energía directa del cable."
+        },
+        {
+          "n": 14,
+          "inicio": 77.066,
+          "fin": 82.812,
+          "clave": "límite",
+          "texto": "En tu sistema puedes activar la carga optimizada o fijar el límite de cuidado de batería al ochenta por ciento."
+        },
+        {
+          "n": 15,
+          "inicio": 83.04,
+          "fin": 88.75,
+          "clave": "estrés",
+          "texto": "Actívalo y déjala enchufada sin estrés; envía este video al amigo que siempre la desconecta al llegar al cien."
+        }
+      ]
+    },
+    "stderr": ""
+  }
+]
