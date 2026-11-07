@@ -1,0 +1,11 @@
+¿Notaste que al apagar el WiFi en la barra rápida el botón se pone blanco y a las 5:00 AM se vuelve a encender solo? 🕔📱
+
+No es un fallo de tu teléfono: el centro de control solo pausa la conexión actual, dejando la antena activa buscando redes y gastando hasta un 18 % extra de batería mientras duermes.
+
+La solución definitiva:
+1️⃣ Apaga el WiFi directamente desde el menú principal de Ajustes / Configuración.
+2️⃣ Entra a Ubicación > Precisión de ubicación y desactiva el escaneo constante de WiFi.
+
+Guárdalo para que no se te olvide esta noche y envíaselo a esa persona que carga su celular dos veces al día 🔋✨
+
+#trucoscelular #ahorrarbateria #wifi #tecnologia #iphone #android #puraprueba #consejostech #bateria
