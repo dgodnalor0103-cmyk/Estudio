@@ -1,0 +1,14 @@
+Error: Command failed: /Users/rol.travel/.gemini/antigravity/scratch/Estudio/PuraPrueba/node_modules/@remotion/compositor-darwin-arm64/ffmpeg -hide_banner -loglevel error -y -i /Users/rol.travel/.gemini/antigravity/scratch/pruebas-cuentas-instagram/analisis/DeW3kuNM2v5/original_1080.mp4 -vf fps=1.2,scale=270:480,drawtext=text='%{pts\:hms}':x=8:y=8:fontsize=20:fontcolor=white:box=1:boxcolor=black@0.7,tile=6x6 -frames:v 1 -q:v 2 /Users/rol.travel/.gemini/antigravity/scratch/pruebas-cuentas-instagram/analisis/DeW3kuNM2v5/hoja_contacto.jpg
+[AVFilterGraph @ 0x9cb0052d0] No option name near '1.2'
+[AVFilterGraph @ 0x9cb0052d0] Error parsing a filter description around: ,scale=270:480,drawtext=text='%{pts\:hms}':x=8:y=8:fontsize=20:fontcolor=white:box=1:boxcolor=black@0.7,tile=6x6
+[AVFilterGraph @ 0x9cb0052d0] Error parsing filterchain 'fps=1.2,scale=270:480,drawtext=text='%{pts\:hms}':x=8:y=8:fontsize=20:fontcolor=white:box=1:boxcolor=black@0.7,tile=6x6' around: ,scale=270:480,drawtext=text='%{pts\:hms}':x=8:y=8:fontsize=20:fontcolor=white:box=1:boxcolor=black@0.7,tile=6x6
+Error opening output file /Users/rol.travel/.gemini/antigravity/scratch/pruebas-cuentas-instagram/analisis/DeW3kuNM2v5/hoja_contacto.jpg.
+Error opening output files: Invalid argument
+
+    at genericNodeError (node:internal/errors:983:15)
+    at wrappedFn (node:internal/errors:537:14)
+    at checkExecSyncError (node:child_process:883:11)
+    at execFileSync (node:child_process:919:15)
+    at extraerUno (file:///Users/rol.travel/.gemini/antigravity/scratch/pruebas-cuentas-instagram/extraer_top3.mjs:181:5)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async file:///Users/rol.travel/.gemini/antigravity/scratch/pruebas-cuentas-instagram/extraer_top3.mjs:214:5

@@ -1,0 +1,28 @@
+[2026-11-06T15:48:45.439Z] Iniciando extracción de https://www.instagram.com/p/DfHpex7MbM2/
+[2026-11-06T15:48:45.449Z] Aviso servidor 8900: listen EADDRINUSE: address already in use 127.0.0.1:8900
+[2026-11-06T15:53:08.478Z] Extrayendo post DfHpex7MbM2...
+[2026-11-06T15:53:08.794Z] GraphQL 8845758582119845: status=403, len=20481
+[2026-11-06T15:53:09.015Z] GraphQL 10015901848480474: status=403, len=20481
+[2026-11-06T15:53:09.167Z] GraphQL 7153564848096362: status=403, len=20481
+[2026-11-06T15:53:09.531Z] Fetch embed_captioned: status=200, len=512663
+[2026-11-06T15:53:09.826Z] Fetch embed: status=200, len=512655
+[2026-11-06T15:53:10.139Z] Fetch post: status=200, len=512657
+[2026-11-06T15:53:10.193Z] Puertos Chrome detectados: []
+[2026-11-06T15:53:10.193Z] Total URLs de video encontradas: 0, imágenes: 0
+[2026-11-06T15:53:10.194Z] LISTO_EXTRACCION_INICIAL
+[2026-11-06T15:56:00.982Z] Procesando petición en cola: {"id":"extraer-1","accion":"node","script":"/Users/rol.travel/.gemini/antigravity/scratch/pruebas-cuentas-instagram/extraer_navegador.mjs"}
+[2026-11-06T15:56:02.559Z] Script /Users/rol.travel/.gemini/antigravity/scratch/pruebas-cuentas-instagram/extraer_navegador.mjs completado (status=0)
+[2026-11-06T15:58:01.506Z] Procesando petición en cola: {"id":"extraer-2","accion":"node","script":"/Users/rol.travel/.gemini/antigravity/scratch/pruebas-cuentas-instagram/extraer_navegador.mjs"}
+[2026-11-06T15:58:01.797Z] Script /Users/rol.travel/.gemini/antigravity/scratch/pruebas-cuentas-instagram/extraer_navegador.mjs completado (status=1)
+[2026-11-06T15:59:23.241Z] Procesando petición en cola: {"id":"extraer-3","accion":"node","script":"/Users/rol.travel/.gemini/antigravity/scratch/pruebas-cuentas-instagram/extraer_navegador.mjs"}
+[2026-11-06T15:59:59.036Z] Script /Users/rol.travel/.gemini/antigravity/scratch/pruebas-cuentas-instagram/extraer_navegador.mjs completado (status=1)
+[2026-11-06T16:08:26.533Z] Procesando petición en cola: {"id":"voz-coop-1","accion":"voz","proyecto":"/Users/rol.travel/.gemini/antigravity/scratch/pruebas-cuentas-instagram/reel-coop-es","rehacer":true}
+[2026-11-06T16:08:33.307Z] Voz completada (status=0)
+[2026-11-06T18:25:20.502Z] Procesando petición en cola: {"id":"extraer_top3_virales","accion":"node","script":"/Users/rol.travel/.gemini/antigravity/scratch/pruebas-cuentas-instagram/extraer_top3.mjs","args":[]}
+[2026-11-06T18:25:20.725Z] Script /Users/rol.travel/.gemini/antigravity/scratch/pruebas-cuentas-instagram/extraer_top3.mjs completado (status=0)
+[2026-11-06T18:35:19.221Z] Procesando petición en cola: {"id":"voces_3_virales","accion":"node","script":"/Users/rol.travel/.gemini/antigravity/scratch/pruebas-cuentas-instagram/generar_voces_virales.mjs","args":[]}
+[2026-11-06T18:35:43.792Z] Script /Users/rol.travel/.gemini/antigravity/scratch/pruebas-cuentas-instagram/generar_voces_virales.mjs completado (status=0)
+[2026-11-06T20:18:01.055Z] Procesando petición en cola: {"id":"transcribir_3_virales","accion":"node","script":"/Users/rol.travel/.gemini/antigravity/scratch/pruebas-cuentas-instagram/transcribir_top3.mjs","args":[]}
+[2026-11-06T20:18:01.396Z] Script /Users/rol.travel/.gemini/antigravity/scratch/pruebas-cuentas-instagram/transcribir_top3.mjs completado (status=1)
+[2026-11-06T20:20:24.949Z] Procesando petición en cola: {"id":"transcribir_3_virales_v2","accion":"node","script":"/Users/rol.travel/.gemini/antigravity/scratch/pruebas-cuentas-instagram/transcribir_top3.mjs","args":[]}
+[2026-11-06T20:20:35.363Z] Script /Users/rol.travel/.gemini/antigravity/scratch/pruebas-cuentas-instagram/transcribir_top3.mjs completado (status=0)
