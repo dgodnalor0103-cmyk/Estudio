@@ -16,12 +16,13 @@ Word times come from reels/<slug>/voice.alignment.json when it exists (ElevenLab
 from speech recognition (whisper.cpp small.en if the model is found, else auto-editor's Apple pass) matched to the
 caption's own words; a caption word the recogniser missed is timed between its neighbours and reported.
 """
-import difflib, json, re, subprocess, sys, tempfile, unicodedata, wave
+import difflib, json, os, re, subprocess, sys, tempfile, unicodedata, wave
 from pathlib import Path
 import numpy as np
 from where import WHISPER, whisper_cli   # the folder's own speech model and engine, on every system
 
 ROOT = Path(__file__).resolve().parent.parent
+os.environ["PATH"] = f"{ROOT.parent.parent / 'node_modules' / '.bin'}:/usr/local/bin:" + os.environ.get("PATH", "")
 MODELS = [WHISPER]
 norm = lambda s: re.sub(r"[^a-z0-9]", "", unicodedata.normalize("NFKD", s).lower())
 is_emoji = lambda tok: not any(ch.isalnum() or ch in "$€%" for ch in tok)

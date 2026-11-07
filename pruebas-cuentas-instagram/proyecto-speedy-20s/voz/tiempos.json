@@ -1,0 +1,393 @@
+{
+  "firma": "51a58ce959b3",
+  "duracion": 20.56,
+  "frases": [
+    {
+      "n": 1,
+      "texto": "Cuando tu dedo toca el celular, no estás presionando ningún botón.",
+      "clave": "botón",
+      "inicio": 0,
+      "fin": 4.4
+    },
+    {
+      "n": 2,
+      "texto": "Tu piel roba una pequeña carga eléctrica del cristal para marcar el punto exacto.",
+      "clave": "eléctrica",
+      "inicio": 4.44,
+      "fin": 9.52
+    },
+    {
+      "n": 3,
+      "texto": "Además, tres capas invisibles agrandan en secreto la siguiente letra de tu teclado.",
+      "clave": "secreto",
+      "inicio": 9.6,
+      "fin": 14.8
+    },
+    {
+      "n": 4,
+      "texto": "Por eso aciertas cada palabra aunque escribas corriendo y sin mirar la pantalla.",
+      "clave": "pantalla",
+      "inicio": 15.04,
+      "fin": 19.76
+    }
+  ],
+  "palabras": [
+    {
+      "texto": "Cuando",
+      "inicio": 0,
+      "fin": 0.24,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "tu",
+      "inicio": 0.32,
+      "fin": 0.4,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "dedo",
+      "inicio": 0.52,
+      "fin": 0.72,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "toca",
+      "inicio": 0.8,
+      "fin": 1.04,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "el",
+      "inicio": 1.08,
+      "fin": 1.12,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "celular,",
+      "inicio": 1.2,
+      "fin": 1.92,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "no",
+      "inicio": 2,
+      "fin": 2.08,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "estás",
+      "inicio": 2.16,
+      "fin": 2.4,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "presionando",
+      "inicio": 2.48,
+      "fin": 2.96,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "ningún",
+      "inicio": 3.04,
+      "fin": 3.36,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "botón.",
+      "inicio": 3.44,
+      "fin": 4.4,
+      "frase": 1,
+      "clave": true
+    },
+    {
+      "texto": "Tu",
+      "inicio": 4.44,
+      "fin": 4.48,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "piel",
+      "inicio": 4.56,
+      "fin": 4.8,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "roba",
+      "inicio": 4.88,
+      "fin": 5.12,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "una",
+      "inicio": 5.2,
+      "fin": 5.36,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "pequeña",
+      "inicio": 5.48,
+      "fin": 5.84,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "carga",
+      "inicio": 5.92,
+      "fin": 6.24,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "eléctrica",
+      "inicio": 6.28,
+      "fin": 6.72,
+      "frase": 2,
+      "clave": true
+    },
+    {
+      "texto": "del",
+      "inicio": 6.8,
+      "fin": 6.88,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "cristal",
+      "inicio": 6.96,
+      "fin": 7.36,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "para",
+      "inicio": 7.44,
+      "fin": 7.6,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "marcar",
+      "inicio": 7.68,
+      "fin": 8,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "el",
+      "inicio": 8.08,
+      "fin": 8.16,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "punto",
+      "inicio": 8.24,
+      "fin": 8.48,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "exacto.",
+      "inicio": 8.72,
+      "fin": 9.52,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "Además,",
+      "inicio": 9.6,
+      "fin": 10.32,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "tres",
+      "inicio": 10.4,
+      "fin": 10.56,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "capas",
+      "inicio": 10.64,
+      "fin": 10.96,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "invisibles",
+      "inicio": 11.04,
+      "fin": 11.6,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "agrandan",
+      "inicio": 11.68,
+      "fin": 12.16,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "en",
+      "inicio": 12.24,
+      "fin": 12.32,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "secreto",
+      "inicio": 12.4,
+      "fin": 12.8,
+      "frase": 3,
+      "clave": true
+    },
+    {
+      "texto": "la",
+      "inicio": 12.88,
+      "fin": 12.96,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "siguiente",
+      "inicio": 13.04,
+      "fin": 13.44,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "letra",
+      "inicio": 13.52,
+      "fin": 13.76,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "de",
+      "inicio": 13.84,
+      "fin": 13.92,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "tu",
+      "inicio": 13.96,
+      "fin": 14,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "teclado.",
+      "inicio": 14.08,
+      "fin": 14.8,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "Por",
+      "inicio": 15.04,
+      "fin": 15.12,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "eso",
+      "inicio": 15.2,
+      "fin": 15.36,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "aciertas",
+      "inicio": 15.44,
+      "fin": 15.92,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "cada",
+      "inicio": 16,
+      "fin": 16.16,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "palabra",
+      "inicio": 16.32,
+      "fin": 16.72,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "aunque",
+      "inicio": 16.8,
+      "fin": 17.04,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "escribas",
+      "inicio": 17.12,
+      "fin": 17.52,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "corriendo",
+      "inicio": 17.6,
+      "fin": 18.08,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "y",
+      "inicio": 18.16,
+      "fin": 18.24,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "sin",
+      "inicio": 18.32,
+      "fin": 18.56,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "mirar",
+      "inicio": 18.64,
+      "fin": 18.8,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "la",
+      "inicio": 18.88,
+      "fin": 18.96,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "pantalla.",
+      "inicio": 19,
+      "fin": 19.76,
+      "frase": 4,
+      "clave": true
+    }
+  ]
+}

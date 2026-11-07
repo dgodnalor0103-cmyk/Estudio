@@ -1,0 +1,61 @@
+{
+  "titulo": "Por qué el protector de cámara arruina las fotos de tu celular",
+  "idioma": "es",
+  "subtitulos": "arriba",
+  "voz": {
+    "id": "gWaDC0oXAheKoZfljzuI",
+    "modelo": "eleven_v4",
+    "estabilidad": 0.4,
+    "similitud": 0.8,
+    "estilo": 0,
+    "velocidad": 1.12
+  },
+  "frases": [
+    {
+      "texto": "¿Sabías que pegarle protectores de vidrio a las cámaras de tu celular arruina tus fotos de noche?",
+      "clave": "arruina",
+      "hook": true
+    },
+    {
+      "texto": "Te los venden para cuidar los lentes, pero esos anillos baratos sabotean toda la óptica de fábrica.",
+      "clave": "sabotean",
+      "hook": true
+    },
+    {
+      "texto": "El lente original de tu celular ya trae cristal templado con zafiro y siete capas que evitan reflejos.",
+      "clave": "zafiro"
+    },
+    {
+      "texto": "Al pegarle un vidrio barato encima, dejas un colchón de aire encerrado entre los dos cristales.",
+      "clave": "aire"
+    },
+    {
+      "texto": "Es como ponerte unos lentes de sol de plástico rayado encima de unos anteojos caros recién limpiados.",
+      "clave": "plástico"
+    },
+    {
+      "texto": "De noche, la luz de las farolas rebota dentro de ese hueco y llena tus fotos de fantasmas verdes y neblina.",
+      "clave": "fantasmas"
+    },
+    {
+      "texto": "Además, el borde de pegamento tapa el sensor láser invisible y hace que tu cámara tarde el doble en enfocar.",
+      "clave": "láser"
+    },
+    {
+      "texto": "Por eso, nunca pegues vidrios ni anillos con brillos directamente sobre los lentes de tu cámara.",
+      "clave": "nunca"
+    },
+    {
+      "texto": "Quítalos hoy mismo y usa una funda con borde elevado de dos milímetros: protege igual sin tocar la luz.",
+      "clave": "funda"
+    },
+    {
+      "texto": "Envíaselo a ese amigo que se queja de que su celular toma fotos borrosas y lleva protector en la cámara.",
+      "clave": "amigo"
+    },
+    {
+      "texto": "Y mañana, episodio ocho: el peligro oculto dentro de los puertos USB públicos cuando cargas tu celular.",
+      "clave": "públicos"
+    }
+  ]
+}

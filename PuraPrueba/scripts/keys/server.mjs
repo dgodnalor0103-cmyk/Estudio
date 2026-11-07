@@ -28,6 +28,30 @@ const KEYS = {
   },
   // Optional, never required: asked for only when a long clip transcribes slowly on this machine
   // (scripts/keys/server.mjs --keys OPENAI_API_KEY). With it, the words come from OpenAI in seconds.
+  BUFFER_API_KEY: {
+    title: "Clave de Buffer (TikTok + Instagram + YouTube Shorts)",
+    what: "Conecta tus canales de Buffer Plan Gratis para publicar y programar automáticamente.",
+    steps: [
+      { do: "Abrir API de Buffer", detail: "Copia tu API Key desde tu cuenta de Buffer abierta en Chrome.", link: "https://publish.buffer.com/settings/api" },
+    ],
+  },
+  META_PAGE_ID: {
+    title: "Meta Page ID (Facebook Reels oficial, opcional)",
+    what: "ID de tu Página de Facebook para subir Reels directo a Meta Graph API.",
+    steps: [],
+  },
+  META_IG_USER_ID: {
+    title: "Meta Instagram User ID (Instagram Reels oficial, opcional)",
+    what: "ID de tu cuenta de Instagram Profesional vinculada a tu Página de Facebook.",
+    steps: [],
+  },
+  META_PAGE_ACCESS_TOKEN: {
+    title: "Token de tu Bot de Facebook (Meta Graph API · App 1828644828457446)",
+    what: "Pega aquí tu Access Token (EAA...) del Graph API Explorer. El sistema detectará automáticamente tu META_PAGE_ID y META_IG_USER_ID y subirá de inmediato los episodios faltantes a Facebook Reels.",
+    steps: [
+      { do: "Abrir tu Bot en Graph API Explorer", detail: "En «User or Page» selecciona tu Página de Facebook (o genera el token) y copia el texto que empieza por EAA...", link: "https://developers.facebook.com/tools/explorer/?app_id=1828644828457446" },
+    ],
+  },
   OPENAI_API_KEY: {
     title: "Faster transcription, optional",
     what: "With this key a long clip is transcribed in seconds instead of minutes. About a cent per minute of clip. The audio leaves your machine for that call and nothing else. Without it everything still works.",
@@ -46,9 +70,9 @@ const voice=voiceFlag>=0?productVoiceProviders.find(p=>p.id===process.argv[voice
 if(voiceFlag>=0&&!voice){console.error('Choose openai, elevenlabs or fish for the voice key page.');process.exit(1);}
 if(voice)KEYS[voice.key]={title:voice.name+' voiceover',what:'Your film’s AI narration uses '+voice.name+'. '+voice.note,steps:[{do:'Open API keys',detail:'Create a key for this folder.',link:voice.url}]};
 const packs=installedPacks();
-const need = new Set(voice?[voice.key]:[...(packs.some(p=>p.needs?.account!==false)?['COMPOSIO_API_KEY']:[]), ...extra]);
+const need = new Set(voice ? [voice.key] : extra.length > 0 ? extra : [...(packs.some(p=>p.needs?.account!==false)?['COMPOSIO_API_KEY']:[])]);
 const asked = new Map();
-if(!voice)for (const p of packs) for (const k of (Array.isArray(p.needs?.keys) ? p.needs.keys : Object.keys(p.needs?.keys ?? {}))) { need.add(k); if (!asked.has(k)) asked.set(k, p.name); }
+if(!voice && extra.length === 0)for (const p of packs) for (const k of (Array.isArray(p.needs?.keys) ? p.needs.keys : Object.keys(p.needs?.keys ?? {}))) { need.add(k); if (!asked.has(k)) asked.set(k, p.name); }
 const have = new Set(loadEnvNames());
 if(voice&&productVoiceStatus(process.cwd()).keys[voice.id])have.add(voice.key);
 
@@ -91,11 +115,16 @@ const server = createServer((req, res) => {
     try {
       const values = JSON.parse(body);
       if(!values||typeof values!=='object'||Array.isArray(values))throw Error('Invalid keys.');
-      for (const k of Object.keys(values)) if (!need.has(k)) delete values[k];
+      for (const k of Object.keys(values)) {
+        if (!need.has(k)) delete values[k];
+        else if (typeof values[k] === "string") values[k] = values[k].trim();
+      }
       for(const value of Object.values(values))if(typeof value!=='string'||value.length>8192||/[\r\n\0]/.test(value))throw Error('Invalid key.');
+      const savedCount = Object.keys(values).filter((k) => values[k]).length;
+      if (savedCount === 0) throw Error('Empty key.');
       merge(values);
       res.writeHead(200, { "content-type": "text/plain" }); res.end("saved");
-      console.log(`saved ${Object.keys(values).filter((k) => values[k]).length} key(s) to .env.local`);
+      console.log(`saved ${savedCount} key(s) to .env.local`);
       setTimeout(() => { server.close(); process.exit(0); }, 300);
     } catch (e) { res.writeHead(400); res.end("bad request"); }
   });

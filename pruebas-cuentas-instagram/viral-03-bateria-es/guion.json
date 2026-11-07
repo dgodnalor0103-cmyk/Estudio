@@ -1,0 +1,66 @@
+{
+  "tema": "oscuro",
+  "subtitulos": "arriba",
+  "frases": [
+    {
+      "texto": "¿Dejar tu laptop enchufada todo el día destruye su batería? No, eso es completamente falso.",
+      "clave": "falso"
+    },
+    {
+      "texto": "Para entender qué es lo que realmente desgasta una batería, primero debes ver cómo funciona por dentro.",
+      "clave": "dentro"
+    },
+    {
+      "texto": "En su interior, miles de iones de litio viajan desde el ánodo hacia el cátodo cruzando un separador.",
+      "clave": "litio"
+    },
+    {
+      "texto": "Sus electrones no pueden cruzar por dentro, así que toman un desvío por tu laptop generando corriente eléctrica.",
+      "clave": "corriente"
+    },
+    {
+      "texto": "Cuando casi todos completan ese viaje, la batería se agota; y al enchufarla, todos regresan al inicio.",
+      "clave": "regresan"
+    },
+    {
+      "texto": "En la práctica, algunos iones quedan atrapados por reacciones químicas en el ánodo y ya no pueden moverse.",
+      "clave": "atrapados"
+    },
+    {
+      "texto": "Menos litio libre para moverse significa menos iones viajando y una capacidad cada vez más pequeña.",
+      "clave": "capacidad"
+    },
+    {
+      "texto": "Además, esas reacciones crean una costra microscópica que frena los iones, y el calor acelera todo el proceso.",
+      "clave": "calor"
+    },
+    {
+      "texto": "Dejar una laptop en un auto caliente en verano o sobre la cama tapando sus ventiladores cocina la batería rápido.",
+      "clave": "ventiladores"
+    },
+    {
+      "texto": "Lo segundo que más la daña son los extremos: al cien por ciento, los iones quedan apretados a máxima tensión.",
+      "clave": "extremos"
+    },
+    {
+      "texto": "En cambio, mantenerse alrededor del veinte al ochenta por ciento es donde la celda trabaja más cómoda.",
+      "clave": "ochenta"
+    },
+    {
+      "texto": "¿Entonces si está siempre enchufada se queda al cien por ciento desgastándose? No en las laptops modernas.",
+      "clave": "modernas"
+    },
+    {
+      "texto": "En cuanto detecta que llegó a su meta, desconecta la batería sola y funciona con energía directa del cable.",
+      "clave": "cable"
+    },
+    {
+      "texto": "En tu sistema puedes activar la carga optimizada o fijar el límite de cuidado de batería al ochenta por ciento.",
+      "clave": "límite"
+    },
+    {
+      "texto": "Actívalo y déjala enchufada sin estrés; envía este video al amigo que siempre la desconecta al llegar al cien.",
+      "clave": "estrés"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+# Desmitificación Viral Episodio 6: Ponerle gasolina Premium a un auto normal (Español). Script: script.txt.
+== hook | ground: dark
+Ponerle gasolina ⛽ *Premium*
+a un 🚗 *auto* normal
+❌ *no* limpia el motor
+ni da más *potencia,*
+tiras un 💸 *18%*
+de *dinero.*
+== aaa | ground: light
+La Asociación 🧪 *Automovilística*
+probó motores *estándar*
+en ⚙️ *dinamómetro*
+y demostró *cero* caballos extra
+y *cero* kilómetros
+adicionales por *litro.*
+== octane | ground: light
+El número 🔢 *95* o 98
+no mide *pureza* ni energía,
+solo indica *cuánto* resiste
+el 🔥 *combustible*
+antes de *explotar*
+por *presión.*
+== compression | ground: dark
+Los motores 🏎️ *turbo*
+de alta *compresión*
+sí exigen *Premium*
+para evitar ⚠️ *cascabeleo,*
+pero un motor *normal*
+quema la *Regular*
+exactamente *igual.*
+== detergents | ground: dark
+Por ley 📜 *técnica,*
+tanto la gasolina *Regular*
+como la *Premium* del mismo grifo
+ya incluyen los *mismos*
+aditivos 🧪 *detergentes*
+para *inyectores.*
+== rule | ground: light
+Aplica esta 📌 *regla* al tanquear:
+revisa la *tapa* de tu tanque,
+usa ⛽ *Regular*
+si dice *87* octanos
+y ahorra 💰 *cientos*
+de dólares al *año.*
+== cta | ground: dark
+Cuéntame en 💬 *comentarios*
+qué gasolina le *pones* hoy
+a tu *auto,*
+guarda este 🔖 *video*
+antes de ir a la *estación*
+y recuerda *esto:*

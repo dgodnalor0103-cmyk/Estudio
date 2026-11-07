@@ -1,10 +1,10 @@
 {
-  "at": "2026-11-01T19:07:44.114Z",
+  "at": "2026-11-03T22:54:47.565Z",
   "checks": [
     {
       "name": "node",
       "status": "ok",
-      "detail": "Node 24.15.0",
+      "detail": "Node 22.17.0",
       "fix": null,
       "who": "agent",
       "cmd": null
@@ -60,7 +60,7 @@
     {
       "name": "disk",
       "status": "ok",
-      "detail": "74 GB free",
+      "detail": "16 GB free",
       "fix": null,
       "who": "agent",
       "cmd": null
@@ -107,27 +107,27 @@
     },
     {
       "name": "talking-head, auto-editor",
-      "status": "fix",
-      "detail": "auto-editor missing on this machine",
-      "fix": "talking-head uses it for the levels and the cut, and on a Mac the transcript. On Windows a program is only found by a terminal opened after it was installed: once installed, open a new one and check again",
+      "status": "ok",
+      "detail": "auto-editor ready",
+      "fix": null,
       "who": "agent",
-      "cmd": "curl -L --create-dirs -o \"%LOCALAPPDATA%\\Microsoft\\WindowsApps\\auto-editor.exe\" https://github.com/WyattBlue/auto-editor/releases/latest/download/auto-editor-windows-x86_64.exe"
+      "cmd": null
     },
     {
       "name": "talking-head, python3",
-      "status": "fix",
-      "detail": "python3 missing on this machine",
-      "fix": "talking-head uses it for its scripts are called as python3. On Windows a program is only found by a terminal opened after it was installed: once installed, open a new one and check again",
+      "status": "ok",
+      "detail": "python3 ready",
+      "fix": null,
       "who": "agent",
-      "cmd": "winget install -e --id Python.Python.3.12 --accept-package-agreements --accept-source-agreements & py -3 -c \"import shutil,sys,os; shutil.copy(sys.executable, os.path.join(os.path.dirname(sys.executable), 'python3.exe'))\""
+      "cmd": null
     },
     {
       "name": "talking-head, python packages",
-      "status": "fix",
-      "detail": "python packages missing on this machine",
-      "fix": "talking-head uses it for measuring, charts and its checks. On Windows a program is only found by a terminal opened after it was installed: once installed, open a new one and check again",
+      "status": "ok",
+      "detail": "python packages ready",
+      "fix": null,
       "who": "agent",
-      "cmd": "python3 -m pip install --user pillow numpy matplotlib scipy opencv-python-headless || python3 -m pip install --user --break-system-packages pillow numpy matplotlib scipy opencv-python-headless"
+      "cmd": null
     },
     {
       "name": "you",
@@ -163,11 +163,11 @@
     },
     {
       "name": "commands",
-      "status": "fix",
-      "detail": ".installed/full-visual.json: missing or invalid JSON; .installed/talking-head.json: missing or invalid JSON; .installed/split-explainer.json: missing or invalid JSON",
-      "fix": "restore missing skills from the pack and repair its agent entry points",
+      "status": "ok",
+      "detail": "16 skills and agent entry points checked",
+      "fix": null,
       "who": "agent",
-      "cmd": "node scripts/agent-skills.mjs --json"
+      "cmd": null
     },
     {
       "name": "keys",
@@ -202,6 +202,6 @@
       "cmd": null
     }
   ],
-  "blocking": true,
+  "blocking": false,
   "version": "0.2.11"
 }

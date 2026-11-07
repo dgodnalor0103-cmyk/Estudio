@@ -1,0 +1,1996 @@
+{
+  "firma": "e09ec11b23bf",
+  "duracion": 89.9,
+  "frases": [
+    {
+      "n": 1,
+      "texto": "¿Dejar tu laptop enchufada todo el día destruye su batería? No, eso es completamente falso.",
+      "clave": "falso",
+      "inicio": 0.06,
+      "fin": 6.316
+    },
+    {
+      "n": 2,
+      "texto": "Para entender qué es lo que realmente desgasta una batería, primero debes ver cómo funciona por dentro.",
+      "clave": "dentro",
+      "inicio": 6.543,
+      "fin": 11.708
+    },
+    {
+      "n": 3,
+      "texto": "En su interior, miles de iones de litio viajan desde el ánodo hacia el cátodo cruzando un separador.",
+      "clave": "litio",
+      "inicio": 11.935,
+      "fin": 17.1
+    },
+    {
+      "n": 4,
+      "texto": "Sus electrones no pueden cruzar por dentro, así que toman un desvío por tu laptop generando corriente eléctrica.",
+      "clave": "corriente",
+      "inicio": 17.327,
+      "fin": 23.074
+    },
+    {
+      "n": 5,
+      "texto": "Cuando casi todos completan ese viaje, la batería se agota; y al enchufarla, todos regresan al inicio.",
+      "clave": "regresan",
+      "inicio": 23.301,
+      "fin": 29.484
+    },
+    {
+      "n": 6,
+      "texto": "En la práctica, algunos iones quedan atrapados por reacciones químicas en el ánodo y ya no pueden moverse.",
+      "clave": "atrapados",
+      "inicio": 29.711,
+      "fin": 34.949
+    },
+    {
+      "n": 7,
+      "texto": "Menos litio libre para moverse significa menos iones viajando y una capacidad cada vez más pequeña.",
+      "clave": "capacidad",
+      "inicio": 35.176,
+      "fin": 40.85
+    },
+    {
+      "n": 8,
+      "texto": "Además, esas reacciones crean una costra microscópica que frena los iones, y el calor acelera todo el proceso.",
+      "clave": "calor",
+      "inicio": 41.077,
+      "fin": 47.551
+    },
+    {
+      "n": 9,
+      "texto": "Dejar una laptop en un auto caliente en verano o sobre la cama tapando sus ventiladores cocina la batería rápido.",
+      "clave": "ventiladores",
+      "inicio": 47.778,
+      "fin": 53.598
+    },
+    {
+      "n": 10,
+      "texto": "Lo segundo que más la daña son los extremos: al cien por ciento, los iones quedan apretados a máxima tensión.",
+      "clave": "extremos",
+      "inicio": 53.825,
+      "fin": 59.644
+    },
+    {
+      "n": 11,
+      "texto": "En cambio, mantenerse alrededor del veinte al ochenta por ciento es donde la celda trabaja más cómoda.",
+      "clave": "ochenta",
+      "inicio": 59.872,
+      "fin": 65.109
+    },
+    {
+      "n": 12,
+      "texto": "¿Entonces si está siempre enchufada se queda al cien por ciento desgastándose? No en las laptops modernas.",
+      "clave": "modernas",
+      "inicio": 65.336,
+      "fin": 71.447
+    },
+    {
+      "n": 13,
+      "texto": "En cuanto detecta que llegó a su meta, desconecta la batería sola y funciona con energía directa del cable.",
+      "clave": "cable",
+      "inicio": 71.674,
+      "fin": 76.839
+    },
+    {
+      "n": 14,
+      "texto": "En tu sistema puedes activar la carga optimizada o fijar el límite de cuidado de batería al ochenta por ciento.",
+      "clave": "límite",
+      "inicio": 77.066,
+      "fin": 82.812
+    },
+    {
+      "n": 15,
+      "texto": "Actívalo y déjala enchufada sin estrés; envía este video al amigo que siempre la desconecta al llegar al cien.",
+      "clave": "estrés",
+      "inicio": 83.04,
+      "fin": 88.75
+    }
+  ],
+  "palabras": [
+    {
+      "texto": "¿Dejar",
+      "inicio": 0.06,
+      "fin": 0.351,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "tu",
+      "inicio": 0.424,
+      "fin": 0.496,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "laptop",
+      "inicio": 0.617,
+      "fin": 0.86,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "enchufada",
+      "inicio": 0.933,
+      "fin": 1.297,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "todo",
+      "inicio": 1.442,
+      "fin": 1.66,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "el",
+      "inicio": 1.697,
+      "fin": 1.733,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "día",
+      "inicio": 1.806,
+      "fin": 2.024,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "destruye",
+      "inicio": 2.097,
+      "fin": 2.46,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "su",
+      "inicio": 2.533,
+      "fin": 2.606,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "batería?",
+      "inicio": 2.679,
+      "fin": 3.333,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "No,",
+      "inicio": 3.624,
+      "fin": 4.134,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "eso",
+      "inicio": 4.243,
+      "fin": 4.352,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "es",
+      "inicio": 4.424,
+      "fin": 4.497,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "completamente",
+      "inicio": 4.643,
+      "fin": 5.37,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "falso.",
+      "inicio": 5.443,
+      "fin": 6.316,
+      "frase": 1,
+      "clave": true
+    },
+    {
+      "texto": "Para",
+      "inicio": 6.543,
+      "fin": 6.616,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "entender",
+      "inicio": 6.689,
+      "fin": 6.98,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "qué",
+      "inicio": 7.125,
+      "fin": 7.198,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "es",
+      "inicio": 7.27,
+      "fin": 7.343,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "lo",
+      "inicio": 7.416,
+      "fin": 7.452,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "que",
+      "inicio": 7.489,
+      "fin": 7.634,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "realmente",
+      "inicio": 7.707,
+      "fin": 8.216,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "desgasta",
+      "inicio": 8.289,
+      "fin": 8.653,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "una",
+      "inicio": 8.725,
+      "fin": 8.798,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "batería,",
+      "inicio": 8.871,
+      "fin": 9.598,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "primero",
+      "inicio": 9.707,
+      "fin": 9.889,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "debes",
+      "inicio": 9.962,
+      "fin": 10.18,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "ver",
+      "inicio": 10.253,
+      "fin": 10.326,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "cómo",
+      "inicio": 10.544,
+      "fin": 10.689,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "funciona",
+      "inicio": 10.762,
+      "fin": 11.126,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "por",
+      "inicio": 11.199,
+      "fin": 11.344,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "dentro.",
+      "inicio": 11.453,
+      "fin": 11.708,
+      "frase": 2,
+      "clave": true
+    },
+    {
+      "texto": "En",
+      "inicio": 11.935,
+      "fin": 12.008,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "su",
+      "inicio": 12.044,
+      "fin": 12.081,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "interior,",
+      "inicio": 12.153,
+      "fin": 12.808,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "miles",
+      "inicio": 12.881,
+      "fin": 13.172,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "de",
+      "inicio": 13.244,
+      "fin": 13.281,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "iones",
+      "inicio": 13.317,
+      "fin": 13.608,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "de",
+      "inicio": 13.644,
+      "fin": 13.681,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "litio",
+      "inicio": 13.754,
+      "fin": 14.045,
+      "frase": 3,
+      "clave": true
+    },
+    {
+      "texto": "viajan",
+      "inicio": 14.117,
+      "fin": 14.408,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "desde",
+      "inicio": 14.481,
+      "fin": 14.626,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "el",
+      "inicio": 14.699,
+      "fin": 14.772,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "ánodo",
+      "inicio": 14.845,
+      "fin": 15.136,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "hacia",
+      "inicio": 15.172,
+      "fin": 15.354,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "el",
+      "inicio": 15.427,
+      "fin": 15.499,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "cátodo",
+      "inicio": 15.572,
+      "fin": 15.936,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "cruzando",
+      "inicio": 16.009,
+      "fin": 16.445,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "un",
+      "inicio": 16.481,
+      "fin": 16.518,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "separador.",
+      "inicio": 16.59,
+      "fin": 17.1,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "Sus",
+      "inicio": 17.327,
+      "fin": 17.472,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "electrones",
+      "inicio": 17.582,
+      "fin": 18.054,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "no",
+      "inicio": 18.2,
+      "fin": 18.273,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "pueden",
+      "inicio": 18.418,
+      "fin": 18.564,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "cruzar",
+      "inicio": 18.636,
+      "fin": 18.855,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "por",
+      "inicio": 18.927,
+      "fin": 19.073,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "dentro,",
+      "inicio": 19.182,
+      "fin": 19.655,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "así",
+      "inicio": 19.727,
+      "fin": 19.873,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "que",
+      "inicio": 19.946,
+      "fin": 20.018,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "toman",
+      "inicio": 20.091,
+      "fin": 20.309,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "un",
+      "inicio": 20.346,
+      "fin": 20.382,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "desvío",
+      "inicio": 20.491,
+      "fin": 20.819,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "por",
+      "inicio": 20.891,
+      "fin": 20.964,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "tu",
+      "inicio": 21.037,
+      "fin": 21.11,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "laptop",
+      "inicio": 21.182,
+      "fin": 21.546,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "generando",
+      "inicio": 21.619,
+      "fin": 22.055,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "corriente",
+      "inicio": 22.128,
+      "fin": 22.492,
+      "frase": 4,
+      "clave": true
+    },
+    {
+      "texto": "eléctrica.",
+      "inicio": 22.564,
+      "fin": 23.074,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "Cuando",
+      "inicio": 23.301,
+      "fin": 23.519,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "casi",
+      "inicio": 23.665,
+      "fin": 23.883,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "todos",
+      "inicio": 24.028,
+      "fin": 24.319,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "completan",
+      "inicio": 24.392,
+      "fin": 24.756,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "ese",
+      "inicio": 24.828,
+      "fin": 24.901,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "viaje,",
+      "inicio": 25.01,
+      "fin": 25.483,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "la",
+      "inicio": 25.52,
+      "fin": 25.556,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "batería",
+      "inicio": 25.629,
+      "fin": 25.992,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "se",
+      "inicio": 26.029,
+      "fin": 26.065,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "agota;",
+      "inicio": 26.138,
+      "fin": 26.865,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "y",
+      "inicio": 26.902,
+      "fin": 26.938,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "al",
+      "inicio": 26.974,
+      "fin": 27.011,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "enchufarla,",
+      "inicio": 27.083,
+      "fin": 27.884,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "todos",
+      "inicio": 28.029,
+      "fin": 28.175,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "regresan",
+      "inicio": 28.247,
+      "fin": 28.611,
+      "frase": 5,
+      "clave": true
+    },
+    {
+      "texto": "al",
+      "inicio": 28.684,
+      "fin": 28.756,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "inicio.",
+      "inicio": 28.938,
+      "fin": 29.484,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "En",
+      "inicio": 29.711,
+      "fin": 29.748,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "la",
+      "inicio": 29.784,
+      "fin": 29.857,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "práctica,",
+      "inicio": 29.929,
+      "fin": 30.511,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "algunos",
+      "inicio": 30.584,
+      "fin": 30.875,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "iones",
+      "inicio": 30.948,
+      "fin": 31.239,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "quedan",
+      "inicio": 31.275,
+      "fin": 31.457,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "atrapados",
+      "inicio": 31.53,
+      "fin": 31.966,
+      "frase": 6,
+      "clave": true
+    },
+    {
+      "texto": "por",
+      "inicio": 32.039,
+      "fin": 32.112,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "reacciones",
+      "inicio": 32.184,
+      "fin": 32.621,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "químicas",
+      "inicio": 32.694,
+      "fin": 33.057,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "en",
+      "inicio": 33.094,
+      "fin": 33.13,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "el",
+      "inicio": 33.203,
+      "fin": 33.276,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "ánodo",
+      "inicio": 33.348,
+      "fin": 33.712,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "y",
+      "inicio": 33.785,
+      "fin": 33.857,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "ya",
+      "inicio": 33.93,
+      "fin": 34.076,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "no",
+      "inicio": 34.148,
+      "fin": 34.221,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "pueden",
+      "inicio": 34.269,
+      "fin": 34.439,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "moverse.",
+      "inicio": 34.512,
+      "fin": 34.949,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "Menos",
+      "inicio": 35.176,
+      "fin": 35.394,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "litio",
+      "inicio": 35.467,
+      "fin": 35.685,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "libre",
+      "inicio": 35.758,
+      "fin": 35.903,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "para",
+      "inicio": 35.976,
+      "fin": 36.122,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "moverse",
+      "inicio": 36.194,
+      "fin": 36.558,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "significa",
+      "inicio": 36.703,
+      "fin": 37.213,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "menos",
+      "inicio": 37.358,
+      "fin": 37.576,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "iones",
+      "inicio": 37.649,
+      "fin": 37.94,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "viajando",
+      "inicio": 38.013,
+      "fin": 38.377,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "y",
+      "inicio": 38.522,
+      "fin": 38.595,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "una",
+      "inicio": 38.668,
+      "fin": 38.813,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "capacidad",
+      "inicio": 38.886,
+      "fin": 39.395,
+      "frase": 7,
+      "clave": true
+    },
+    {
+      "texto": "cada",
+      "inicio": 39.54,
+      "fin": 39.759,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "vez",
+      "inicio": 39.831,
+      "fin": 39.904,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "más",
+      "inicio": 39.977,
+      "fin": 40.086,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "pequeña.",
+      "inicio": 40.122,
+      "fin": 40.85,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "Además,",
+      "inicio": 41.077,
+      "fin": 41.732,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "esas",
+      "inicio": 41.804,
+      "fin": 41.95,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "reacciones",
+      "inicio": 42.023,
+      "fin": 42.459,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "crean",
+      "inicio": 42.532,
+      "fin": 42.75,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "una",
+      "inicio": 42.823,
+      "fin": 42.896,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "costra",
+      "inicio": 43.041,
+      "fin": 43.332,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "microscópica",
+      "inicio": 43.478,
+      "fin": 44.132,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "que",
+      "inicio": 44.205,
+      "fin": 44.278,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "frena",
+      "inicio": 44.35,
+      "fin": 44.641,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "los",
+      "inicio": 44.714,
+      "fin": 44.787,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "iones,",
+      "inicio": 44.969,
+      "fin": 45.514,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "y",
+      "inicio": 45.551,
+      "fin": 45.587,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "el",
+      "inicio": 45.623,
+      "fin": 45.66,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "calor",
+      "inicio": 45.733,
+      "fin": 46.023,
+      "frase": 8,
+      "clave": true
+    },
+    {
+      "texto": "acelera",
+      "inicio": 46.169,
+      "fin": 46.533,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "todo",
+      "inicio": 46.751,
+      "fin": 46.896,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "el",
+      "inicio": 46.969,
+      "fin": 47.042,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "proceso.",
+      "inicio": 47.115,
+      "fin": 47.551,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "Dejar",
+      "inicio": 47.778,
+      "fin": 47.997,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "una",
+      "inicio": 48.069,
+      "fin": 48.142,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "laptop",
+      "inicio": 48.178,
+      "fin": 48.506,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "en",
+      "inicio": 48.542,
+      "fin": 48.579,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "un",
+      "inicio": 48.651,
+      "fin": 48.688,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "auto",
+      "inicio": 48.724,
+      "fin": 48.942,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "caliente",
+      "inicio": 49.015,
+      "fin": 49.306,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "en",
+      "inicio": 49.342,
+      "fin": 49.379,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "verano",
+      "inicio": 49.451,
+      "fin": 49.815,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "o",
+      "inicio": 49.961,
+      "fin": 50.033,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "sobre",
+      "inicio": 50.179,
+      "fin": 50.324,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "la",
+      "inicio": 50.397,
+      "fin": 50.47,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "cama",
+      "inicio": 50.543,
+      "fin": 50.761,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "tapando",
+      "inicio": 50.87,
+      "fin": 51.124,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "sus",
+      "inicio": 51.197,
+      "fin": 51.27,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "ventiladores",
+      "inicio": 51.379,
+      "fin": 51.925,
+      "frase": 9,
+      "clave": true
+    },
+    {
+      "texto": "cocina",
+      "inicio": 52.07,
+      "fin": 52.434,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "la",
+      "inicio": 52.507,
+      "fin": 52.579,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "batería",
+      "inicio": 52.677,
+      "fin": 53.016,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "rápido.",
+      "inicio": 53.161,
+      "fin": 53.598,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "Lo",
+      "inicio": 53.825,
+      "fin": 53.898,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "segundo",
+      "inicio": 53.97,
+      "fin": 54.189,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "que",
+      "inicio": 54.261,
+      "fin": 54.407,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "más",
+      "inicio": 54.48,
+      "fin": 54.625,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "la",
+      "inicio": 54.698,
+      "fin": 54.771,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "daña",
+      "inicio": 54.843,
+      "fin": 55.062,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "son",
+      "inicio": 55.134,
+      "fin": 55.207,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "los",
+      "inicio": 55.28,
+      "fin": 55.353,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "extremos:",
+      "inicio": 55.425,
+      "fin": 56.298,
+      "frase": 10,
+      "clave": true
+    },
+    {
+      "texto": "al",
+      "inicio": 56.371,
+      "fin": 56.444,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "cien",
+      "inicio": 56.516,
+      "fin": 56.662,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "por",
+      "inicio": 56.735,
+      "fin": 56.88,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "ciento,",
+      "inicio": 56.977,
+      "fin": 57.389,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "los",
+      "inicio": 57.462,
+      "fin": 57.535,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "iones",
+      "inicio": 57.68,
+      "fin": 57.826,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "quedan",
+      "inicio": 57.862,
+      "fin": 58.044,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "apretados",
+      "inicio": 58.117,
+      "fin": 58.553,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "a",
+      "inicio": 58.626,
+      "fin": 58.699,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "máxima",
+      "inicio": 58.771,
+      "fin": 59.135,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "tensión.",
+      "inicio": 59.208,
+      "fin": 59.644,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "En",
+      "inicio": 59.872,
+      "fin": 59.944,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "cambio,",
+      "inicio": 60.017,
+      "fin": 60.454,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "mantenerse",
+      "inicio": 60.563,
+      "fin": 60.963,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "alrededor",
+      "inicio": 61.036,
+      "fin": 61.399,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "del",
+      "inicio": 61.472,
+      "fin": 61.617,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "veinte",
+      "inicio": 61.69,
+      "fin": 61.981,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "al",
+      "inicio": 62.127,
+      "fin": 62.199,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "ochenta",
+      "inicio": 62.272,
+      "fin": 62.563,
+      "frase": 11,
+      "clave": true
+    },
+    {
+      "texto": "por",
+      "inicio": 62.636,
+      "fin": 62.709,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "ciento",
+      "inicio": 62.781,
+      "fin": 63.072,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "es",
+      "inicio": 63.29,
+      "fin": 63.363,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "donde",
+      "inicio": 63.436,
+      "fin": 63.581,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "la",
+      "inicio": 63.618,
+      "fin": 63.654,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "celda",
+      "inicio": 63.727,
+      "fin": 63.945,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "trabaja",
+      "inicio": 64.018,
+      "fin": 64.382,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "más",
+      "inicio": 64.527,
+      "fin": 64.673,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "cómoda.",
+      "inicio": 64.745,
+      "fin": 65.109,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "¿Entonces",
+      "inicio": 65.336,
+      "fin": 65.846,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "si",
+      "inicio": 66.064,
+      "fin": 66.136,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "está",
+      "inicio": 66.209,
+      "fin": 66.427,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "siempre",
+      "inicio": 66.5,
+      "fin": 66.718,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "enchufada",
+      "inicio": 66.791,
+      "fin": 67.228,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "se",
+      "inicio": 67.3,
+      "fin": 67.446,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "queda",
+      "inicio": 67.519,
+      "fin": 67.591,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "al",
+      "inicio": 67.7,
+      "fin": 67.81,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "cien",
+      "inicio": 67.846,
+      "fin": 67.955,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "por",
+      "inicio": 68.101,
+      "fin": 68.173,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "ciento",
+      "inicio": 68.246,
+      "fin": 68.391,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "desgastándose?",
+      "inicio": 68.464,
+      "fin": 69.555,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "No",
+      "inicio": 69.919,
+      "fin": 70.065,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "en",
+      "inicio": 70.101,
+      "fin": 70.137,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "las",
+      "inicio": 70.21,
+      "fin": 70.283,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "laptops",
+      "inicio": 70.356,
+      "fin": 70.646,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "modernas.",
+      "inicio": 70.719,
+      "fin": 71.447,
+      "frase": 12,
+      "clave": true
+    },
+    {
+      "texto": "En",
+      "inicio": 71.674,
+      "fin": 71.747,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "cuanto",
+      "inicio": 71.783,
+      "fin": 71.965,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "detecta",
+      "inicio": 72.147,
+      "fin": 72.365,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "que",
+      "inicio": 72.401,
+      "fin": 72.474,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "llegó",
+      "inicio": 72.51,
+      "fin": 72.692,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "a",
+      "inicio": 72.729,
+      "fin": 72.765,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "su",
+      "inicio": 72.801,
+      "fin": 72.838,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "meta,",
+      "inicio": 72.911,
+      "fin": 73.347,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "desconecta",
+      "inicio": 73.456,
+      "fin": 73.856,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "la",
+      "inicio": 73.929,
+      "fin": 73.965,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "batería",
+      "inicio": 74.002,
+      "fin": 74.365,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "sola",
+      "inicio": 74.438,
+      "fin": 74.729,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "y",
+      "inicio": 74.802,
+      "fin": 74.875,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "funciona",
+      "inicio": 74.947,
+      "fin": 75.238,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "con",
+      "inicio": 75.311,
+      "fin": 75.384,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "energía",
+      "inicio": 75.456,
+      "fin": 75.893,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "directa",
+      "inicio": 75.966,
+      "fin": 76.329,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "del",
+      "inicio": 76.402,
+      "fin": 76.475,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "cable.",
+      "inicio": 76.548,
+      "fin": 76.839,
+      "frase": 13,
+      "clave": true
+    },
+    {
+      "texto": "En",
+      "inicio": 77.066,
+      "fin": 77.139,
+      "frase": 14,
+      "clave": false
+    },
+    {
+      "texto": "tu",
+      "inicio": 77.175,
+      "fin": 77.211,
+      "frase": 14,
+      "clave": false
+    },
+    {
+      "texto": "sistema",
+      "inicio": 77.284,
+      "fin": 77.721,
+      "frase": 14,
+      "clave": false
+    },
+    {
+      "texto": "puedes",
+      "inicio": 77.757,
+      "fin": 77.939,
+      "frase": 14,
+      "clave": false
+    },
+    {
+      "texto": "activar",
+      "inicio": 78.012,
+      "fin": 78.303,
+      "frase": 14,
+      "clave": false
+    },
+    {
+      "texto": "la",
+      "inicio": 78.375,
+      "fin": 78.448,
+      "frase": 14,
+      "clave": false
+    },
+    {
+      "texto": "carga",
+      "inicio": 78.521,
+      "fin": 78.666,
+      "frase": 14,
+      "clave": false
+    },
+    {
+      "texto": "optimizada",
+      "inicio": 78.739,
+      "fin": 79.321,
+      "frase": 14,
+      "clave": false
+    },
+    {
+      "texto": "o",
+      "inicio": 79.466,
+      "fin": 79.539,
+      "frase": 14,
+      "clave": false
+    },
+    {
+      "texto": "fijar",
+      "inicio": 79.575,
+      "fin": 79.83,
+      "frase": 14,
+      "clave": false
+    },
+    {
+      "texto": "el",
+      "inicio": 79.866,
+      "fin": 79.903,
+      "frase": 14,
+      "clave": false
+    },
+    {
+      "texto": "límite",
+      "inicio": 79.976,
+      "fin": 80.267,
+      "frase": 14,
+      "clave": true
+    },
+    {
+      "texto": "de",
+      "inicio": 80.303,
+      "fin": 80.339,
+      "frase": 14,
+      "clave": false
+    },
+    {
+      "texto": "cuidado",
+      "inicio": 80.412,
+      "fin": 80.703,
+      "frase": 14,
+      "clave": false
+    },
+    {
+      "texto": "de",
+      "inicio": 80.739,
+      "fin": 80.776,
+      "frase": 14,
+      "clave": false
+    },
+    {
+      "texto": "batería",
+      "inicio": 80.848,
+      "fin": 81.285,
+      "frase": 14,
+      "clave": false
+    },
+    {
+      "texto": "al",
+      "inicio": 81.358,
+      "fin": 81.43,
+      "frase": 14,
+      "clave": false
+    },
+    {
+      "texto": "ochenta",
+      "inicio": 81.503,
+      "fin": 81.794,
+      "frase": 14,
+      "clave": false
+    },
+    {
+      "texto": "por",
+      "inicio": 81.867,
+      "fin": 82.012,
+      "frase": 14,
+      "clave": false
+    },
+    {
+      "texto": "ciento.",
+      "inicio": 82.049,
+      "fin": 82.812,
+      "frase": 14,
+      "clave": false
+    },
+    {
+      "texto": "Actívalo",
+      "inicio": 83.04,
+      "fin": 83.513,
+      "frase": 15,
+      "clave": false
+    },
+    {
+      "texto": "y",
+      "inicio": 83.585,
+      "fin": 83.658,
+      "frase": 15,
+      "clave": false
+    },
+    {
+      "texto": "déjala",
+      "inicio": 83.694,
+      "fin": 83.949,
+      "frase": 15,
+      "clave": false
+    },
+    {
+      "texto": "enchufada",
+      "inicio": 84.022,
+      "fin": 84.386,
+      "frase": 15,
+      "clave": false
+    },
+    {
+      "texto": "sin",
+      "inicio": 84.531,
+      "fin": 84.676,
+      "frase": 15,
+      "clave": false
+    },
+    {
+      "texto": "estrés;",
+      "inicio": 84.749,
+      "fin": 85.549,
+      "frase": 15,
+      "clave": true
+    },
+    {
+      "texto": "envía",
+      "inicio": 85.622,
+      "fin": 85.768,
+      "frase": 15,
+      "clave": false
+    },
+    {
+      "texto": "este",
+      "inicio": 85.877,
+      "fin": 85.986,
+      "frase": 15,
+      "clave": false
+    },
+    {
+      "texto": "video",
+      "inicio": 86.095,
+      "fin": 86.204,
+      "frase": 15,
+      "clave": false
+    },
+    {
+      "texto": "al",
+      "inicio": 86.277,
+      "fin": 86.35,
+      "frase": 15,
+      "clave": false
+    },
+    {
+      "texto": "amigo",
+      "inicio": 86.422,
+      "fin": 86.64,
+      "frase": 15,
+      "clave": false
+    },
+    {
+      "texto": "que",
+      "inicio": 86.75,
+      "fin": 86.859,
+      "frase": 15,
+      "clave": false
+    },
+    {
+      "texto": "siempre",
+      "inicio": 86.931,
+      "fin": 87.222,
+      "frase": 15,
+      "clave": false
+    },
+    {
+      "texto": "la",
+      "inicio": 87.259,
+      "fin": 87.295,
+      "frase": 15,
+      "clave": false
+    },
+    {
+      "texto": "desconecta",
+      "inicio": 87.368,
+      "fin": 87.804,
+      "frase": 15,
+      "clave": false
+    },
+    {
+      "texto": "al",
+      "inicio": 87.841,
+      "fin": 87.877,
+      "frase": 15,
+      "clave": false
+    },
+    {
+      "texto": "llegar",
+      "inicio": 87.95,
+      "fin": 88.132,
+      "frase": 15,
+      "clave": false
+    },
+    {
+      "texto": "al",
+      "inicio": 88.168,
+      "fin": 88.241,
+      "frase": 15,
+      "clave": false
+    },
+    {
+      "texto": "cien.",
+      "inicio": 88.314,
+      "fin": 88.75,
+      "frase": 15,
+      "clave": false
+    }
+  ]
+}

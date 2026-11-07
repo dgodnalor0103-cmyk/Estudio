@@ -7,6 +7,14 @@ import { fileURLToPath } from "node:url";
 export const RAIZ = existsSync("C:\\Estudio\\ATOM\\package.json") ? "C:\\Estudio\\ATOM" : resolve(dirname(fileURLToPath(import.meta.url)), "..", "..");
 export const ANCHO = 1080, ALTO = 1920;
 
+const REMOTION_FFMPEG_DIR = resolve(RAIZ, "..", "PuraPrueba", "node_modules", "@remotion", "compositor-darwin-arm64");
+if (existsSync(REMOTION_FFMPEG_DIR)) {
+  if (!(process.env.PATH || "").includes(REMOTION_FFMPEG_DIR)) {
+    process.env.PATH = `${REMOTION_FFMPEG_DIR}:/usr/local/bin:${process.env.PATH || "/usr/bin:/bin"}`;
+  }
+  process.env.DYLD_LIBRARY_PATH = REMOTION_FFMPEG_DIR;
+}
+
 export function fallo(msg) {
   console.error(`\n✗ ${msg}\n`);
   process.exit(1);
@@ -55,10 +63,24 @@ export function duracion(archivo) {
 
 // Audio a muestras: mono, float, a la frecuencia pedida.
 export function leerAudio(archivo, sr = 48000) {
-  const b = execFileSync("ffmpeg", ["-v", "error", "-i", archivo, "-f", "f32le", "-ac", "1", "-ar", String(sr), "-"], { maxBuffer: 1 << 30 });
-  const ab = new ArrayBuffer(b.length);
-  new Uint8Array(ab).set(b);
-  return new Float32Array(ab);
+  const b = execFileSync("ffmpeg", ["-v", "error", "-i", archivo, "-f", "wav", "-c:a", "pcm_s16le", "-ac", "1", "-ar", String(sr), "-"], { maxBuffer: 1 << 30 });
+  let offset = 12;
+  while (offset + 8 <= b.length) {
+    const id = b.toString("ascii", offset, offset + 4);
+    const sz = b.readUInt32LE(offset + 4);
+    if (id === "data") {
+      const start = offset + 8;
+      const count = Math.min(sz, b.length - start) >> 1;
+      const out = new Float32Array(count);
+      for (let i = 0; i < count; i++) out[i] = b.readInt16LE(start + i * 2) / 32768;
+      return out;
+    }
+    offset += 8 + sz + (sz & 1);
+  }
+  const count = Math.max(0, b.length - 44) >> 1;
+  const out = new Float32Array(count);
+  for (let i = 0; i < count; i++) out[i] = b.readInt16LE(44 + i * 2) / 32768;
+  return out;
 }
 
 // Un wav mono de 16 bits. (Mono a propósito: al leer un estéreo con L = R como mono, ffmpeg le suma 3 dB.)
@@ -87,13 +109,11 @@ export function cargarClaves() {
   }
 }
 
-// Un proceso de ffmpeg al que se le van pasando fotogramas (RGBA, 1080 × 1920) y que escribe un mp4 Ultra-Nítido BT.709 optimizado para TikTok/Reels/Shorts.
+// Un proceso de ffmpeg al que se le van pasando fotogramas (JPEG, 1080 × 1920) y que escribe un mp4 Ultra-Nítido BT.709 optimizado para TikTok/Reels/Shorts.
 export function codificador(salida, fps, calidad = "final") {
-  const crf = calidad === "final" ? "16" : "23", preset = calidad === "final" ? "slow" : "veryfast";
-  const vf = calidad === "final"
-    ? "scale=out_color_matrix=bt709:out_range=tv,unsharp=3:3:0.45:3:3:0.0"
-    : "scale=out_color_matrix=bt709:out_range=tv";
-  const p = spawn("ffmpeg", ["-hide_banner", "-loglevel", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgba", "-s", `${ANCHO}x${ALTO}`, "-r", String(fps), "-i", "-",
+  const crf = calidad === "final" ? "16" : "23", preset = calidad === "final" ? "fast" : "veryfast";
+  const vf = "scale=out_color_matrix=bt709:out_range=tv";
+  const p = spawn("ffmpeg", ["-hide_banner", "-loglevel", "error", "-y", "-f", "image2pipe", "-c:v", "mjpeg", "-r", String(fps), "-i", "-",
     "-vf", vf,
     "-c:v", "libx264", "-profile:v", "high", "-level:v", "4.2", "-preset", preset, "-crf", crf,
     "-maxrate", "8500k", "-bufsize", "17000k",

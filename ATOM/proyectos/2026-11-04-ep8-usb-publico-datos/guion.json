@@ -1,0 +1,61 @@
+{
+  "titulo": "Por qué no debes cargar tu celular en puertos USB públicos",
+  "idioma": "es",
+  "subtitulos": "arriba",
+  "voz": {
+    "id": "gWaDC0oXAheKoZfljzuI",
+    "modelo": "eleven_v4",
+    "estabilidad": 0.4,
+    "similitud": 0.8,
+    "estilo": 0,
+    "velocidad": 1.12
+  },
+  "frases": [
+    {
+      "texto": "¿Sabías que enchufar tu cable en un puerto USB público conecta tus datos privados a una computadora oculta?",
+      "clave": "oculta",
+      "hook": true
+    },
+    {
+      "texto": "Parece un simple enchufe de corriente en el aeropuerto, pero por dentro ese hueco hace mucho más que cargar.",
+      "clave": "dentro",
+      "hook": true
+    },
+    {
+      "texto": "Si abres tu cable USB verás cuatro hilos metálicos: solo los dos de las orillas llevan electricidad.",
+      "clave": "cuatro"
+    },
+    {
+      "texto": "Los dos hilos del centro son una autopista de datos conectada directo a la memoria de tu celular.",
+      "clave": "autopista"
+    },
+    {
+      "texto": "Es como conectar una manguera para llenar tu tanque de agua que adentro trae escondido un micrófono a tu sala.",
+      "clave": "micrófono"
+    },
+    {
+      "texto": "En un puerto alterado, un chip escondido detrás de la pared pide permiso mientras estás distraído.",
+      "clave": "escondido"
+    },
+    {
+      "texto": "Si tocas Confiar por error o tu sistema es viejo, en segundos copia tus fotos y claves sin que lo notes.",
+      "clave": "claves"
+    },
+    {
+      "texto": "Por eso, nunca conectes tu cable directo a una ranura USB suelta en aeropuertos, hoteles o centros comerciales.",
+      "clave": "ranura"
+    },
+    {
+      "texto": "Usa siempre tu propio cubo de pared en el enchufe normal o pon un bloqueador USB que corta los dos pines del centro.",
+      "clave": "cubo"
+    },
+    {
+      "texto": "Envíaselo a ese amigo que viaja y enchufa su celular en el primer puerto USB libre que encuentra.",
+      "clave": "amigo"
+    },
+    {
+      "texto": "Y entra a mi perfil para ver todos los episodios de la serie Mitos de tu Celular.",
+      "clave": "perfil"
+    }
+  ]
+}

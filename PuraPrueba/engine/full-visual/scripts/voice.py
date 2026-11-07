@@ -15,17 +15,18 @@ import base64, difflib, json, os, re, subprocess, sys, tempfile, unicodedata, ur
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+os.environ["PATH"] = f"{ROOT.parent.parent / 'node_modules' / '.bin'}:/usr/local/bin:" + os.environ.get("PATH", "")
 API = "https://api.elevenlabs.io/v1"
 from where import WHISPER, whisper_cli   # the folder's own speech model and engine, on every system
-DEFAULTS = {"model": "eleven_multilingual_v2", "speed": 1.12, "stability": 0.5, "similarity": 0.8, "style": 0.0}
+DEFAULTS = {"model": "eleven_v4", "speed": 1.12, "stability": 0.4, "similarity": 0.8, "style": 0.0}
 norm = lambda s: re.sub(r"[^a-z0-9 ]", "", unicodedata.normalize("NFKD", s).lower()).split()
 
 
 def api_key():
     key = os.environ.get("ELEVENLABS_API_KEY", "")
-    env = ROOT.parent.parent / ".env.local"
-    if not key and env.exists():
-        key = next((l.split("=", 1)[1].strip().strip("\"'") for l in env.read_text().splitlines() if l.startswith("ELEVENLABS_API_KEY=")), "")
+    for env in (ROOT.parent.parent / ".env.local", ROOT.parent.parent.parent / "ATOM" / ".env.local"):
+        if not key and env.exists():
+            key = next((l.split("=", 1)[1].strip().strip("\"'") for l in env.read_text().splitlines() if l.startswith("ELEVENLABS_API_KEY=")), "")
     return key or sys.exit("no ELEVENLABS_API_KEY in the environment or in .env.local")
 
 
@@ -42,7 +43,7 @@ def speak(text, v):
     body = {"text": text, "model_id": v["model"], "voice_settings": {
         "speed": v["speed"], "stability": v["stability"], "similarity_boost": v["similarity"], "style": v["style"], "use_speaker_boost": True}}
     out = call(f"/text-to-speech/{v['id']}/with-timestamps?output_format=mp3_44100_192", body)
-    return base64.b64decode(out["audio_base64"]), out["alignment"]
+    return base64.b64decode(out["audio_base64"]), (out.get("alignment") or out.get("normalized_alignment"))
 
 
 def force_align(mp3, text):
@@ -91,12 +92,11 @@ def heard(mp3, start, lang="en", fallback_text=""):
 
 
 if __name__ == "__main__":
-    reel = ROOT / "reels" / sys.argv[1]
-    text = re.sub(r"\n{2,}", "\n\n", (reel / "script.txt").read_text().strip())
-    cfg = json.loads((reel / "reel.json").read_text()).get("voice", {}) if (reel / "reel.json").exists() else {}
-    sentences = re.split(r"(?<=[.?!])\s+", text)
-
     if "--audition" in sys.argv:
+        reel = ROOT / "reels" / sys.argv[1]
+        text = re.sub(r"\n{2,}", "\n\n", (reel / "script.txt").read_text().strip())
+        cfg = json.loads((reel / "reel.json").read_text()).get("voice", {}) if (reel / "reel.json").exists() else {}
+        sentences = re.split(r"(?<=[.?!])\s+", text)
         (reel / "voices").mkdir(exist_ok=True)
         names = {x["voice_id"]: x["name"] for x in call("/voices")["voices"]}
         for spec in sys.argv[sys.argv.index("--audition") + 1].split(","):  # id, or id:label for a library voice
@@ -107,31 +107,33 @@ if __name__ == "__main__":
             print(reel / "voices" / f"{name}.mp3")
         sys.exit(0)
 
-    v = {**DEFAULTS, **cfg}
-    if "id" not in v:
-        sys.exit('reel.json has no "voice": {"id": ...}. Audition first, he picks the voice.')
-    # eleven_v3 performs from script.v3.txt when it exists: the same words plus [audio tags] where the tone turns.
-    # The tags are never spoken, and v3's own character times run through pauses, so the take is then timed by
-    # forced alignment against the plain script.
-    tagged = reel / "script.v3.txt"
-    v3 = v["model"] == "eleven_v3"
-    audio, al = speak(re.sub(r"\n{2,}", "\n\n", tagged.read_text().strip()) if v3 and tagged.exists() else text, v)
-    mp3 = reel / "voice.mp3"
-    mp3.write_bytes(audio)
-    if v3:
-        al = force_align(mp3, text)
-    pad(mp3)
-    (reel / "voice.alignment.json").write_text(json.dumps({"voice": v, "alignment": al}, ensure_ascii=False))
+    for slug_arg in sys.argv[1:]:
+        reel = ROOT / "reels" / slug_arg
+        text = re.sub(r"\n{2,}", "\n\n", (reel / "script.txt").read_text().strip())
+        cfg = json.loads((reel / "reel.json").read_text()).get("voice", {}) if (reel / "reel.json").exists() else {}
+        sentences = re.split(r"(?<=[.?!])\s+", text)
+        v = {**DEFAULTS, **cfg}
+        if "id" not in v:
+            sys.exit('reel.json has no "voice": {"id": ...}. Audition first, he picks the voice.')
+        tagged = reel / "script.v3.txt"
+        v3 = v["model"] == "eleven_v3"
+        audio, al = speak(re.sub(r"\n{2,}", "\n\n", tagged.read_text().strip()) if v3 and tagged.exists() else text, v)
+        mp3 = reel / "voice.mp3"
+        mp3.write_bytes(audio)
+        if v3:
+            al = force_align(mp3, text)
+        pad(mp3)
+        (reel / "voice.alignment.json").write_text(json.dumps({"voice": v, "alignment": al}, ensure_ascii=False))
 
-    # the last sentence, by its own character times, then by ear
-    chars, t0s = "".join(al["characters"]), al["character_start_times_seconds"]
-    last = sentences[-1]
-    at = chars.rfind(last[:20])
-    start, end = t0s[at], al["character_end_times_seconds"][-1]
-    said = heard(mp3, max(0, start - 0.15), v.get("lang", "en"), last)
-    ratio = difflib.SequenceMatcher(None, norm(last), norm(said)).ratio()
-    words = len(text.split())
-    print(f"{mp3}: {end:.2f} s, {words} words, {words / end:.2f} words a second")
-    print(f"last line {start:.2f}-{end:.2f} s, heard: \"{said.strip()}\" ({ratio:.0%} of the script's words)")
-    if ratio < 0.8 or (end - start) < 0.03 * len(last):
-        sys.exit("the last line is missing or rushed: run the take again, never patch it")
+        # the last sentence, by its own character times, then by ear
+        chars, t0s = "".join(al["characters"]), al["character_start_times_seconds"]
+        last = sentences[-1]
+        at = chars.rfind(last[:20])
+        start, end = t0s[at], al["character_end_times_seconds"][-1]
+        said = heard(mp3, max(0, start - 0.15), v.get("lang", "en"), last)
+        ratio = difflib.SequenceMatcher(None, norm(last), norm(said)).ratio()
+        words = len(text.split())
+        print(f"{mp3}: {end:.2f} s, {words} words, {words / end:.2f} words a second")
+        print(f"last line {start:.2f}-{end:.2f} s, heard: \"{said.strip()}\" ({ratio:.0%} of the script's words)")
+        if ratio < 0.8 or (end - start) < 0.03 * len(last):
+            sys.exit("the last line is missing or rushed: run the take again, never patch it")

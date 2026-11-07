@@ -1,0 +1,61 @@
+{
+  "titulo": "La trampa de activar la RAM virtual en tu celular",
+  "idioma": "es",
+  "subtitulos": "arriba",
+  "voz": {
+    "id": "gWaDC0oXAheKoZfljzuI",
+    "modelo": "eleven_v4",
+    "estabilidad": 0.4,
+    "similitud": 0.8,
+    "estilo": 0,
+    "velocidad": 1.12
+  },
+  "frases": [
+    {
+      "texto": "¿Sabías que activar la famosa RAM virtual de tu celular puede volverlo más lento y desgastar su memoria?",
+      "clave": "lento",
+      "hook": true
+    },
+    {
+      "texto": "Las marcas te prometen ocho gigas extra gratis con un botón, pero es un truco con trampa.",
+      "clave": "trampa",
+      "hook": true
+    },
+    {
+      "texto": "La memoria RAM real es un chip ultrarrápido soldado al procesador que responde al instante.",
+      "clave": "ultrarrápido"
+    },
+    {
+      "texto": "En cambio, la RAM virtual agarra un pedazo del chip donde guardas tus fotos, que es quince veces más lento.",
+      "clave": "quince"
+    },
+    {
+      "texto": "Es como quitar cosas de la mesa de tu cocina para guardarlas en el sótano y bajar corriendo por cada cuchara.",
+      "clave": "sótano"
+    },
+    {
+      "texto": "Cuando abres tus aplicaciones, el procesador pierde tiempo esperando datos que vienen del chip lento.",
+      "clave": "esperando"
+    },
+    {
+      "texto": "Y como la RAM escribe miles de veces por minuto, ese roce constante va gastando la vida útil de tu almacenamiento.",
+      "clave": "gastando"
+    },
+    {
+      "texto": "Si tu celular ya tiene seis u ocho gigas de RAM física, esa memoria prestada solo le estorba.",
+      "clave": "estorba"
+    },
+    {
+      "texto": "Entra a Ajustes, busca Extensión de memoria o RAM Plus, apágala y reinicia tu celular.",
+      "clave": "apágala"
+    },
+    {
+      "texto": "Envíaselo a ese amigo que subió la RAM virtual al máximo creyendo que su celular iba a volar.",
+      "clave": "amigo"
+    },
+    {
+      "texto": "Y mañana, episodio siete: por qué los vidrios en los lentes de tu cámara arruinan tus fotos.",
+      "clave": "cámara"
+    }
+  ]
+}

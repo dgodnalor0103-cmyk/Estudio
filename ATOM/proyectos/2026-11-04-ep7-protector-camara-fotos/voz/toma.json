@@ -1,0 +1,1004 @@
+{
+  "firma": "cbf3322a15f4",
+  "proveedor": "elevenlabs",
+  "ajustes": {
+    "id": "gWaDC0oXAheKoZfljzuI",
+    "modelo": "eleven_v4",
+    "estabilidad": 0.4,
+    "similitud": 0.8,
+    "estilo": 0,
+    "velocidad": 1.12
+  },
+  "palabras": [
+    {
+      "texto": "¿Sabías",
+      "inicio": 0,
+      "fin": 0.48
+    },
+    {
+      "texto": "que",
+      "inicio": 0.52,
+      "fin": 0.56
+    },
+    {
+      "texto": "pegarle",
+      "inicio": 0.64,
+      "fin": 1.04
+    },
+    {
+      "texto": "protectores",
+      "inicio": 1.24,
+      "fin": 1.6
+    },
+    {
+      "texto": "de",
+      "inicio": 1.68,
+      "fin": 1.72
+    },
+    {
+      "texto": "vidrio",
+      "inicio": 1.76,
+      "fin": 2.08
+    },
+    {
+      "texto": "a",
+      "inicio": 2.12,
+      "fin": 2.16
+    },
+    {
+      "texto": "las",
+      "inicio": 2.24,
+      "fin": 2.32
+    },
+    {
+      "texto": "cámaras",
+      "inicio": 2.4,
+      "fin": 2.72
+    },
+    {
+      "texto": "de",
+      "inicio": 2.76,
+      "fin": 2.8
+    },
+    {
+      "texto": "tu",
+      "inicio": 2.88,
+      "fin": 2.96
+    },
+    {
+      "texto": "celular",
+      "inicio": 3.04,
+      "fin": 3.44
+    },
+    {
+      "texto": "arruina",
+      "inicio": 3.52,
+      "fin": 4
+    },
+    {
+      "texto": "tus",
+      "inicio": 4.08,
+      "fin": 4.16
+    },
+    {
+      "texto": "fotos",
+      "inicio": 4.24,
+      "fin": 4.48
+    },
+    {
+      "texto": "de",
+      "inicio": 4.56,
+      "fin": 4.6
+    },
+    {
+      "texto": "noche?",
+      "inicio": 4.64,
+      "fin": 5.24
+    },
+    {
+      "texto": "Te",
+      "inicio": 5.52,
+      "fin": 5.6
+    },
+    {
+      "texto": "los",
+      "inicio": 5.68,
+      "fin": 5.76
+    },
+    {
+      "texto": "venden",
+      "inicio": 5.867,
+      "fin": 6.08
+    },
+    {
+      "texto": "para",
+      "inicio": 6.16,
+      "fin": 6.24
+    },
+    {
+      "texto": "cuidar",
+      "inicio": 6.28,
+      "fin": 6.56
+    },
+    {
+      "texto": "los",
+      "inicio": 6.64,
+      "fin": 6.72
+    },
+    {
+      "texto": "lentes,",
+      "inicio": 6.8,
+      "fin": 7.36
+    },
+    {
+      "texto": "pero",
+      "inicio": 7.44,
+      "fin": 7.76
+    },
+    {
+      "texto": "esos",
+      "inicio": 7.84,
+      "fin": 8
+    },
+    {
+      "texto": "anillos",
+      "inicio": 8.08,
+      "fin": 8.4
+    },
+    {
+      "texto": "baratos",
+      "inicio": 8.48,
+      "fin": 8.88
+    },
+    {
+      "texto": "sabotean",
+      "inicio": 8.96,
+      "fin": 9.6
+    },
+    {
+      "texto": "toda",
+      "inicio": 9.64,
+      "fin": 9.92
+    },
+    {
+      "texto": "la",
+      "inicio": 9.96,
+      "fin": 10
+    },
+    {
+      "texto": "óptica",
+      "inicio": 10.08,
+      "fin": 10.4
+    },
+    {
+      "texto": "de",
+      "inicio": 10.48,
+      "fin": 10.56
+    },
+    {
+      "texto": "fábrica.",
+      "inicio": 10.587,
+      "fin": 11.44
+    },
+    {
+      "texto": "El",
+      "inicio": 11.52,
+      "fin": 11.6
+    },
+    {
+      "texto": "lente",
+      "inicio": 11.68,
+      "fin": 11.84
+    },
+    {
+      "texto": "original",
+      "inicio": 12.04,
+      "fin": 12.24
+    },
+    {
+      "texto": "de",
+      "inicio": 12.28,
+      "fin": 12.32
+    },
+    {
+      "texto": "tu",
+      "inicio": 12.4,
+      "fin": 12.48
+    },
+    {
+      "texto": "celular",
+      "inicio": 12.56,
+      "fin": 13.04
+    },
+    {
+      "texto": "ya",
+      "inicio": 13.12,
+      "fin": 13.2
+    },
+    {
+      "texto": "trae",
+      "inicio": 13.28,
+      "fin": 13.52
+    },
+    {
+      "texto": "cristal",
+      "inicio": 13.56,
+      "fin": 13.84
+    },
+    {
+      "texto": "templado",
+      "inicio": 13.92,
+      "fin": 14.32
+    },
+    {
+      "texto": "con",
+      "inicio": 14.4,
+      "fin": 14.48
+    },
+    {
+      "texto": "zafiro",
+      "inicio": 14.56,
+      "fin": 15.04
+    },
+    {
+      "texto": "y",
+      "inicio": 15.08,
+      "fin": 15.12
+    },
+    {
+      "texto": "siete",
+      "inicio": 15.28,
+      "fin": 15.6
+    },
+    {
+      "texto": "capas",
+      "inicio": 15.68,
+      "fin": 16
+    },
+    {
+      "texto": "que",
+      "inicio": 16.04,
+      "fin": 16.08
+    },
+    {
+      "texto": "evitan",
+      "inicio": 16.16,
+      "fin": 16.48
+    },
+    {
+      "texto": "reflejos.",
+      "inicio": 16.56,
+      "fin": 17.44
+    },
+    {
+      "texto": "Al",
+      "inicio": 17.52,
+      "fin": 17.6
+    },
+    {
+      "texto": "pegarle",
+      "inicio": 17.68,
+      "fin": 17.92
+    },
+    {
+      "texto": "un",
+      "inicio": 18,
+      "fin": 18.04
+    },
+    {
+      "texto": "vidrio",
+      "inicio": 18.08,
+      "fin": 18.32
+    },
+    {
+      "texto": "barato",
+      "inicio": 18.4,
+      "fin": 18.72
+    },
+    {
+      "texto": "encima,",
+      "inicio": 18.84,
+      "fin": 19.44
+    },
+    {
+      "texto": "dejas",
+      "inicio": 19.52,
+      "fin": 19.76
+    },
+    {
+      "texto": "un",
+      "inicio": 19.84,
+      "fin": 19.92
+    },
+    {
+      "texto": "colchón",
+      "inicio": 20,
+      "fin": 20.32
+    },
+    {
+      "texto": "de",
+      "inicio": 20.4,
+      "fin": 20.48
+    },
+    {
+      "texto": "aire",
+      "inicio": 20.56,
+      "fin": 20.72
+    },
+    {
+      "texto": "encerrado",
+      "inicio": 20.84,
+      "fin": 21.28
+    },
+    {
+      "texto": "entre",
+      "inicio": 21.4,
+      "fin": 21.52
+    },
+    {
+      "texto": "los",
+      "inicio": 21.6,
+      "fin": 21.68
+    },
+    {
+      "texto": "dos",
+      "inicio": 21.76,
+      "fin": 21.84
+    },
+    {
+      "texto": "cristales.",
+      "inicio": 21.88,
+      "fin": 22.88
+    },
+    {
+      "texto": "Es",
+      "inicio": 22.96,
+      "fin": 23.04
+    },
+    {
+      "texto": "como",
+      "inicio": 23.12,
+      "fin": 23.2
+    },
+    {
+      "texto": "ponerte",
+      "inicio": 23.28,
+      "fin": 23.6
+    },
+    {
+      "texto": "unos",
+      "inicio": 23.68,
+      "fin": 23.76
+    },
+    {
+      "texto": "lentes",
+      "inicio": 23.84,
+      "fin": 24.08
+    },
+    {
+      "texto": "de",
+      "inicio": 24.16,
+      "fin": 24.2
+    },
+    {
+      "texto": "sol",
+      "inicio": 24.24,
+      "fin": 24.4
+    },
+    {
+      "texto": "de",
+      "inicio": 24.48,
+      "fin": 24.56
+    },
+    {
+      "texto": "plástico",
+      "inicio": 24.6,
+      "fin": 24.96
+    },
+    {
+      "texto": "rayado",
+      "inicio": 25.04,
+      "fin": 25.52
+    },
+    {
+      "texto": "encima",
+      "inicio": 25.68,
+      "fin": 26
+    },
+    {
+      "texto": "de",
+      "inicio": 26.04,
+      "fin": 26.08
+    },
+    {
+      "texto": "unos",
+      "inicio": 26.2,
+      "fin": 26.32
+    },
+    {
+      "texto": "anteojos",
+      "inicio": 26.44,
+      "fin": 26.8
+    },
+    {
+      "texto": "caros",
+      "inicio": 26.88,
+      "fin": 27.2
+    },
+    {
+      "texto": "recién",
+      "inicio": 27.32,
+      "fin": 27.6
+    },
+    {
+      "texto": "limpiados.",
+      "inicio": 27.68,
+      "fin": 28.64
+    },
+    {
+      "texto": "De",
+      "inicio": 28.72,
+      "fin": 28.8
+    },
+    {
+      "texto": "noche,",
+      "inicio": 28.88,
+      "fin": 29.44
+    },
+    {
+      "texto": "la",
+      "inicio": 29.48,
+      "fin": 29.52
+    },
+    {
+      "texto": "luz",
+      "inicio": 29.6,
+      "fin": 29.76
+    },
+    {
+      "texto": "de",
+      "inicio": 29.8,
+      "fin": 29.84
+    },
+    {
+      "texto": "las",
+      "inicio": 29.92,
+      "fin": 30
+    },
+    {
+      "texto": "farolas",
+      "inicio": 30.08,
+      "fin": 30.4
+    },
+    {
+      "texto": "rebota",
+      "inicio": 30.48,
+      "fin": 30.96
+    },
+    {
+      "texto": "dentro",
+      "inicio": 31.04,
+      "fin": 31.28
+    },
+    {
+      "texto": "de",
+      "inicio": 31.32,
+      "fin": 31.36
+    },
+    {
+      "texto": "ese",
+      "inicio": 31.44,
+      "fin": 31.52
+    },
+    {
+      "texto": "hueco",
+      "inicio": 31.6,
+      "fin": 32
+    },
+    {
+      "texto": "y",
+      "inicio": 32.04,
+      "fin": 32.08
+    },
+    {
+      "texto": "llena",
+      "inicio": 32.16,
+      "fin": 32.4
+    },
+    {
+      "texto": "tus",
+      "inicio": 32.48,
+      "fin": 32.64
+    },
+    {
+      "texto": "fotos",
+      "inicio": 32.68,
+      "fin": 32.96
+    },
+    {
+      "texto": "de",
+      "inicio": 33,
+      "fin": 33.04
+    },
+    {
+      "texto": "fantasmas",
+      "inicio": 33.12,
+      "fin": 33.68
+    },
+    {
+      "texto": "verdes",
+      "inicio": 33.76,
+      "fin": 34.16
+    },
+    {
+      "texto": "y",
+      "inicio": 34.187,
+      "fin": 34.213
+    },
+    {
+      "texto": "neblina.",
+      "inicio": 34.24,
+      "fin": 35.12
+    },
+    {
+      "texto": "Además,",
+      "inicio": 35.2,
+      "fin": 35.84
+    },
+    {
+      "texto": "el",
+      "inicio": 35.92,
+      "fin": 36
+    },
+    {
+      "texto": "borde",
+      "inicio": 36.08,
+      "fin": 36.32
+    },
+    {
+      "texto": "de",
+      "inicio": 36.36,
+      "fin": 36.4
+    },
+    {
+      "texto": "pegamento",
+      "inicio": 36.48,
+      "fin": 36.96
+    },
+    {
+      "texto": "tapa",
+      "inicio": 37.12,
+      "fin": 37.36
+    },
+    {
+      "texto": "el",
+      "inicio": 37.4,
+      "fin": 37.44
+    },
+    {
+      "texto": "sensor",
+      "inicio": 37.52,
+      "fin": 37.84
+    },
+    {
+      "texto": "láser",
+      "inicio": 37.92,
+      "fin": 38.16
+    },
+    {
+      "texto": "invisible",
+      "inicio": 38.44,
+      "fin": 38.72
+    },
+    {
+      "texto": "y",
+      "inicio": 38.88,
+      "fin": 38.907
+    },
+    {
+      "texto": "hace",
+      "inicio": 38.933,
+      "fin": 39.12
+    },
+    {
+      "texto": "que",
+      "inicio": 39.16,
+      "fin": 39.2
+    },
+    {
+      "texto": "tu",
+      "inicio": 39.28,
+      "fin": 39.36
+    },
+    {
+      "texto": "cámara",
+      "inicio": 39.4,
+      "fin": 39.68
+    },
+    {
+      "texto": "tarde",
+      "inicio": 39.76,
+      "fin": 40.08
+    },
+    {
+      "texto": "el",
+      "inicio": 40.2,
+      "fin": 40.32
+    },
+    {
+      "texto": "doble",
+      "inicio": 40.4,
+      "fin": 40.72
+    },
+    {
+      "texto": "en",
+      "inicio": 40.76,
+      "fin": 40.8
+    },
+    {
+      "texto": "enfocar.",
+      "inicio": 40.88,
+      "fin": 41.76
+    },
+    {
+      "texto": "Por",
+      "inicio": 41.8,
+      "fin": 41.84
+    },
+    {
+      "texto": "eso,",
+      "inicio": 41.92,
+      "fin": 42.48
+    },
+    {
+      "texto": "nunca",
+      "inicio": 42.56,
+      "fin": 42.88
+    },
+    {
+      "texto": "pegues",
+      "inicio": 42.96,
+      "fin": 43.2
+    },
+    {
+      "texto": "vidrios",
+      "inicio": 43.28,
+      "fin": 43.68
+    },
+    {
+      "texto": "ni",
+      "inicio": 43.72,
+      "fin": 43.76
+    },
+    {
+      "texto": "anillos",
+      "inicio": 43.84,
+      "fin": 44.16
+    },
+    {
+      "texto": "con",
+      "inicio": 44.24,
+      "fin": 44.32
+    },
+    {
+      "texto": "brillos",
+      "inicio": 44.36,
+      "fin": 44.72
+    },
+    {
+      "texto": "directamente",
+      "inicio": 44.8,
+      "fin": 45.44
+    },
+    {
+      "texto": "sobre",
+      "inicio": 45.52,
+      "fin": 45.76
+    },
+    {
+      "texto": "los",
+      "inicio": 45.84,
+      "fin": 45.92
+    },
+    {
+      "texto": "lentes",
+      "inicio": 45.96,
+      "fin": 46.24
+    },
+    {
+      "texto": "de",
+      "inicio": 46.28,
+      "fin": 46.32
+    },
+    {
+      "texto": "tu",
+      "inicio": 46.4,
+      "fin": 46.48
+    },
+    {
+      "texto": "cámara.",
+      "inicio": 46.587,
+      "fin": 47.2
+    },
+    {
+      "texto": "Quítalos",
+      "inicio": 47.24,
+      "fin": 47.68
+    },
+    {
+      "texto": "hoy",
+      "inicio": 47.72,
+      "fin": 47.92
+    },
+    {
+      "texto": "mismo",
+      "inicio": 48.027,
+      "fin": 48.24
+    },
+    {
+      "texto": "y",
+      "inicio": 48.32,
+      "fin": 48.4
+    },
+    {
+      "texto": "usa",
+      "inicio": 48.48,
+      "fin": 48.64
+    },
+    {
+      "texto": "una",
+      "inicio": 48.72,
+      "fin": 48.8
+    },
+    {
+      "texto": "funda",
+      "inicio": 48.88,
+      "fin": 49.12
+    },
+    {
+      "texto": "con",
+      "inicio": 49.2,
+      "fin": 49.28
+    },
+    {
+      "texto": "borde",
+      "inicio": 49.36,
+      "fin": 49.6
+    },
+    {
+      "texto": "elevado",
+      "inicio": 49.64,
+      "fin": 50
+    },
+    {
+      "texto": "de",
+      "inicio": 50.08,
+      "fin": 50.16
+    },
+    {
+      "texto": "dos",
+      "inicio": 50.24,
+      "fin": 50.4
+    },
+    {
+      "texto": "milímetros:",
+      "inicio": 50.48,
+      "fin": 51.36
+    },
+    {
+      "texto": "protege",
+      "inicio": 51.44,
+      "fin": 51.76
+    },
+    {
+      "texto": "igual",
+      "inicio": 51.84,
+      "fin": 52.16
+    },
+    {
+      "texto": "sin",
+      "inicio": 52.32,
+      "fin": 52.48
+    },
+    {
+      "texto": "tocar",
+      "inicio": 52.56,
+      "fin": 52.8
+    },
+    {
+      "texto": "la",
+      "inicio": 52.84,
+      "fin": 52.88
+    },
+    {
+      "texto": "luz.",
+      "inicio": 52.96,
+      "fin": 53.6
+    },
+    {
+      "texto": "Envíaselo",
+      "inicio": 53.72,
+      "fin": 54.16
+    },
+    {
+      "texto": "a",
+      "inicio": 54.2,
+      "fin": 54.24
+    },
+    {
+      "texto": "ese",
+      "inicio": 54.32,
+      "fin": 54.4
+    },
+    {
+      "texto": "amigo",
+      "inicio": 54.48,
+      "fin": 54.64
+    },
+    {
+      "texto": "que",
+      "inicio": 54.72,
+      "fin": 54.8
+    },
+    {
+      "texto": "se",
+      "inicio": 54.88,
+      "fin": 54.96
+    },
+    {
+      "texto": "queja",
+      "inicio": 55.04,
+      "fin": 55.2
+    },
+    {
+      "texto": "de",
+      "inicio": 55.28,
+      "fin": 55.36
+    },
+    {
+      "texto": "que",
+      "inicio": 55.4,
+      "fin": 55.44
+    },
+    {
+      "texto": "su",
+      "inicio": 55.52,
+      "fin": 55.6
+    },
+    {
+      "texto": "celular",
+      "inicio": 55.68,
+      "fin": 56
+    },
+    {
+      "texto": "toma",
+      "inicio": 56.04,
+      "fin": 56.24
+    },
+    {
+      "texto": "fotos",
+      "inicio": 56.32,
+      "fin": 56.56
+    },
+    {
+      "texto": "borrosas",
+      "inicio": 56.64,
+      "fin": 57.2
+    },
+    {
+      "texto": "y",
+      "inicio": 57.24,
+      "fin": 57.28
+    },
+    {
+      "texto": "lleva",
+      "inicio": 57.36,
+      "fin": 57.56
+    },
+    {
+      "texto": "protector",
+      "inicio": 57.6,
+      "fin": 58.08
+    },
+    {
+      "texto": "en",
+      "inicio": 58.12,
+      "fin": 58.16
+    },
+    {
+      "texto": "la",
+      "inicio": 58.2,
+      "fin": 58.24
+    },
+    {
+      "texto": "cámara.",
+      "inicio": 58.32,
+      "fin": 58.72
+    },
+    {
+      "texto": "Y",
+      "inicio": 59.36,
+      "fin": 59.44
+    },
+    {
+      "texto": "mañana,",
+      "inicio": 59.52,
+      "fin": 60.16
+    },
+    {
+      "texto": "episodio",
+      "inicio": 60.24,
+      "fin": 60.72
+    },
+    {
+      "texto": "ocho:",
+      "inicio": 60.88,
+      "fin": 61.6
+    },
+    {
+      "texto": "el",
+      "inicio": 61.64,
+      "fin": 61.68
+    },
+    {
+      "texto": "peligro",
+      "inicio": 61.76,
+      "fin": 62.16
+    },
+    {
+      "texto": "oculto",
+      "inicio": 62.24,
+      "fin": 62.64
+    },
+    {
+      "texto": "dentro",
+      "inicio": 62.72,
+      "fin": 62.96
+    },
+    {
+      "texto": "de",
+      "inicio": 63.04,
+      "fin": 63.12
+    },
+    {
+      "texto": "los",
+      "inicio": 63.2,
+      "fin": 63.28
+    },
+    {
+      "texto": "puertos",
+      "inicio": 63.36,
+      "fin": 63.68
+    },
+    {
+      "texto": "USB",
+      "inicio": 63.84,
+      "fin": 64.32
+    },
+    {
+      "texto": "públicos",
+      "inicio": 64.4,
+      "fin": 64.88
+    },
+    {
+      "texto": "cuando",
+      "inicio": 64.96,
+      "fin": 65.2
+    },
+    {
+      "texto": "cargas",
+      "inicio": 65.28,
+      "fin": 65.6
+    },
+    {
+      "texto": "tu",
+      "inicio": 65.68,
+      "fin": 65.76
+    },
+    {
+      "texto": "celular.",
+      "inicio": 65.84,
+      "fin": 66.56
+    }
+  ]
+}

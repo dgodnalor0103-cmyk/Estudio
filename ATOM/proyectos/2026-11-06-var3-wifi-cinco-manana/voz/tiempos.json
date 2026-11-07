@@ -1,0 +1,1541 @@
+{
+  "firma": "170031b6abba",
+  "duracion": 69.6,
+  "frases": [
+    {
+      "n": 1,
+      "texto": "¿Notaste que al apagar el WiFi en la barra rápida de tu celular el botón blanco no lo apaga?",
+      "clave": "apaga",
+      "inicio": 0,
+      "fin": 5.24
+    },
+    {
+      "n": 2,
+      "texto": "Porque esta noche, apenas apagues la luz de tu cuarto, va a seguir buscando redes solo.",
+      "clave": "noche",
+      "inicio": 5.52,
+      "fin": 10.36
+    },
+    {
+      "n": 3,
+      "texto": "Apple confirma que ese botón blanco solo te desconecta del router, pero deja tu antena encendida.",
+      "clave": "antena",
+      "inicio": 10.64,
+      "fin": 16.08
+    },
+    {
+      "n": 4,
+      "texto": "Lo hace para que AirDrop, tu reloj y la ubicación sigan funcionando todo el tiempo.",
+      "clave": "reloj",
+      "inicio": 16.32,
+      "fin": 21.48
+    },
+    {
+      "n": 5,
+      "texto": "Peor aún: en tu iPhone, a las cinco de la mañana se reconecta solo mientras duermes.",
+      "clave": "cinco",
+      "inicio": 21.76,
+      "fin": 26.84
+    },
+    {
+      "n": 6,
+      "texto": "Y en Android pasa igual: aunque lo apagues, Ubicación sigue escaneando las redes de tus vecinos.",
+      "clave": "vecinos",
+      "inicio": 27.04,
+      "fin": 32.32
+    },
+    {
+      "n": 7,
+      "texto": "Es como cerrar con llave tu puerta principal, pero dejar todas las ventanas abiertas de noche.",
+      "clave": "ventanas",
+      "inicio": 32.72,
+      "fin": 37.44
+    },
+    {
+      "n": 8,
+      "texto": "Al salir a la calle, ese rastreo gasta tu batería y registra por qué tiendas pasaste.",
+      "clave": "batería",
+      "inicio": 37.92,
+      "fin": 42.96
+    },
+    {
+      "n": 9,
+      "texto": "Para apagarlo de raíz de verdad, entra directo a Ajustes y desactiva WiFi hasta verlo tachado.",
+      "clave": "Ajustes",
+      "inicio": 43.2,
+      "fin": 49
+    },
+    {
+      "n": 10,
+      "texto": "Y en teléfonos Android, apaga también la búsqueda oculta de WiFi dentro de Ubicación.",
+      "clave": "Ubicación",
+      "inicio": 49.2,
+      "fin": 53.84
+    },
+    {
+      "n": 11,
+      "texto": "Recuerda que si solo tocas arriba, a mitad de la noche tu antena vuelve a despertar.",
+      "clave": "despertar",
+      "inicio": 54.32,
+      "fin": 59.08
+    },
+    {
+      "n": 12,
+      "texto": "Envíaselo ahora a ese amigo que lo apaga desde arriba creyendo ahorrar batería.",
+      "clave": "amigo",
+      "inicio": 59.36,
+      "fin": 63.48
+    },
+    {
+      "n": 13,
+      "texto": "Y no te pierdas mañana la parte dos: cómo un cable barato quema tu celular por dentro.",
+      "clave": "cable",
+      "inicio": 63.68,
+      "fin": 68.8
+    }
+  ],
+  "palabras": [
+    {
+      "texto": "¿Notaste",
+      "inicio": 0,
+      "fin": 0.48,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "que",
+      "inicio": 0.52,
+      "fin": 0.56,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "al",
+      "inicio": 0.6,
+      "fin": 0.64,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "apagar",
+      "inicio": 0.72,
+      "fin": 0.96,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "el",
+      "inicio": 1.04,
+      "fin": 1.12,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "WiFi",
+      "inicio": 1.2,
+      "fin": 1.6,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "en",
+      "inicio": 1.64,
+      "fin": 1.68,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "la",
+      "inicio": 1.76,
+      "fin": 1.8,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "barra",
+      "inicio": 1.84,
+      "fin": 2.08,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "rápida",
+      "inicio": 2.16,
+      "fin": 2.48,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "de",
+      "inicio": 2.52,
+      "fin": 2.56,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "tu",
+      "inicio": 2.64,
+      "fin": 2.72,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "celular",
+      "inicio": 2.8,
+      "fin": 3.28,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "el",
+      "inicio": 3.36,
+      "fin": 3.44,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "botón",
+      "inicio": 3.52,
+      "fin": 3.76,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "blanco",
+      "inicio": 3.84,
+      "fin": 4.24,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "no",
+      "inicio": 4.32,
+      "fin": 4.4,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "lo",
+      "inicio": 4.48,
+      "fin": 4.52,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "apaga?",
+      "inicio": 4.56,
+      "fin": 5.24,
+      "frase": 1,
+      "clave": true
+    },
+    {
+      "texto": "Porque",
+      "inicio": 5.52,
+      "fin": 5.76,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "esta",
+      "inicio": 5.88,
+      "fin": 6,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "noche,",
+      "inicio": 6.08,
+      "fin": 6.56,
+      "frase": 2,
+      "clave": true
+    },
+    {
+      "texto": "apenas",
+      "inicio": 6.68,
+      "fin": 7.04,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "apagues",
+      "inicio": 7.12,
+      "fin": 7.44,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "la",
+      "inicio": 7.48,
+      "fin": 7.52,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "luz",
+      "inicio": 7.6,
+      "fin": 7.68,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "de",
+      "inicio": 7.72,
+      "fin": 7.76,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "tu",
+      "inicio": 7.84,
+      "fin": 7.92,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "cuarto,",
+      "inicio": 8,
+      "fin": 8.48,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "va",
+      "inicio": 8.52,
+      "fin": 8.56,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "a",
+      "inicio": 8.6,
+      "fin": 8.64,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "seguir",
+      "inicio": 8.72,
+      "fin": 8.96,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "buscando",
+      "inicio": 9.04,
+      "fin": 9.36,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "redes",
+      "inicio": 9.44,
+      "fin": 9.76,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "solo.",
+      "inicio": 9.8,
+      "fin": 10.36,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "Apple",
+      "inicio": 10.64,
+      "fin": 10.88,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "confirma",
+      "inicio": 10.96,
+      "fin": 11.36,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "que",
+      "inicio": 11.44,
+      "fin": 11.52,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "ese",
+      "inicio": 11.64,
+      "fin": 11.76,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "botón",
+      "inicio": 11.84,
+      "fin": 12,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "blanco",
+      "inicio": 12.08,
+      "fin": 12.48,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "solo",
+      "inicio": 12.56,
+      "fin": 12.8,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "te",
+      "inicio": 12.88,
+      "fin": 12.96,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "desconecta",
+      "inicio": 13.04,
+      "fin": 13.48,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "del",
+      "inicio": 13.52,
+      "fin": 13.6,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "router,",
+      "inicio": 13.68,
+      "fin": 14.32,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "pero",
+      "inicio": 14.36,
+      "fin": 14.48,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "deja",
+      "inicio": 14.56,
+      "fin": 14.8,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "tu",
+      "inicio": 14.88,
+      "fin": 14.96,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "antena",
+      "inicio": 15.04,
+      "fin": 15.28,
+      "frase": 3,
+      "clave": true
+    },
+    {
+      "texto": "encendida.",
+      "inicio": 15.36,
+      "fin": 16.08,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "Lo",
+      "inicio": 16.32,
+      "fin": 16.4,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "hace",
+      "inicio": 16.48,
+      "fin": 16.72,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "para",
+      "inicio": 16.8,
+      "fin": 16.96,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "que",
+      "inicio": 17.04,
+      "fin": 17.12,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "AirDrop,",
+      "inicio": 17.2,
+      "fin": 17.84,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "tu",
+      "inicio": 17.88,
+      "fin": 17.92,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "reloj",
+      "inicio": 18,
+      "fin": 18.48,
+      "frase": 4,
+      "clave": true
+    },
+    {
+      "texto": "y",
+      "inicio": 18.52,
+      "fin": 18.56,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "la",
+      "inicio": 18.6,
+      "fin": 18.64,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "ubicación",
+      "inicio": 18.72,
+      "fin": 19.28,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "sigan",
+      "inicio": 19.44,
+      "fin": 19.68,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "funcionando",
+      "inicio": 19.76,
+      "fin": 20.32,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "todo",
+      "inicio": 20.48,
+      "fin": 20.64,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "el",
+      "inicio": 20.72,
+      "fin": 20.76,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "tiempo.",
+      "inicio": 20.8,
+      "fin": 21.48,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "Peor",
+      "inicio": 21.76,
+      "fin": 22,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "aún:",
+      "inicio": 22.04,
+      "fin": 22.4,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "en",
+      "inicio": 22.72,
+      "fin": 22.8,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "tu",
+      "inicio": 22.88,
+      "fin": 22.96,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "iPhone,",
+      "inicio": 23.16,
+      "fin": 23.44,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "a",
+      "inicio": 23.48,
+      "fin": 23.52,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "las",
+      "inicio": 23.6,
+      "fin": 23.76,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "cinco",
+      "inicio": 23.84,
+      "fin": 24,
+      "frase": 5,
+      "clave": true
+    },
+    {
+      "texto": "de",
+      "inicio": 24.08,
+      "fin": 24.16,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "la",
+      "inicio": 24.24,
+      "fin": 24.28,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "mañana",
+      "inicio": 24.32,
+      "fin": 24.72,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "se",
+      "inicio": 24.8,
+      "fin": 24.88,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "reconecta",
+      "inicio": 24.96,
+      "fin": 25.44,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "solo",
+      "inicio": 25.52,
+      "fin": 25.76,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "mientras",
+      "inicio": 25.84,
+      "fin": 26.16,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "duermes.",
+      "inicio": 26.2,
+      "fin": 26.84,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "Y",
+      "inicio": 27.04,
+      "fin": 27.08,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "en",
+      "inicio": 27.12,
+      "fin": 27.2,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "Android",
+      "inicio": 27.28,
+      "fin": 27.6,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "pasa",
+      "inicio": 27.68,
+      "fin": 27.92,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "igual:",
+      "inicio": 28,
+      "fin": 28.56,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "aunque",
+      "inicio": 28.6,
+      "fin": 28.8,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "lo",
+      "inicio": 28.84,
+      "fin": 28.88,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "apagues,",
+      "inicio": 28.96,
+      "fin": 29.52,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "Ubicación",
+      "inicio": 29.6,
+      "fin": 30.16,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "sigue",
+      "inicio": 30.24,
+      "fin": 30.48,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "escaneando",
+      "inicio": 30.56,
+      "fin": 30.96,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "las",
+      "inicio": 31.04,
+      "fin": 31.12,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "redes",
+      "inicio": 31.2,
+      "fin": 31.44,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "de",
+      "inicio": 31.48,
+      "fin": 31.52,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "tus",
+      "inicio": 31.6,
+      "fin": 31.68,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "vecinos.",
+      "inicio": 31.76,
+      "fin": 32.32,
+      "frase": 6,
+      "clave": true
+    },
+    {
+      "texto": "Es",
+      "inicio": 32.72,
+      "fin": 32.8,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "como",
+      "inicio": 32.92,
+      "fin": 33.04,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "cerrar",
+      "inicio": 33.12,
+      "fin": 33.44,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "con",
+      "inicio": 33.52,
+      "fin": 33.6,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "llave",
+      "inicio": 33.64,
+      "fin": 33.84,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "tu",
+      "inicio": 33.92,
+      "fin": 34,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "puerta",
+      "inicio": 34.04,
+      "fin": 34.24,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "principal,",
+      "inicio": 34.32,
+      "fin": 34.96,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "pero",
+      "inicio": 35.04,
+      "fin": 35.16,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "dejar",
+      "inicio": 35.2,
+      "fin": 35.52,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "todas",
+      "inicio": 35.6,
+      "fin": 35.84,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "las",
+      "inicio": 35.92,
+      "fin": 36,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "ventanas",
+      "inicio": 36.08,
+      "fin": 36.48,
+      "frase": 7,
+      "clave": true
+    },
+    {
+      "texto": "abiertas",
+      "inicio": 36.56,
+      "fin": 36.96,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "de",
+      "inicio": 37,
+      "fin": 37.04,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "noche.",
+      "inicio": 37.12,
+      "fin": 37.44,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "Al",
+      "inicio": 37.92,
+      "fin": 38,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "salir",
+      "inicio": 38.08,
+      "fin": 38.24,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "a",
+      "inicio": 38.32,
+      "fin": 38.36,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "la",
+      "inicio": 38.4,
+      "fin": 38.48,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "calle,",
+      "inicio": 38.52,
+      "fin": 38.96,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "ese",
+      "inicio": 39.08,
+      "fin": 39.2,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "rastreo",
+      "inicio": 39.24,
+      "fin": 39.68,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "gasta",
+      "inicio": 39.76,
+      "fin": 40.08,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "tu",
+      "inicio": 40.12,
+      "fin": 40.16,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "batería",
+      "inicio": 40.24,
+      "fin": 40.72,
+      "frase": 8,
+      "clave": true
+    },
+    {
+      "texto": "y",
+      "inicio": 40.8,
+      "fin": 40.88,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "registra",
+      "inicio": 41.08,
+      "fin": 41.36,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "por",
+      "inicio": 41.44,
+      "fin": 41.6,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "qué",
+      "inicio": 41.68,
+      "fin": 41.76,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "tiendas",
+      "inicio": 41.84,
+      "fin": 42.16,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "pasaste.",
+      "inicio": 42.24,
+      "fin": 42.96,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "Para",
+      "inicio": 43.2,
+      "fin": 43.36,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "apagarlo",
+      "inicio": 43.44,
+      "fin": 43.84,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "de",
+      "inicio": 43.88,
+      "fin": 43.92,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "raíz",
+      "inicio": 44,
+      "fin": 44.32,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "de",
+      "inicio": 44.36,
+      "fin": 44.4,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "verdad,",
+      "inicio": 44.48,
+      "fin": 45.12,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "entra",
+      "inicio": 45.24,
+      "fin": 45.44,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "directo",
+      "inicio": 45.6,
+      "fin": 45.84,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "a",
+      "inicio": 45.88,
+      "fin": 45.92,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "Ajustes",
+      "inicio": 46,
+      "fin": 46.56,
+      "frase": 9,
+      "clave": true
+    },
+    {
+      "texto": "y",
+      "inicio": 46.6,
+      "fin": 46.64,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "desactiva",
+      "inicio": 46.72,
+      "fin": 47.2,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "WiFi",
+      "inicio": 47.28,
+      "fin": 47.76,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "hasta",
+      "inicio": 47.8,
+      "fin": 48,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "verlo",
+      "inicio": 48.08,
+      "fin": 48.32,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "tachado.",
+      "inicio": 48.36,
+      "fin": 49,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "Y",
+      "inicio": 49.2,
+      "fin": 49.28,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "en",
+      "inicio": 49.32,
+      "fin": 49.36,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "teléfonos",
+      "inicio": 49.44,
+      "fin": 49.84,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "Android,",
+      "inicio": 50.04,
+      "fin": 50.4,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "apaga",
+      "inicio": 50.52,
+      "fin": 50.8,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "también",
+      "inicio": 50.84,
+      "fin": 51.12,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "la",
+      "inicio": 51.2,
+      "fin": 51.28,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "búsqueda",
+      "inicio": 51.32,
+      "fin": 51.68,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "oculta",
+      "inicio": 51.76,
+      "fin": 52.08,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "de",
+      "inicio": 52.12,
+      "fin": 52.16,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "WiFi",
+      "inicio": 52.24,
+      "fin": 52.72,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "dentro",
+      "inicio": 52.8,
+      "fin": 53.12,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "de",
+      "inicio": 53.16,
+      "fin": 53.2,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "Ubicación.",
+      "inicio": 53.24,
+      "fin": 53.84,
+      "frase": 10,
+      "clave": true
+    },
+    {
+      "texto": "Recuerda",
+      "inicio": 54.32,
+      "fin": 54.64,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "que",
+      "inicio": 54.72,
+      "fin": 54.8,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "si",
+      "inicio": 54.88,
+      "fin": 54.96,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "solo",
+      "inicio": 55.04,
+      "fin": 55.2,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "tocas",
+      "inicio": 55.28,
+      "fin": 55.6,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "arriba,",
+      "inicio": 55.68,
+      "fin": 56.16,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "a",
+      "inicio": 56.2,
+      "fin": 56.24,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "mitad",
+      "inicio": 56.32,
+      "fin": 56.64,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "de",
+      "inicio": 56.68,
+      "fin": 56.72,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "la",
+      "inicio": 56.76,
+      "fin": 56.8,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "noche",
+      "inicio": 56.88,
+      "fin": 57.12,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "tu",
+      "inicio": 57.2,
+      "fin": 57.28,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "antena",
+      "inicio": 57.36,
+      "fin": 57.68,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "vuelve",
+      "inicio": 57.84,
+      "fin": 58.08,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "a",
+      "inicio": 58.16,
+      "fin": 58.24,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "despertar.",
+      "inicio": 58.32,
+      "fin": 59.08,
+      "frase": 11,
+      "clave": true
+    },
+    {
+      "texto": "Envíaselo",
+      "inicio": 59.36,
+      "fin": 59.84,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "ahora",
+      "inicio": 59.92,
+      "fin": 60.16,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "a",
+      "inicio": 60.2,
+      "fin": 60.24,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "ese",
+      "inicio": 60.32,
+      "fin": 60.4,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "amigo",
+      "inicio": 60.48,
+      "fin": 60.72,
+      "frase": 12,
+      "clave": true
+    },
+    {
+      "texto": "que",
+      "inicio": 60.76,
+      "fin": 60.8,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "lo",
+      "inicio": 60.88,
+      "fin": 60.96,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "apaga",
+      "inicio": 61.04,
+      "fin": 61.28,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "desde",
+      "inicio": 61.36,
+      "fin": 61.52,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "arriba",
+      "inicio": 61.6,
+      "fin": 61.92,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "creyendo",
+      "inicio": 62,
+      "fin": 62.4,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "ahorrar",
+      "inicio": 62.44,
+      "fin": 62.72,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "batería.",
+      "inicio": 62.8,
+      "fin": 63.48,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "Y",
+      "inicio": 63.68,
+      "fin": 63.76,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "no",
+      "inicio": 63.8,
+      "fin": 63.84,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "te",
+      "inicio": 63.92,
+      "fin": 64,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "pierdas",
+      "inicio": 64.053,
+      "fin": 64.32,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "mañana",
+      "inicio": 64.4,
+      "fin": 64.72,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "la",
+      "inicio": 64.8,
+      "fin": 64.88,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "parte",
+      "inicio": 65,
+      "fin": 65.16,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "dos:",
+      "inicio": 65.2,
+      "fin": 65.84,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "cómo",
+      "inicio": 65.88,
+      "fin": 66.08,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "un",
+      "inicio": 66.16,
+      "fin": 66.24,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "cable",
+      "inicio": 66.32,
+      "fin": 66.48,
+      "frase": 13,
+      "clave": true
+    },
+    {
+      "texto": "barato",
+      "inicio": 66.56,
+      "fin": 66.96,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "quema",
+      "inicio": 67.12,
+      "fin": 67.36,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "tu",
+      "inicio": 67.44,
+      "fin": 67.52,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "celular",
+      "inicio": 67.6,
+      "fin": 67.92,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "por",
+      "inicio": 68,
+      "fin": 68.16,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "dentro.",
+      "inicio": 68.28,
+      "fin": 68.8,
+      "frase": 13,
+      "clave": false
+    }
+  ]
+}

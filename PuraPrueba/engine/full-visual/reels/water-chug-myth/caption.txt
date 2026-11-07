@@ -1,0 +1,55 @@
+# Desmitificación Viral Episodio 7: Beber 2 litros de agua de golpe (Español). Script: script.txt.
+== hook | ground: dark
+Beber 💧 *2* litros
+de agua de *golpe*
+❌ *no* hidrata más
+tu *cuerpo,*
+este ⚠️ *error* hace
+que pierdas *minerales* clave.
+== sensors | ground: light
+Estudios de 🧪 *hidratación*
+*clínica* demostraron
+que *tragar* medio litro
+en ⏱️ *segundos*
+engaña a los *sensores*
+de presión de tu *garganta*
+y 🩸 *sangre.*
+== dilution | ground: light
+Al entrar tanta *agua* junta
+sin ⚡ *electrolitos,*
+el plasma *sanguíneo*
+se diluye de *golpe*
+y el 🧠 *cerebro* cree
+que tienes *exceso*
+de *líquido.*
+== kidneys | ground: dark
+Tus *riñones* apagan
+la hormona *antidiurética*
+de 🚫 *inmediato*
+y expulsan *casi* toda
+esa *agua*
+hacia la *vejiga*
+en menos de ⏳ *dos* horas.
+== cells | ground: dark
+Peor *aún:* ese lavado
+*rápido* arrastra
+🧂 *sodio* y potasio
+fuera de tu *cuerpo,*
+dejándote más 🔋 *cansado*
+y con las *células*
+*deshidratadas.*
+== rule | ground: light
+Hidrátate así de 📌 *verdad:*
+toma *sorbos* constantes
+durante el ☀️ *día,*
+acompaña el *agua*
+con tus *comidas*
+y suma *electrolitos*
+si sudas ✅ *fuerte.*
+== cta | ground: dark
+Cuéntame en 💬 *comentarios*
+cuántos *vasos* de agua
+llevas *hoy,*
+guarda este 🔖 *video*
+para cuidar tu *energía*
+y recuerda *esto:*

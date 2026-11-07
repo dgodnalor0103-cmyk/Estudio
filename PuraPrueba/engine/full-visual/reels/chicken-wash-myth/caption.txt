@@ -1,0 +1,51 @@
+# Desmitificación Viral Episodio 5: Lavar el pollo crudo en el fregadero (Español). Script: script.txt.
+== hook | ground: dark
+Lavar el 🍗 *pollo* crudo
+en el 🚰 *fregadero*
+❌ *no* elimina bacterias,
+las *dispersa*
+hasta 📏 *90* centímetros
+por tu *cocina.*
+== usda | ground: light
+El Departamento de 🧪 *Agricultura*
+demostró con *cámaras*
+🔬 *ultravioleta*
+que el *chorro* rebota
+en la *carne*
+y lanza *miles*
+de 💧 *microgotas* invisibles.
+== aerosol | ground: light
+Esas gotas *cargadas*
+de 🦠 *Campylobacter*
+y ⚠️ *Salmonella*
+aterrizan en tus *platos* limpios,
+en la 🧽 *esponja*
+y en la *tabla* de picar.
+== biofilm | ground: dark
+El agua ❄️ *fría* del grifo
+*jamás* despega
+las *bacterias* adheridas
+a la fibra *muscular,*
+solo *multiplica* el riesgo
+de ☣️ *infección* cruzada.
+== heat | ground: dark
+Lo único que 🔥 *destruye*
+el *cien* por ciento
+de los *patógenos* en segundos
+es *cocinar* el centro
+de la *pieza*
+a 🌡️ *74* grados.
+== rule | ground: light
+Aplica esta 📌 *regla* en casa:
+sácalo *directo* del empaque
+al 🍳 *sartén,*
+seca con *papel* desechable
+y lava tus 🧼 *manos* con jabón
+por ✅ *20* segundos.
+== cta | ground: dark
+Confiesa en 💬 *comentarios*
+si en tu *casa*
+todavía *lavan* el pollo crudo,
+guarda este 🔖 *video*
+por *seguridad*
+y recuerda *esto:*

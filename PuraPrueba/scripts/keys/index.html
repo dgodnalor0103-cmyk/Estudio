@@ -30,7 +30,7 @@ f.onsubmit = async (e) => {
   e.preventDefault();
   const values = Object.fromEntries(new FormData(f));
   const r = await fetch("/", { method: "POST", headers:{'Content-Type':'application/json'}, body: JSON.stringify(values) });
-  if (r.ok) f.outerHTML = '<div class="saved">Saved. Close this tab and go back to the agent.</div>';
-  else {let error=document.getElementById('key-error');if(!error){error=document.createElement('p');error.id='key-error';error.setAttribute('role','alert');f.append(error);}error.textContent='The key could not be saved. Check it and try again.';}
+  if (r.ok) f.outerHTML = '<div class="saved">¡Token guardado! Ya puedes cerrar esta pestaña; subiendo videos a Facebook Reels automáticamente...</div>';
+  else {let error=document.getElementById('key-error');if(!error){error=document.createElement('p');error.id='key-error';error.setAttribute('role','alert');f.append(error);}error.textContent='La casilla está vacía. Primero copia el Access Token (que empieza por EAA...) en Graph API Explorer, pégalo en la casilla META_PAGE_ACCESS_TOKEN y vuelve a presionar Save and close.';}
 };
 </script>

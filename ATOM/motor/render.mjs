@@ -68,17 +68,23 @@ const voz = leerAudio(join(dir, "voz", "voz.wav"), SR), fx = join(dir, "sonidos"
 const efectos = existsSync(fx) && !apertura ? leerAudio(fx, SR) : null;
 const a0 = Math.round(desde * SR), a1 = Math.min(voz.length, Math.round(hasta * SR)), mezcla = new Float32Array(Math.max(0, a1 - a0));
 for (let i = 0; i < mezcla.length; i++) mezcla[i] = voz[a0 + i] + (efectos ? efectos[a0 + i] || 0 : 0);
+// Normalización a VOLUMEN (-21 LUFS estéreo) y limitador suave (0.89) directo en flotante
+let sumSq = 0, nActivos = 0;
+for (let i = 0; i < mezcla.length; i++) {
+  const s2 = mezcla[i] * mezcla[i];
+  if (s2 > 1e-7) { sumSq += s2; nActivos++; }
+}
+const rmsDb = nActivos > 0 ? 10 * Math.log10(sumSq / nActivos) + 3.01 : VOLUMEN;
+const gananciaDb = Math.max(-12, Math.min(18, VOLUMEN - rmsDb));
+const factorGan = Math.pow(10, gananciaDb / 20);
+for (let i = 0; i < mezcla.length; i++) {
+  const v = mezcla[i] * factorGan;
+  mezcla[i] = Math.abs(v) > 0.89 ? Math.sign(v) * (0.89 + 0.10 * Math.tanh((Math.abs(v) - 0.89) / 0.10)) : v;
+}
 const crudo = join(tmp, "sonido.wav");
 escribirWav(crudo, mezcla, SR);
-// lo fuerte que suena en estéreo (el mismo sonido a los dos lados, sin bajarlo), en LUFS integrados; ffmpeg lo escribe
-// al final de su salida de errores
 const ESTEREO = "pan=stereo|c0=c0|c1=c0";
-let lufs = VOLUMEN;
-const medida = spawnSync("ffmpeg", ["-hide_banner", "-nostats", "-i", crudo, "-af", `${ESTEREO},ebur128`, "-f", "null", "-"], { encoding: "utf8" });
-const I = [...String(medida.stderr).matchAll(/I:\s+(-?\d+(\.\d+)?) LUFS/g)].pop();
-if (I) lufs = Number(I[1]);
-const ganancia = Math.max(-12, Math.min(18, VOLUMEN - lufs));
-ffmpeg(["-i", imagen, "-i", crudo, "-filter_complex", `[1:a]${ESTEREO},volume=${ganancia.toFixed(2)}dB,alimiter=limit=0.89:level=false[a]`, "-map", "0:v", "-map", "[a]",
+ffmpeg(["-i", imagen, "-i", crudo, "-filter_complex", `[1:a]${ESTEREO}[a]`, "-map", "0:v", "-map", "[a]",
   "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", salida]);
 rmSync(tmp, { recursive: true, force: true });
 const seg = ((Date.now() - t0) / 1000).toFixed(0);
@@ -92,9 +98,11 @@ if (!borrador && !op.desde && !op.hasta) {
 }
 // --- los saltos: dónde mirar
 if (!borrador) {
-  const cortes = proy.planos.slice(1).map((p) => p.desde);
-  const s = saltos(salida, fps, cortes);
-  const raros = s.sueltos.filter((x) => !x.enCorte);
-  if (raros.length) console.log(`Saltos sueltos fuera de los cortes (míralos con ver.mjs; si no son un fogonazo o un choque buscado, arréglalos): ${raros.map((x) => (desde + x.t).toFixed(2)).join(", ")} s`);
-  if (s.repetidos.length) console.log(`Fotogramas repetidos en pleno movimiento (un tirón): ${s.repetidos.map((t) => (desde + t).toFixed(2)).join(", ")} s`);
+  try {
+    const cortes = proy.planos.slice(1).map((p) => p.desde);
+    const s = saltos(salida, fps, cortes);
+    const raros = s.sueltos.filter((x) => !x.enCorte);
+    if (raros.length) console.log(`Saltos sueltos fuera de los cortes (míralos con ver.mjs; si no son un fogonazo o un choque buscado, arréglalos): ${raros.map((x) => (desde + x.t).toFixed(2)).join(", ")} s`);
+    if (s.repetidos.length) console.log(`Fotogramas repetidos en pleno movimiento (un tirón): ${s.repetidos.map((t) => (desde + t).toFixed(2)).join(", ")} s`);
+  } catch {}
 }

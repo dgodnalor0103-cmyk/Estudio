@@ -1,0 +1,69 @@
+{
+  "titulo": "Cuando apagas el WiFi en la barra rápida sigue encendido",
+  "idioma": "es",
+  "subtitulos": "arriba",
+  "voz": {
+    "id": "gWaDC0oXAheKoZfljzuI",
+    "modelo": "eleven_v4",
+    "estabilidad": 0.4,
+    "similitud": 0.8,
+    "estilo": 0,
+    "velocidad": 1.12
+  },
+  "frases": [
+    {
+      "texto": "Cuando tocas para apagar el WiFi en la barra rápida de tu celular, en realidad no lo apaga.",
+      "clave": "apaga",
+      "hook": true
+    },
+    {
+      "texto": "Y esta noche, cuando apagues la luz para dormir, va a seguir buscando redes en silencio.",
+      "clave": "noche",
+      "hook": true
+    },
+    {
+      "texto": "Apple confirma que ese botón rápido solo te desconecta del router actual, pero deja la antena encendida.",
+      "clave": "antena"
+    },
+    {
+      "texto": "Así logra que AirDrop, tu reloj inteligente y la ubicación sigan funcionando por detrás.",
+      "clave": "reloj"
+    },
+    {
+      "texto": "Peor todavía: en iPhone, a las cinco de la mañana se reconecta solo mientras duermes.",
+      "clave": "cinco"
+    },
+    {
+      "texto": "Y en Android, aunque lo apagues, Ubicación sigue escaneando todas las redes de tus vecinos.",
+      "clave": "vecinos"
+    },
+    {
+      "texto": "Es igual a cerrar con llave la puerta de casa, pero dejar todas las ventanas abiertas.",
+      "clave": "ventanas"
+    },
+    {
+      "texto": "En la calle, ese rastreo oculto gasta batería extra y registra por qué tiendas pasaste hoy.",
+      "clave": "batería"
+    },
+    {
+      "texto": "Para apagarlo de raíz hoy mismo, entra a Ajustes y desactiva WiFi hasta verlo tachado.",
+      "clave": "Ajustes"
+    },
+    {
+      "texto": "Y si usas Android, apaga también la búsqueda automática de WiFi dentro de Ubicación.",
+      "clave": "Ubicación"
+    },
+    {
+      "texto": "Porque si solo tocas arriba antes de dormir, esta noche tu antena vuelve a despertar.",
+      "clave": "despertar"
+    },
+    {
+      "texto": "Envíaselo ya a ese amigo que siempre lo apaga desde arriba para ahorrar batería.",
+      "clave": "amigo"
+    },
+    {
+      "texto": "Y guarda este truco para mañana: en el episodio dos verás cómo un cable barato quema tu celular por dentro.",
+      "clave": "cable"
+    }
+  ]
+}

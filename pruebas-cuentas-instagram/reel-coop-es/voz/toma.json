@@ -1,0 +1,304 @@
+{
+  "firma": "e91857ddc6db",
+  "proveedor": "elevenlabs",
+  "ajustes": {
+    "id": "gWaDC0oXAheKoZfljzuI",
+    "modelo": "eleven_v4",
+    "estabilidad": 0.4,
+    "similitud": 0.8,
+    "estilo": 0,
+    "velocidad": 1.14
+  },
+  "palabras": [
+    {
+      "texto": "Clod",
+      "inicio": 0,
+      "fin": 0.32
+    },
+    {
+      "texto": "ahora",
+      "inicio": 0.4,
+      "fin": 0.72
+    },
+    {
+      "texto": "convierte",
+      "inicio": 0.8,
+      "fin": 1.12
+    },
+    {
+      "texto": "tus",
+      "inicio": 1.16,
+      "fin": 1.28
+    },
+    {
+      "texto": "juegos",
+      "inicio": 1.36,
+      "fin": 1.68
+    },
+    {
+      "texto": "de",
+      "inicio": 1.72,
+      "fin": 1.76
+    },
+    {
+      "texto": "un",
+      "inicio": 1.84,
+      "fin": 1.92
+    },
+    {
+      "texto": "jugador",
+      "inicio": 2,
+      "fin": 2.48
+    },
+    {
+      "texto": "en",
+      "inicio": 2.56,
+      "fin": 2.64
+    },
+    {
+      "texto": "cooperativo.",
+      "inicio": 2.72,
+      "fin": 3.52
+    },
+    {
+      "texto": "Es",
+      "inicio": 3.92,
+      "fin": 4
+    },
+    {
+      "texto": "un",
+      "inicio": 4.08,
+      "fin": 4.12
+    },
+    {
+      "texto": "repositorio",
+      "inicio": 4.16,
+      "fin": 4.72
+    },
+    {
+      "texto": "gratis",
+      "inicio": 4.8,
+      "fin": 5.2
+    },
+    {
+      "texto": "que",
+      "inicio": 5.24,
+      "fin": 5.28
+    },
+    {
+      "texto": "tu",
+      "inicio": 5.36,
+      "fin": 5.44
+    },
+    {
+      "texto": "agente",
+      "inicio": 5.48,
+      "fin": 5.76
+    },
+    {
+      "texto": "lee",
+      "inicio": 5.84,
+      "fin": 6.08
+    },
+    {
+      "texto": "para",
+      "inicio": 6.16,
+      "fin": 6.32
+    },
+    {
+      "texto": "buscar",
+      "inicio": 6.48,
+      "fin": 6.64
+    },
+    {
+      "texto": "cualquier",
+      "inicio": 6.72,
+      "fin": 7.28
+    },
+    {
+      "texto": "mod.",
+      "inicio": 7.36,
+      "fin": 7.68
+    },
+    {
+      "texto": "Repara",
+      "inicio": 8.08,
+      "fin": 8.4
+    },
+    {
+      "texto": "uno",
+      "inicio": 8.48,
+      "fin": 8.64
+    },
+    {
+      "texto": "abandonado",
+      "inicio": 8.68,
+      "fin": 9.28
+    },
+    {
+      "texto": "o",
+      "inicio": 9.36,
+      "fin": 9.44
+    },
+    {
+      "texto": "lo",
+      "inicio": 9.52,
+      "fin": 9.6
+    },
+    {
+      "texto": "crea",
+      "inicio": 9.68,
+      "fin": 9.84
+    },
+    {
+      "texto": "desde",
+      "inicio": 9.92,
+      "fin": 10.16
+    },
+    {
+      "texto": "cero,",
+      "inicio": 10.2,
+      "fin": 10.56
+    },
+    {
+      "texto": "como",
+      "inicio": 10.68,
+      "fin": 10.8
+    },
+    {
+      "texto": "Zelda",
+      "inicio": 10.88,
+      "fin": 11.28
+    },
+    {
+      "texto": "y",
+      "inicio": 11.32,
+      "fin": 11.36
+    },
+    {
+      "texto": "Deus-Ex.",
+      "inicio": 11.44,
+      "fin": 12.08
+    },
+    {
+      "texto": "Tu",
+      "inicio": 12.48,
+      "fin": 12.56
+    },
+    {
+      "texto": "amigo",
+      "inicio": 12.6,
+      "fin": 12.88
+    },
+    {
+      "texto": "solo",
+      "inicio": 12.96,
+      "fin": 13.2
+    },
+    {
+      "texto": "entra",
+      "inicio": 13.28,
+      "fin": 13.44
+    },
+    {
+      "texto": "por",
+      "inicio": 13.52,
+      "fin": 13.6
+    },
+    {
+      "texto": "Stim,",
+      "inicio": 13.68,
+      "fin": 14.16
+    },
+    {
+      "texto": "sin",
+      "inicio": 14.24,
+      "fin": 14.32
+    },
+    {
+      "texto": "abrir",
+      "inicio": 14.36,
+      "fin": 14.56
+    },
+    {
+      "texto": "puertos",
+      "inicio": 14.64,
+      "fin": 15.12
+    },
+    {
+      "texto": "ni",
+      "inicio": 15.16,
+      "fin": 15.2
+    },
+    {
+      "texto": "compartir",
+      "inicio": 15.28,
+      "fin": 15.68
+    },
+    {
+      "texto": "Ipe.",
+      "inicio": 15.76,
+      "fin": 16.08
+    },
+    {
+      "texto": "Sumó",
+      "inicio": 16.48,
+      "fin": 16.8
+    },
+    {
+      "texto": "mil",
+      "inicio": 16.88,
+      "fin": 17.04
+    },
+    {
+      "texto": "trescientas",
+      "inicio": 17.12,
+      "fin": 17.68
+    },
+    {
+      "texto": "estrellas;",
+      "inicio": 17.76,
+      "fin": 18.56
+    },
+    {
+      "texto": "comenta",
+      "inicio": 18.64,
+      "fin": 18.96
+    },
+    {
+      "texto": "COOP",
+      "inicio": 19.04,
+      "fin": 19.36
+    },
+    {
+      "texto": "y",
+      "inicio": 19.44,
+      "fin": 19.48
+    },
+    {
+      "texto": "te",
+      "inicio": 19.52,
+      "fin": 19.6
+    },
+    {
+      "texto": "envío",
+      "inicio": 19.68,
+      "fin": 20
+    },
+    {
+      "texto": "todos",
+      "inicio": 20.08,
+      "fin": 20.32
+    },
+    {
+      "texto": "los",
+      "inicio": 20.4,
+      "fin": 20.48
+    },
+    {
+      "texto": "enlaces.",
+      "inicio": 20.56,
+      "fin": 21.28
+    }
+  ]
+}

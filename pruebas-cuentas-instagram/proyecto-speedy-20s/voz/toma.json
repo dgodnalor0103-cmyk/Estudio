@@ -1,0 +1,269 @@
+{
+  "firma": "51a58ce959b3",
+  "proveedor": "elevenlabs",
+  "ajustes": {
+    "id": "gWaDC0oXAheKoZfljzuI",
+    "modelo": "eleven_v4",
+    "estabilidad": 0.4,
+    "similitud": 0.8,
+    "estilo": 0,
+    "velocidad": 1.12
+  },
+  "palabras": [
+    {
+      "texto": "Cuando",
+      "inicio": 0,
+      "fin": 0.24
+    },
+    {
+      "texto": "tu",
+      "inicio": 0.32,
+      "fin": 0.4
+    },
+    {
+      "texto": "dedo",
+      "inicio": 0.52,
+      "fin": 0.72
+    },
+    {
+      "texto": "toca",
+      "inicio": 0.8,
+      "fin": 1.04
+    },
+    {
+      "texto": "el",
+      "inicio": 1.08,
+      "fin": 1.12
+    },
+    {
+      "texto": "celular,",
+      "inicio": 1.2,
+      "fin": 1.92
+    },
+    {
+      "texto": "no",
+      "inicio": 2,
+      "fin": 2.08
+    },
+    {
+      "texto": "estás",
+      "inicio": 2.16,
+      "fin": 2.4
+    },
+    {
+      "texto": "presionando",
+      "inicio": 2.48,
+      "fin": 2.96
+    },
+    {
+      "texto": "ningún",
+      "inicio": 3.04,
+      "fin": 3.36
+    },
+    {
+      "texto": "botón.",
+      "inicio": 3.44,
+      "fin": 4.4
+    },
+    {
+      "texto": "Tu",
+      "inicio": 4.44,
+      "fin": 4.48
+    },
+    {
+      "texto": "piel",
+      "inicio": 4.56,
+      "fin": 4.8
+    },
+    {
+      "texto": "roba",
+      "inicio": 4.88,
+      "fin": 5.12
+    },
+    {
+      "texto": "una",
+      "inicio": 5.2,
+      "fin": 5.36
+    },
+    {
+      "texto": "pequeña",
+      "inicio": 5.48,
+      "fin": 5.84
+    },
+    {
+      "texto": "carga",
+      "inicio": 5.92,
+      "fin": 6.24
+    },
+    {
+      "texto": "eléctrica",
+      "inicio": 6.28,
+      "fin": 6.72
+    },
+    {
+      "texto": "del",
+      "inicio": 6.8,
+      "fin": 6.88
+    },
+    {
+      "texto": "cristal",
+      "inicio": 6.96,
+      "fin": 7.36
+    },
+    {
+      "texto": "para",
+      "inicio": 7.44,
+      "fin": 7.6
+    },
+    {
+      "texto": "marcar",
+      "inicio": 7.68,
+      "fin": 8
+    },
+    {
+      "texto": "el",
+      "inicio": 8.08,
+      "fin": 8.16
+    },
+    {
+      "texto": "punto",
+      "inicio": 8.24,
+      "fin": 8.48
+    },
+    {
+      "texto": "exacto.",
+      "inicio": 8.72,
+      "fin": 9.52
+    },
+    {
+      "texto": "Además,",
+      "inicio": 9.6,
+      "fin": 10.32
+    },
+    {
+      "texto": "tres",
+      "inicio": 10.4,
+      "fin": 10.56
+    },
+    {
+      "texto": "capas",
+      "inicio": 10.64,
+      "fin": 10.96
+    },
+    {
+      "texto": "invisibles",
+      "inicio": 11.04,
+      "fin": 11.6
+    },
+    {
+      "texto": "agrandan",
+      "inicio": 11.68,
+      "fin": 12.16
+    },
+    {
+      "texto": "en",
+      "inicio": 12.24,
+      "fin": 12.32
+    },
+    {
+      "texto": "secreto",
+      "inicio": 12.4,
+      "fin": 12.8
+    },
+    {
+      "texto": "la",
+      "inicio": 12.88,
+      "fin": 12.96
+    },
+    {
+      "texto": "siguiente",
+      "inicio": 13.04,
+      "fin": 13.44
+    },
+    {
+      "texto": "letra",
+      "inicio": 13.52,
+      "fin": 13.76
+    },
+    {
+      "texto": "de",
+      "inicio": 13.84,
+      "fin": 13.92
+    },
+    {
+      "texto": "tu",
+      "inicio": 13.96,
+      "fin": 14
+    },
+    {
+      "texto": "teclado.",
+      "inicio": 14.08,
+      "fin": 14.8
+    },
+    {
+      "texto": "Por",
+      "inicio": 15.04,
+      "fin": 15.12
+    },
+    {
+      "texto": "eso",
+      "inicio": 15.2,
+      "fin": 15.36
+    },
+    {
+      "texto": "aciertas",
+      "inicio": 15.44,
+      "fin": 15.92
+    },
+    {
+      "texto": "cada",
+      "inicio": 16,
+      "fin": 16.16
+    },
+    {
+      "texto": "palabra",
+      "inicio": 16.32,
+      "fin": 16.72
+    },
+    {
+      "texto": "aunque",
+      "inicio": 16.8,
+      "fin": 17.04
+    },
+    {
+      "texto": "escribas",
+      "inicio": 17.12,
+      "fin": 17.52
+    },
+    {
+      "texto": "corriendo",
+      "inicio": 17.6,
+      "fin": 18.08
+    },
+    {
+      "texto": "y",
+      "inicio": 18.16,
+      "fin": 18.24
+    },
+    {
+      "texto": "sin",
+      "inicio": 18.32,
+      "fin": 18.56
+    },
+    {
+      "texto": "mirar",
+      "inicio": 18.64,
+      "fin": 18.8
+    },
+    {
+      "texto": "la",
+      "inicio": 18.88,
+      "fin": 18.96
+    },
+    {
+      "texto": "pantalla.",
+      "inicio": 19,
+      "fin": 19.76
+    }
+  ]
+}

@@ -1,0 +1,449 @@
+{
+  "firma": "e91857ddc6db",
+  "duracion": 22.08,
+  "frases": [
+    {
+      "n": 1,
+      "texto": "Claude ahora convierte tus juegos de un jugador en cooperativo.",
+      "clave": "cooperativo",
+      "inicio": 0,
+      "fin": 3.52
+    },
+    {
+      "n": 2,
+      "texto": "Es un repositorio gratis que tu agente lee para buscar cualquier mod.",
+      "clave": "gratis",
+      "inicio": 3.92,
+      "fin": 7.68
+    },
+    {
+      "n": 3,
+      "texto": "Repara uno abandonado o lo crea desde cero, como Zelda y Deus-Ex.",
+      "clave": "cero",
+      "inicio": 8.08,
+      "fin": 12.08
+    },
+    {
+      "n": 4,
+      "texto": "Tu amigo solo entra por Steam, sin abrir puertos ni compartir IP.",
+      "clave": "Steam",
+      "inicio": 12.48,
+      "fin": 16.08
+    },
+    {
+      "n": 5,
+      "texto": "Sumó mil trescientas estrellas; comenta COOP y te envío todos los enlaces.",
+      "clave": "COOP",
+      "inicio": 16.48,
+      "fin": 21.28
+    }
+  ],
+  "palabras": [
+    {
+      "texto": "Claude",
+      "inicio": 0,
+      "fin": 0.32,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "ahora",
+      "inicio": 0.4,
+      "fin": 0.72,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "convierte",
+      "inicio": 0.8,
+      "fin": 1.12,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "tus",
+      "inicio": 1.16,
+      "fin": 1.28,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "juegos",
+      "inicio": 1.36,
+      "fin": 1.68,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "de",
+      "inicio": 1.72,
+      "fin": 1.76,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "un",
+      "inicio": 1.84,
+      "fin": 1.92,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "jugador",
+      "inicio": 2,
+      "fin": 2.48,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "en",
+      "inicio": 2.56,
+      "fin": 2.64,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "cooperativo.",
+      "inicio": 2.72,
+      "fin": 3.52,
+      "frase": 1,
+      "clave": true
+    },
+    {
+      "texto": "Es",
+      "inicio": 3.92,
+      "fin": 4,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "un",
+      "inicio": 4.08,
+      "fin": 4.12,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "repositorio",
+      "inicio": 4.16,
+      "fin": 4.72,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "gratis",
+      "inicio": 4.8,
+      "fin": 5.2,
+      "frase": 2,
+      "clave": true
+    },
+    {
+      "texto": "que",
+      "inicio": 5.24,
+      "fin": 5.28,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "tu",
+      "inicio": 5.36,
+      "fin": 5.44,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "agente",
+      "inicio": 5.48,
+      "fin": 5.76,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "lee",
+      "inicio": 5.84,
+      "fin": 6.08,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "para",
+      "inicio": 6.16,
+      "fin": 6.32,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "buscar",
+      "inicio": 6.48,
+      "fin": 6.64,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "cualquier",
+      "inicio": 6.72,
+      "fin": 7.28,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "mod.",
+      "inicio": 7.36,
+      "fin": 7.68,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "Repara",
+      "inicio": 8.08,
+      "fin": 8.4,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "uno",
+      "inicio": 8.48,
+      "fin": 8.64,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "abandonado",
+      "inicio": 8.68,
+      "fin": 9.28,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "o",
+      "inicio": 9.36,
+      "fin": 9.44,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "lo",
+      "inicio": 9.52,
+      "fin": 9.6,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "crea",
+      "inicio": 9.68,
+      "fin": 9.84,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "desde",
+      "inicio": 9.92,
+      "fin": 10.16,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "cero,",
+      "inicio": 10.2,
+      "fin": 10.56,
+      "frase": 3,
+      "clave": true
+    },
+    {
+      "texto": "como",
+      "inicio": 10.68,
+      "fin": 10.8,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "Zelda",
+      "inicio": 10.88,
+      "fin": 11.28,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "y",
+      "inicio": 11.32,
+      "fin": 11.36,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "Deus-Ex.",
+      "inicio": 11.44,
+      "fin": 12.08,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "Tu",
+      "inicio": 12.48,
+      "fin": 12.56,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "amigo",
+      "inicio": 12.6,
+      "fin": 12.88,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "solo",
+      "inicio": 12.96,
+      "fin": 13.2,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "entra",
+      "inicio": 13.28,
+      "fin": 13.44,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "por",
+      "inicio": 13.52,
+      "fin": 13.6,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "Steam,",
+      "inicio": 13.68,
+      "fin": 14.16,
+      "frase": 4,
+      "clave": true
+    },
+    {
+      "texto": "sin",
+      "inicio": 14.24,
+      "fin": 14.32,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "abrir",
+      "inicio": 14.36,
+      "fin": 14.56,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "puertos",
+      "inicio": 14.64,
+      "fin": 15.12,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "ni",
+      "inicio": 15.16,
+      "fin": 15.2,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "compartir",
+      "inicio": 15.28,
+      "fin": 15.68,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "IP.",
+      "inicio": 15.76,
+      "fin": 16.08,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "Sumó",
+      "inicio": 16.48,
+      "fin": 16.8,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "mil",
+      "inicio": 16.88,
+      "fin": 17.04,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "trescientas",
+      "inicio": 17.12,
+      "fin": 17.68,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "estrellas;",
+      "inicio": 17.76,
+      "fin": 18.56,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "comenta",
+      "inicio": 18.64,
+      "fin": 18.96,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "COOP",
+      "inicio": 19.04,
+      "fin": 19.36,
+      "frase": 5,
+      "clave": true
+    },
+    {
+      "texto": "y",
+      "inicio": 19.44,
+      "fin": 19.48,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "te",
+      "inicio": 19.52,
+      "fin": 19.6,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "envío",
+      "inicio": 19.68,
+      "fin": 20,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "todos",
+      "inicio": 20.08,
+      "fin": 20.32,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "los",
+      "inicio": 20.4,
+      "fin": 20.48,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "enlaces.",
+      "inicio": 20.56,
+      "fin": 21.28,
+      "frase": 5,
+      "clave": false
+    }
+  ]
+}

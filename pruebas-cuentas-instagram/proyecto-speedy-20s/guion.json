@@ -1,0 +1,33 @@
+{
+  "titulo": "Cómo funciona realmente el teclado y la pantalla de tu celular por dentro (Estilo @speedy_devv)",
+  "idioma": "es",
+  "subtitulos": "arriba",
+  "voz": {
+    "id": "gWaDC0oXAheKoZfljzuI",
+    "modelo": "eleven_v4",
+    "estabilidad": 0.4,
+    "similitud": 0.8,
+    "estilo": 0,
+    "velocidad": 1.12
+  },
+  "frases": [
+    {
+      "texto": "Cuando tu dedo toca el celular, no estás presionando ningún botón.",
+      "clave": "botón",
+      "hook": true
+    },
+    {
+      "texto": "Tu piel roba una pequeña carga eléctrica del cristal para marcar el punto exacto.",
+      "clave": "eléctrica",
+      "hook": true
+    },
+    {
+      "texto": "Además, tres capas invisibles agrandan en secreto la siguiente letra de tu teclado.",
+      "clave": "secreto"
+    },
+    {
+      "texto": "Por eso aciertas cada palabra aunque escribas corriendo y sin mirar la pantalla.",
+      "clave": "pantalla"
+    }
+  ]
+}

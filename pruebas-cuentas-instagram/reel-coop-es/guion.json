@@ -1,0 +1,42 @@
+{
+  "titulo": "Claude convierte tus juegos de un jugador en cooperativo (Réplica exacta @speedy_devv)",
+  "idioma": "es",
+  "subtitulos": "arriba",
+  "voz": {
+    "id": "gWaDC0oXAheKoZfljzuI",
+    "modelo": "eleven_v4",
+    "estabilidad": 0.4,
+    "similitud": 0.8,
+    "estilo": 0,
+    "velocidad": 1.14
+  },
+  "frases": [
+    {
+      "texto": "Claude ahora convierte tus juegos de un jugador en cooperativo.",
+      "dicho": "Clod ahora convierte tus juegos de un jugador en cooperativo.",
+      "clave": "cooperativo",
+      "hook": true
+    },
+    {
+      "texto": "Es un repositorio gratis que tu agente lee para buscar cualquier mod.",
+      "dicho": "Es un repositorio gratis que tu agente lee para buscar cualquier mod.",
+      "clave": "gratis",
+      "hook": true
+    },
+    {
+      "texto": "Repara uno abandonado o lo crea desde cero, como Zelda y Deus-Ex.",
+      "dicho": "Repara uno abandonado o lo crea desde cero, como Zelda y Deus-Ex.",
+      "clave": "cero"
+    },
+    {
+      "texto": "Tu amigo solo entra por Steam, sin abrir puertos ni compartir IP.",
+      "dicho": "Tu amigo solo entra por Stim, sin abrir puertos ni compartir Ipe.",
+      "clave": "Steam"
+    },
+    {
+      "texto": "Sumó mil trescientas estrellas; comenta COOP y te envío todos los enlaces.",
+      "dicho": "Sumó mil trescientas estrellas; comenta COOP y te envío todos los enlaces.",
+      "clave": "COOP"
+    }
+  ]
+}

@@ -36,7 +36,11 @@ PuraPrueba/engine/full-visual/reels/*/assets/atom-upper.mp4
 PuraPrueba/engine/full-visual/reels/*/assets/atom-lower.mp4
 
 # ============================================================================
-# Archivos de sistema
+# Archivos de sistema y cachés de fotogramas extraídos
 # ============================================================================
 .DS_Store
 Thumbs.db
+**/frames_30fps/
+**/frames_1fps/
+**/frames_all/
+**/dl_*.mp4

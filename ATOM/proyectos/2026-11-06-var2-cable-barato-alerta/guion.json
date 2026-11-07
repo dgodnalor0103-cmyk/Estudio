@@ -1,0 +1,62 @@
+{
+  "titulo": "Por qué un cable barato sí quema tu celular por dentro",
+  "idioma": "es",
+  "subtitulos": "arriba",
+  "voz": {
+    "id": "gWaDC0oXAheKoZfljzuI",
+    "modelo": "eleven_v4",
+    "estabilidad": 0.4,
+    "similitud": 0.8,
+    "estilo": 0,
+    "velocidad": 1.12
+  },
+  "frases": [
+    {
+      "texto": "Tu cargador rápido original no daña tu celular, pero un cable barato sí puede quemarlo por dentro.",
+      "clave": "cable",
+      "hook": true
+    },
+    {
+      "texto": "Por fuera los dos conectores se ven iguales, pero por dentro uno viene completamente vacío.",
+      "clave": "vacío",
+      "hook": true
+    },
+    {
+      "texto": "El cable original esconde un microchip inteligente que negocia el voltaje exacto con tu celular.",
+      "clave": "microchip"
+    },
+    {
+      "texto": "Carga rápido hasta el 80 % y luego frena solo para no calentar tu batería.",
+      "dicho": "Carga rápido hasta el ochenta por ciento y luego frena solo para no calentar tu batería.",
+      "clave": "frena"
+    },
+    {
+      "texto": "En cambio, ese cable barato no trae chip y lleva hilos de cobre finísimos.",
+      "clave": "cobre"
+    },
+    {
+      "texto": "Es igual a meter toda el agua de tu casa por un tubo finito sin válvula: la unión revienta.",
+      "clave": "válvula"
+    },
+    {
+      "texto": "Sin ese control, la corriente calienta los pines del puerto y quema el chip de carga interior.",
+      "clave": "quema"
+    },
+    {
+      "texto": "Por eso la punta metálica quema al tocarla y tu teléfono solo carga cuando doblas el cable.",
+      "clave": "doblas"
+    },
+    {
+      "texto": "Para evitarlo hoy, usa cables certificados y desconéctalo de inmediato si la punta se calienta.",
+      "clave": "certificados"
+    },
+    {
+      "texto": "Envíaselo ahora a ese amigo que siempre compra el cable más barato de la esquina.",
+      "clave": "amigo"
+    },
+    {
+      "texto": "Y guarda este video para mañana, parte tres: dónde quedan de verdad las fotos que borras de tu celular.",
+      "clave": "fotos"
+    }
+  ]
+}

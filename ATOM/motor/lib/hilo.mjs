@@ -8,7 +8,7 @@ const { dir, primero, ultimo, fps, salida, calidad, apertura } = workerData;
 const proy = await abrir(dir, { apertura }), est = preparar(proy), cod = codificador(salida, fps, calidad);
 for (let f = primero; f < ultimo; f++) {
   const lienzo = dibujar(proy, est, f / fps);
-  await cod.escribe(Buffer.from(lienzo.data())); // una copia: el lienzo se vuelve a usar en el fotograma siguiente
+  await cod.escribe(lienzo.toBuffer("image/jpeg", 98));
   if ((f - primero) % 30 === 0) parentPort.postMessage({ hechos: f - primero });
 }
 await cod.cierra();

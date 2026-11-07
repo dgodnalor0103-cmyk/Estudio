@@ -58,14 +58,24 @@ export function run(bin, args, opts = {}) {
   return execFileSync(bin, args, { encoding: "utf8", maxBuffer: 64 * 1024 * 1024, env: ffenv(bin), ...opts });
 }
 export function loadEnvNames(path = P(".env.local")) {
-  if (!existsSync(path)) return [];
-  return readFileSync(path, "utf8").split("\n").map((l) => l.trim()).filter((l) => l && !l.startsWith("#") && l.includes("=")).map((l) => l.split("=")[0]);
+  const paths = [path, P("..", "ATOM", ".env.local")];
+  const names = [];
+  for (const p of paths) {
+    if (!existsSync(p)) continue;
+    for (const l of readFileSync(p, "utf8").split("\n")) {
+      const t = l.trim();
+      if (t && !t.startsWith("#") && t.includes("=")) names.push(t.split("=")[0]);
+    }
+  }
+  return [...new Set(names)];
 }
 export function loadEnv(path = P(".env.local")) {
-  if (!existsSync(path)) return;
-  for (const line of readFileSync(path, "utf8").split("\n")) {
-    const m = /^\s*([A-Z0-9_]+)\s*=\s*(.*)\s*$/.exec(line); if (!m) continue;
-    if (process.env[m[1]] === undefined) process.env[m[1]] = m[2].replace(/^["']|["']$/g, "");
+  for (const p of [path, P("..", "ATOM", ".env.local")]) {
+    if (!existsSync(p)) continue;
+    for (const line of readFileSync(p, "utf8").split("\n")) {
+      const m = /^\s*([A-Z0-9_]+)\s*=\s*(.*)\s*$/.exec(line); if (!m) continue;
+      if (process.env[m[1]] === undefined) process.env[m[1]] = m[2].replace(/^["']|["']$/g, "");
+    }
   }
 }
 export function slug(s, n = 40) { return String(s).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, n) || "untitled"; }

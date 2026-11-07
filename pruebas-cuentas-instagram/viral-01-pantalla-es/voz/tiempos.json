@@ -1,0 +1,2080 @@
+{
+  "firma": "f8da39bccdfe",
+  "duracion": 84.5,
+  "frases": [
+    {
+      "n": 1,
+      "texto": "La pantalla de tu celular reacciona al toque más leve de tu dedo, pero ignora un bolígrafo aunque presiones con fuerza.",
+      "clave": "dedo",
+      "inicio": 0.06,
+      "fin": 5.641
+    },
+    {
+      "n": 2,
+      "texto": "¿Entonces qué está sintiendo realmente? En realidad no siente presión: detecta la electricidad que hay en tu cuerpo.",
+      "clave": "electricidad",
+      "inicio": 5.853,
+      "fin": 12.591
+    },
+    {
+      "n": 3,
+      "texto": "Imagina que afuera hace mucho frío e intentas contestar una llamada urgente con los guantes puestos.",
+      "clave": "guantes",
+      "inicio": 12.804,
+      "fin": 17.602
+    },
+    {
+      "n": 4,
+      "texto": "Debajo del cristal de tu pantalla hay una cuadrícula invisible: filas hacia un lado y columnas hacia el otro.",
+      "clave": "cuadrícula",
+      "inicio": 17.814,
+      "fin": 23.123
+    },
+    {
+      "n": 5,
+      "texto": "En cada punto donde una fila cruza una columna, el teléfono sostiene una diminuta carga eléctrica.",
+      "clave": "carga",
+      "inicio": 23.335,
+      "fin": 28.372
+    },
+    {
+      "n": 6,
+      "texto": "Y revisa cada uno de esos cruces una y otra vez, ciento veinte veces por segundo.",
+      "clave": "segundo",
+      "inicio": 28.584,
+      "fin": 33.484
+    },
+    {
+      "n": 7,
+      "texto": "Tu cuerpo está lleno de agua con sal, así que conduce la electricidad de forma natural.",
+      "clave": "conduce",
+      "inicio": 33.697,
+      "fin": 37.781
+    },
+    {
+      "n": 8,
+      "texto": "Cuando la yema de tu dedo se acerca al cristal, absorbe una pequeña parte de esa carga justo debajo.",
+      "clave": "cristal",
+      "inicio": 37.993,
+      "fin": 42.995
+    },
+    {
+      "n": 9,
+      "texto": "El teléfono detecta la caída exacta en esos cruces y dice al instante: tocaron justo aquí.",
+      "clave": "exacta",
+      "inicio": 43.208,
+      "fin": 47.836
+    },
+    {
+      "n": 10,
+      "texto": "Y como revisa cada cruce por separado, puede seguir dos dedos a la vez cuando haces zoom.",
+      "clave": "zoom",
+      "inicio": 48.049,
+      "fin": 52.54
+    },
+    {
+      "n": 11,
+      "texto": "Un guante de lana no conduce nada y mantiene tu piel demasiado lejos de la superficie del vidrio.",
+      "clave": "lana",
+      "inicio": 52.753,
+      "fin": 57.245
+    },
+    {
+      "n": 12,
+      "texto": "Aunque presiones fuerte, la carga nunca cambia; para el teléfono, nadie tocó la pantalla.",
+      "clave": "nadie",
+      "inicio": 57.458,
+      "fin": 62.358
+    },
+    {
+      "n": 13,
+      "texto": "Por eso también tu pantalla se vuelve loca bajo la lluvia: el agua conduce y cada gota parece un dedo.",
+      "clave": "lluvia",
+      "inicio": 62.57,
+      "fin": 67.607
+    },
+    {
+      "n": 14,
+      "texto": "Y por eso funcionan los guantes táctiles: tienen hilos conductores tejidos en la punta que conectan tu piel.",
+      "clave": "conductores",
+      "inicio": 67.819,
+      "fin": 73.06
+    },
+    {
+      "n": 15,
+      "texto": "Así que tu celular nunca sintió tu dedo: solo sintió que una diminuta carga eléctrica desapareció.",
+      "clave": "nunca",
+      "inicio": 73.272,
+      "fin": 78.513
+    },
+    {
+      "n": 16,
+      "texto": "Envía este video a esa persona a la que siempre se le vuelve loca la pantalla con las manos mojadas.",
+      "clave": "mojadas",
+      "inicio": 78.725,
+      "fin": 83.353
+    }
+  ],
+  "palabras": [
+    {
+      "texto": "La",
+      "inicio": 0.06,
+      "fin": 0.196,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "pantalla",
+      "inicio": 0.264,
+      "fin": 0.536,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "de",
+      "inicio": 0.57,
+      "fin": 0.604,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "tu",
+      "inicio": 0.673,
+      "fin": 0.741,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "celular",
+      "inicio": 0.809,
+      "fin": 1.149,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "reacciona",
+      "inicio": 1.285,
+      "fin": 1.693,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "al",
+      "inicio": 1.727,
+      "fin": 1.761,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "toque",
+      "inicio": 1.829,
+      "fin": 2.17,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "más",
+      "inicio": 2.204,
+      "fin": 2.442,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "leve",
+      "inicio": 2.51,
+      "fin": 2.714,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "de",
+      "inicio": 2.748,
+      "fin": 2.782,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "tu",
+      "inicio": 2.85,
+      "fin": 2.918,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "dedo,",
+      "inicio": 3.02,
+      "fin": 3.463,
+      "frase": 1,
+      "clave": true
+    },
+    {
+      "texto": "pero",
+      "inicio": 3.531,
+      "fin": 3.667,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "ignora",
+      "inicio": 3.735,
+      "fin": 3.939,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "un",
+      "inicio": 3.973,
+      "fin": 4.007,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "bolígrafo",
+      "inicio": 4.075,
+      "fin": 4.484,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "aunque",
+      "inicio": 4.518,
+      "fin": 4.756,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "presiones",
+      "inicio": 4.824,
+      "fin": 5.096,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "con",
+      "inicio": 5.164,
+      "fin": 5.232,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "fuerza.",
+      "inicio": 5.3,
+      "fin": 5.641,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "¿Entonces",
+      "inicio": 5.853,
+      "fin": 6.33,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "qué",
+      "inicio": 6.602,
+      "fin": 6.67,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "está",
+      "inicio": 6.772,
+      "fin": 6.908,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "sintiendo",
+      "inicio": 6.942,
+      "fin": 7.419,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "realmente?",
+      "inicio": 7.487,
+      "fin": 8.235,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "En",
+      "inicio": 8.508,
+      "fin": 8.576,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "realidad",
+      "inicio": 8.644,
+      "fin": 9.052,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "no",
+      "inicio": 9.188,
+      "fin": 9.324,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "siente",
+      "inicio": 9.392,
+      "fin": 9.665,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "presión:",
+      "inicio": 9.869,
+      "fin": 10.481,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "detecta",
+      "inicio": 10.685,
+      "fin": 10.958,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "la",
+      "inicio": 11.026,
+      "fin": 11.094,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "electricidad",
+      "inicio": 11.298,
+      "fin": 11.774,
+      "frase": 2,
+      "clave": true
+    },
+    {
+      "texto": "que",
+      "inicio": 11.842,
+      "fin": 11.91,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "hay",
+      "inicio": 11.978,
+      "fin": 12.047,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "en",
+      "inicio": 12.081,
+      "fin": 12.115,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "tu",
+      "inicio": 12.183,
+      "fin": 12.251,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "cuerpo.",
+      "inicio": 12.285,
+      "fin": 12.591,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "Imagina",
+      "inicio": 12.804,
+      "fin": 13.144,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "que",
+      "inicio": 13.178,
+      "fin": 13.212,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "afuera",
+      "inicio": 13.28,
+      "fin": 13.552,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "hace",
+      "inicio": 13.586,
+      "fin": 13.825,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "mucho",
+      "inicio": 13.893,
+      "fin": 14.165,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "frío",
+      "inicio": 14.233,
+      "fin": 14.505,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "e",
+      "inicio": 14.573,
+      "fin": 14.641,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "intentas",
+      "inicio": 14.709,
+      "fin": 15.05,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "contestar",
+      "inicio": 15.118,
+      "fin": 15.458,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "una",
+      "inicio": 15.526,
+      "fin": 15.594,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "llamada",
+      "inicio": 15.662,
+      "fin": 15.866,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "urgente",
+      "inicio": 15.934,
+      "fin": 16.343,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "con",
+      "inicio": 16.411,
+      "fin": 16.479,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "los",
+      "inicio": 16.547,
+      "fin": 16.615,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "guantes",
+      "inicio": 16.649,
+      "fin": 16.887,
+      "frase": 3,
+      "clave": true
+    },
+    {
+      "texto": "puestos.",
+      "inicio": 16.955,
+      "fin": 17.602,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "Debajo",
+      "inicio": 17.814,
+      "fin": 18.087,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "del",
+      "inicio": 18.155,
+      "fin": 18.223,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "cristal",
+      "inicio": 18.291,
+      "fin": 18.563,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "de",
+      "inicio": 18.597,
+      "fin": 18.631,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "tu",
+      "inicio": 18.699,
+      "fin": 18.767,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "pantalla",
+      "inicio": 18.801,
+      "fin": 19.244,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "hay",
+      "inicio": 19.312,
+      "fin": 19.38,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "una",
+      "inicio": 19.448,
+      "fin": 19.584,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "cuadrícula",
+      "inicio": 19.652,
+      "fin": 20.094,
+      "frase": 4,
+      "clave": true
+    },
+    {
+      "texto": "invisible:",
+      "inicio": 20.128,
+      "fin": 21.013,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "filas",
+      "inicio": 21.081,
+      "fin": 21.353,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "hacia",
+      "inicio": 21.398,
+      "fin": 21.489,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "un",
+      "inicio": 21.557,
+      "fin": 21.626,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "lado",
+      "inicio": 21.66,
+      "fin": 21.898,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "y",
+      "inicio": 22.034,
+      "fin": 22.102,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "columnas",
+      "inicio": 22.17,
+      "fin": 22.578,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "hacia",
+      "inicio": 22.623,
+      "fin": 22.714,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "el",
+      "inicio": 22.783,
+      "fin": 22.851,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "otro.",
+      "inicio": 22.919,
+      "fin": 23.123,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "En",
+      "inicio": 23.335,
+      "fin": 23.472,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "cada",
+      "inicio": 23.54,
+      "fin": 23.676,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "punto",
+      "inicio": 23.812,
+      "fin": 24.016,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "donde",
+      "inicio": 24.084,
+      "fin": 24.22,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "una",
+      "inicio": 24.288,
+      "fin": 24.424,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "fila",
+      "inicio": 24.492,
+      "fin": 24.697,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "cruza",
+      "inicio": 24.765,
+      "fin": 25.037,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "una",
+      "inicio": 25.105,
+      "fin": 25.173,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "columna,",
+      "inicio": 25.241,
+      "fin": 25.854,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "el",
+      "inicio": 25.922,
+      "fin": 25.99,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "teléfono",
+      "inicio": 26.058,
+      "fin": 26.33,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "sostiene",
+      "inicio": 26.398,
+      "fin": 26.738,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "una",
+      "inicio": 26.806,
+      "fin": 26.942,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "diminuta",
+      "inicio": 27.045,
+      "fin": 27.487,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "carga",
+      "inicio": 27.623,
+      "fin": 27.827,
+      "frase": 5,
+      "clave": true
+    },
+    {
+      "texto": "eléctrica.",
+      "inicio": 27.895,
+      "fin": 28.372,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "Y",
+      "inicio": 28.584,
+      "fin": 28.652,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "revisa",
+      "inicio": 28.72,
+      "fin": 29.061,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "cada",
+      "inicio": 29.197,
+      "fin": 29.469,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "uno",
+      "inicio": 29.537,
+      "fin": 29.673,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "de",
+      "inicio": 29.741,
+      "fin": 29.809,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "esos",
+      "inicio": 29.877,
+      "fin": 30.014,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "cruces",
+      "inicio": 30.082,
+      "fin": 30.49,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "una",
+      "inicio": 30.626,
+      "fin": 30.83,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "y",
+      "inicio": 30.966,
+      "fin": 31,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "otra",
+      "inicio": 31.034,
+      "fin": 31.239,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "vez,",
+      "inicio": 31.307,
+      "fin": 31.783,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "ciento",
+      "inicio": 31.919,
+      "fin": 32.259,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "veinte",
+      "inicio": 32.328,
+      "fin": 32.6,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "veces",
+      "inicio": 32.668,
+      "fin": 32.872,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "por",
+      "inicio": 32.94,
+      "fin": 33.008,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "segundo.",
+      "inicio": 33.076,
+      "fin": 33.484,
+      "frase": 6,
+      "clave": true
+    },
+    {
+      "texto": "Tu",
+      "inicio": 33.697,
+      "fin": 33.765,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "cuerpo",
+      "inicio": 33.833,
+      "fin": 34.105,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "está",
+      "inicio": 34.174,
+      "fin": 34.31,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "lleno",
+      "inicio": 34.378,
+      "fin": 34.582,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "de",
+      "inicio": 34.65,
+      "fin": 34.718,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "agua",
+      "inicio": 34.786,
+      "fin": 34.922,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "con",
+      "inicio": 34.99,
+      "fin": 35.126,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "sal,",
+      "inicio": 35.194,
+      "fin": 35.603,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "así",
+      "inicio": 35.671,
+      "fin": 35.773,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "que",
+      "inicio": 35.807,
+      "fin": 35.943,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "conduce",
+      "inicio": 36.011,
+      "fin": 36.283,
+      "frase": 7,
+      "clave": true
+    },
+    {
+      "texto": "la",
+      "inicio": 36.317,
+      "fin": 36.351,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "electricidad",
+      "inicio": 36.419,
+      "fin": 36.964,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "de",
+      "inicio": 37.032,
+      "fin": 37.1,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "forma",
+      "inicio": 37.202,
+      "fin": 37.304,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "natural.",
+      "inicio": 37.372,
+      "fin": 37.781,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "Cuando",
+      "inicio": 37.993,
+      "fin": 38.129,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "la",
+      "inicio": 38.197,
+      "fin": 38.231,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "yema",
+      "inicio": 38.265,
+      "fin": 38.47,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "de",
+      "inicio": 38.504,
+      "fin": 38.538,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "tu",
+      "inicio": 38.606,
+      "fin": 38.674,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "dedo",
+      "inicio": 38.742,
+      "fin": 38.878,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "se",
+      "inicio": 38.946,
+      "fin": 39.014,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "acerca",
+      "inicio": 39.116,
+      "fin": 39.286,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "al",
+      "inicio": 39.354,
+      "fin": 39.422,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "cristal,",
+      "inicio": 39.456,
+      "fin": 40.035,
+      "frase": 8,
+      "clave": true
+    },
+    {
+      "texto": "absorbe",
+      "inicio": 40.137,
+      "fin": 40.375,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "una",
+      "inicio": 40.443,
+      "fin": 40.511,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "pequeña",
+      "inicio": 40.647,
+      "fin": 41.056,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "parte",
+      "inicio": 41.124,
+      "fin": 41.396,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "de",
+      "inicio": 41.43,
+      "fin": 41.464,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "esa",
+      "inicio": 41.532,
+      "fin": 41.668,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "carga",
+      "inicio": 41.736,
+      "fin": 42.009,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "justo",
+      "inicio": 42.077,
+      "fin": 42.349,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "debajo.",
+      "inicio": 42.417,
+      "fin": 42.995,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "El",
+      "inicio": 43.208,
+      "fin": 43.276,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "teléfono",
+      "inicio": 43.344,
+      "fin": 43.685,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "detecta",
+      "inicio": 43.821,
+      "fin": 44.025,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "la",
+      "inicio": 44.093,
+      "fin": 44.161,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "caída",
+      "inicio": 44.229,
+      "fin": 44.433,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "exacta",
+      "inicio": 44.637,
+      "fin": 44.91,
+      "frase": 9,
+      "clave": true
+    },
+    {
+      "texto": "en",
+      "inicio": 44.944,
+      "fin": 44.978,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "esos",
+      "inicio": 45.046,
+      "fin": 45.182,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "cruces",
+      "inicio": 45.25,
+      "fin": 45.59,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "y",
+      "inicio": 45.658,
+      "fin": 45.726,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "dice",
+      "inicio": 45.828,
+      "fin": 45.93,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "al",
+      "inicio": 45.964,
+      "fin": 45.998,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "instante:",
+      "inicio": 46.067,
+      "fin": 46.645,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "tocaron",
+      "inicio": 46.815,
+      "fin": 47.155,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "justo",
+      "inicio": 47.292,
+      "fin": 47.53,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "aquí.",
+      "inicio": 47.564,
+      "fin": 47.836,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "Y",
+      "inicio": 48.049,
+      "fin": 48.117,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "como",
+      "inicio": 48.185,
+      "fin": 48.321,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "revisa",
+      "inicio": 48.355,
+      "fin": 48.661,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "cada",
+      "inicio": 48.729,
+      "fin": 48.933,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "cruce",
+      "inicio": 49.001,
+      "fin": 49.206,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "por",
+      "inicio": 49.274,
+      "fin": 49.342,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "separado,",
+      "inicio": 49.41,
+      "fin": 50.09,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "puede",
+      "inicio": 50.124,
+      "fin": 50.295,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "seguir",
+      "inicio": 50.363,
+      "fin": 50.567,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "dos",
+      "inicio": 50.703,
+      "fin": 50.839,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "dedos",
+      "inicio": 50.907,
+      "fin": 51.111,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "a",
+      "inicio": 51.179,
+      "fin": 51.213,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "la",
+      "inicio": 51.247,
+      "fin": 51.315,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "vez",
+      "inicio": 51.383,
+      "fin": 51.452,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "cuando",
+      "inicio": 51.52,
+      "fin": 51.724,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "haces",
+      "inicio": 51.792,
+      "fin": 51.996,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "zoom.",
+      "inicio": 52.064,
+      "fin": 52.54,
+      "frase": 10,
+      "clave": true
+    },
+    {
+      "texto": "Un",
+      "inicio": 52.753,
+      "fin": 52.821,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "guante",
+      "inicio": 52.855,
+      "fin": 53.093,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "de",
+      "inicio": 53.161,
+      "fin": 53.229,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "lana",
+      "inicio": 53.264,
+      "fin": 53.502,
+      "frase": 11,
+      "clave": true
+    },
+    {
+      "texto": "no",
+      "inicio": 53.57,
+      "fin": 53.638,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "conduce",
+      "inicio": 53.706,
+      "fin": 54.046,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "nada",
+      "inicio": 54.114,
+      "fin": 54.386,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "y",
+      "inicio": 54.523,
+      "fin": 54.591,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "mantiene",
+      "inicio": 54.659,
+      "fin": 54.863,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "tu",
+      "inicio": 54.931,
+      "fin": 55.067,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "piel",
+      "inicio": 55.135,
+      "fin": 55.203,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "demasiado",
+      "inicio": 55.271,
+      "fin": 55.816,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "lejos",
+      "inicio": 55.884,
+      "fin": 56.088,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "de",
+      "inicio": 56.122,
+      "fin": 56.156,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "la",
+      "inicio": 56.19,
+      "fin": 56.224,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "superficie",
+      "inicio": 56.292,
+      "fin": 56.7,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "del",
+      "inicio": 56.768,
+      "fin": 56.837,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "vidrio.",
+      "inicio": 56.905,
+      "fin": 57.245,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "Aunque",
+      "inicio": 57.458,
+      "fin": 57.662,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "presiones",
+      "inicio": 57.73,
+      "fin": 58.002,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "fuerte,",
+      "inicio": 58.07,
+      "fin": 58.546,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "la",
+      "inicio": 58.615,
+      "fin": 58.683,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "carga",
+      "inicio": 58.717,
+      "fin": 58.955,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "nunca",
+      "inicio": 59.091,
+      "fin": 59.295,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "cambia;",
+      "inicio": 59.363,
+      "fin": 60.044,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "para",
+      "inicio": 60.112,
+      "fin": 60.18,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "el",
+      "inicio": 60.248,
+      "fin": 60.282,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "teléfono,",
+      "inicio": 60.316,
+      "fin": 60.928,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "nadie",
+      "inicio": 60.996,
+      "fin": 61.269,
+      "frase": 12,
+      "clave": true
+    },
+    {
+      "texto": "tocó",
+      "inicio": 61.337,
+      "fin": 61.541,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "la",
+      "inicio": 61.609,
+      "fin": 61.677,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "pantalla.",
+      "inicio": 61.745,
+      "fin": 62.358,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "Por",
+      "inicio": 62.57,
+      "fin": 62.638,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "eso",
+      "inicio": 62.706,
+      "fin": 62.774,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "también",
+      "inicio": 62.843,
+      "fin": 63.115,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "tu",
+      "inicio": 63.183,
+      "fin": 63.251,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "pantalla",
+      "inicio": 63.296,
+      "fin": 63.591,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "se",
+      "inicio": 63.625,
+      "fin": 63.659,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "vuelve",
+      "inicio": 63.727,
+      "fin": 63.931,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "loca",
+      "inicio": 64,
+      "fin": 64.204,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "bajo",
+      "inicio": 64.272,
+      "fin": 64.408,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "la",
+      "inicio": 64.476,
+      "fin": 64.544,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "lluvia:",
+      "inicio": 64.578,
+      "fin": 65.156,
+      "frase": 13,
+      "clave": true
+    },
+    {
+      "texto": "el",
+      "inicio": 65.225,
+      "fin": 65.293,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "agua",
+      "inicio": 65.395,
+      "fin": 65.497,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "conduce",
+      "inicio": 65.565,
+      "fin": 66.041,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "y",
+      "inicio": 66.109,
+      "fin": 66.177,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "cada",
+      "inicio": 66.313,
+      "fin": 66.518,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "gota",
+      "inicio": 66.586,
+      "fin": 66.858,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "parece",
+      "inicio": 66.926,
+      "fin": 67.198,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "un",
+      "inicio": 67.232,
+      "fin": 67.266,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "dedo.",
+      "inicio": 67.334,
+      "fin": 67.607,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "Y",
+      "inicio": 67.819,
+      "fin": 67.887,
+      "frase": 14,
+      "clave": false
+    },
+    {
+      "texto": "por",
+      "inicio": 67.921,
+      "fin": 67.955,
+      "frase": 14,
+      "clave": false
+    },
+    {
+      "texto": "eso",
+      "inicio": 68.023,
+      "fin": 68.159,
+      "frase": 14,
+      "clave": false
+    },
+    {
+      "texto": "funcionan",
+      "inicio": 68.228,
+      "fin": 68.568,
+      "frase": 14,
+      "clave": false
+    },
+    {
+      "texto": "los",
+      "inicio": 68.602,
+      "fin": 68.636,
+      "frase": 14,
+      "clave": false
+    },
+    {
+      "texto": "guantes",
+      "inicio": 68.704,
+      "fin": 68.976,
+      "frase": 14,
+      "clave": false
+    },
+    {
+      "texto": "táctiles:",
+      "inicio": 69.044,
+      "fin": 69.793,
+      "frase": 14,
+      "clave": false
+    },
+    {
+      "texto": "tienen",
+      "inicio": 69.884,
+      "fin": 70.065,
+      "frase": 14,
+      "clave": false
+    },
+    {
+      "texto": "hilos",
+      "inicio": 70.133,
+      "fin": 70.269,
+      "frase": 14,
+      "clave": false
+    },
+    {
+      "texto": "conductores",
+      "inicio": 70.337,
+      "fin": 70.746,
+      "frase": 14,
+      "clave": true
+    },
+    {
+      "texto": "tejidos",
+      "inicio": 70.814,
+      "fin": 71.154,
+      "frase": 14,
+      "clave": false
+    },
+    {
+      "texto": "en",
+      "inicio": 71.222,
+      "fin": 71.29,
+      "frase": 14,
+      "clave": false
+    },
+    {
+      "texto": "la",
+      "inicio": 71.358,
+      "fin": 71.426,
+      "frase": 14,
+      "clave": false
+    },
+    {
+      "texto": "punta",
+      "inicio": 71.46,
+      "fin": 71.698,
+      "frase": 14,
+      "clave": false
+    },
+    {
+      "texto": "que",
+      "inicio": 71.767,
+      "fin": 71.835,
+      "frase": 14,
+      "clave": false
+    },
+    {
+      "texto": "conectan",
+      "inicio": 71.903,
+      "fin": 72.175,
+      "frase": 14,
+      "clave": false
+    },
+    {
+      "texto": "tu",
+      "inicio": 72.243,
+      "fin": 72.311,
+      "frase": 14,
+      "clave": false
+    },
+    {
+      "texto": "piel.",
+      "inicio": 72.379,
+      "fin": 73.06,
+      "frase": 14,
+      "clave": false
+    },
+    {
+      "texto": "Así",
+      "inicio": 73.272,
+      "fin": 73.374,
+      "frase": 15,
+      "clave": false
+    },
+    {
+      "texto": "que",
+      "inicio": 73.408,
+      "fin": 73.476,
+      "frase": 15,
+      "clave": false
+    },
+    {
+      "texto": "tu",
+      "inicio": 73.51,
+      "fin": 73.545,
+      "frase": 15,
+      "clave": false
+    },
+    {
+      "texto": "celular",
+      "inicio": 73.613,
+      "fin": 74.021,
+      "frase": 15,
+      "clave": false
+    },
+    {
+      "texto": "nunca",
+      "inicio": 74.157,
+      "fin": 74.429,
+      "frase": 15,
+      "clave": true
+    },
+    {
+      "texto": "sintió",
+      "inicio": 74.497,
+      "fin": 74.77,
+      "frase": 15,
+      "clave": false
+    },
+    {
+      "texto": "tu",
+      "inicio": 74.838,
+      "fin": 74.906,
+      "frase": 15,
+      "clave": false
+    },
+    {
+      "texto": "dedo:",
+      "inicio": 75.008,
+      "fin": 75.518,
+      "frase": 15,
+      "clave": false
+    },
+    {
+      "texto": "solo",
+      "inicio": 75.563,
+      "fin": 75.654,
+      "frase": 15,
+      "clave": false
+    },
+    {
+      "texto": "sintió",
+      "inicio": 75.722,
+      "fin": 76.063,
+      "frase": 15,
+      "clave": false
+    },
+    {
+      "texto": "que",
+      "inicio": 76.131,
+      "fin": 76.199,
+      "frase": 15,
+      "clave": false
+    },
+    {
+      "texto": "una",
+      "inicio": 76.267,
+      "fin": 76.403,
+      "frase": 15,
+      "clave": false
+    },
+    {
+      "texto": "diminuta",
+      "inicio": 76.471,
+      "fin": 76.879,
+      "frase": 15,
+      "clave": false
+    },
+    {
+      "texto": "carga",
+      "inicio": 76.947,
+      "fin": 77.152,
+      "frase": 15,
+      "clave": false
+    },
+    {
+      "texto": "eléctrica",
+      "inicio": 77.22,
+      "fin": 77.628,
+      "frase": 15,
+      "clave": false
+    },
+    {
+      "texto": "desapareció.",
+      "inicio": 77.696,
+      "fin": 78.513,
+      "frase": 15,
+      "clave": false
+    },
+    {
+      "texto": "Envía",
+      "inicio": 78.725,
+      "fin": 78.998,
+      "frase": 16,
+      "clave": false
+    },
+    {
+      "texto": "este",
+      "inicio": 79.1,
+      "fin": 79.202,
+      "frase": 16,
+      "clave": false
+    },
+    {
+      "texto": "video",
+      "inicio": 79.338,
+      "fin": 79.474,
+      "frase": 16,
+      "clave": false
+    },
+    {
+      "texto": "a",
+      "inicio": 79.508,
+      "fin": 79.542,
+      "frase": 16,
+      "clave": false
+    },
+    {
+      "texto": "esa",
+      "inicio": 79.61,
+      "fin": 79.678,
+      "frase": 16,
+      "clave": false
+    },
+    {
+      "texto": "persona",
+      "inicio": 79.746,
+      "fin": 80.086,
+      "frase": 16,
+      "clave": false
+    },
+    {
+      "texto": "a",
+      "inicio": 80.121,
+      "fin": 80.155,
+      "frase": 16,
+      "clave": false
+    },
+    {
+      "texto": "la",
+      "inicio": 80.223,
+      "fin": 80.291,
+      "frase": 16,
+      "clave": false
+    },
+    {
+      "texto": "que",
+      "inicio": 80.393,
+      "fin": 80.495,
+      "frase": 16,
+      "clave": false
+    },
+    {
+      "texto": "siempre",
+      "inicio": 80.563,
+      "fin": 80.903,
+      "frase": 16,
+      "clave": false
+    },
+    {
+      "texto": "se",
+      "inicio": 80.971,
+      "fin": 81.039,
+      "frase": 16,
+      "clave": false
+    },
+    {
+      "texto": "le",
+      "inicio": 81.073,
+      "fin": 81.107,
+      "frase": 16,
+      "clave": false
+    },
+    {
+      "texto": "vuelve",
+      "inicio": 81.175,
+      "fin": 81.38,
+      "frase": 16,
+      "clave": false
+    },
+    {
+      "texto": "loca",
+      "inicio": 81.448,
+      "fin": 81.652,
+      "frase": 16,
+      "clave": false
+    },
+    {
+      "texto": "la",
+      "inicio": 81.72,
+      "fin": 81.788,
+      "frase": 16,
+      "clave": false
+    },
+    {
+      "texto": "pantalla",
+      "inicio": 81.856,
+      "fin": 82.196,
+      "frase": 16,
+      "clave": false
+    },
+    {
+      "texto": "con",
+      "inicio": 82.264,
+      "fin": 82.332,
+      "frase": 16,
+      "clave": false
+    },
+    {
+      "texto": "las",
+      "inicio": 82.366,
+      "fin": 82.4,
+      "frase": 16,
+      "clave": false
+    },
+    {
+      "texto": "manos",
+      "inicio": 82.468,
+      "fin": 82.673,
+      "frase": 16,
+      "clave": false
+    },
+    {
+      "texto": "mojadas.",
+      "inicio": 82.741,
+      "fin": 83.353,
+      "frase": 16,
+      "clave": true
+    }
+  ]
+}

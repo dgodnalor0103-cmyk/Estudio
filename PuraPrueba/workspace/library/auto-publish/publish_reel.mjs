@@ -48,16 +48,22 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const KF_ROOT = path.resolve(__dirname, "../../..");
 const ENV_PATH = path.join(KF_ROOT, ".env.local");
 
+const CURL_BIN = process.platform === "win32" ? "curl" + ".exe" : "curl";
+const SSH_BIN = process.platform === "win32" ? "ssh.exe" : "ssh";
+const NULL_DEV = process.platform === "win32" ? "NUL" : "/dev/null";
+
 function loadEnv() {
   const env = { ...process.env };
-  if (fs.existsSync(ENV_PATH)) {
-    for (const raw of fs.readFileSync(ENV_PATH, "utf8").split(/\r?\n/)) {
-      const line = raw.trim();
-      if (!line || line.startsWith("#") || !line.includes("=")) continue;
-      const idx = line.indexOf("=");
-      const k = line.slice(0, idx).trim();
-      const v = line.slice(idx + 1).trim().replace(/^['"]|['"]$/g, "");
-      if (!env[k]) env[k] = v;
+  for (const p of [ENV_PATH, path.resolve(KF_ROOT, "../ATOM/.env.local")]) {
+    if (fs.existsSync(p)) {
+      for (const raw of fs.readFileSync(p, "utf8").split(/\r?\n/)) {
+        const line = raw.trim();
+        if (!line || line.startsWith("#") || !line.includes("=")) continue;
+        const idx = line.indexOf("=");
+        const k = line.slice(0, idx).trim();
+        const v = line.slice(idx + 1).trim().replace(/^['"]|['"]$/g, "");
+        if (!env[k]) env[k] = v;
+      }
     }
   }
   return env;
@@ -164,7 +170,7 @@ if (dryRun) {
 function stageViaUguu(localFile) {
   console.log(`\nSubiendo ${path.basename(localFile)} a enlace HTTPS directo (uguu.se)...`);
   const raw = execFileSync(
-    "curl.exe",
+    CURL_BIN,
     ["-sS", "--fail", "--max-time", "180", "-F", `files[]=@${localFile}`, "https://uguu.se/upload"],
     { encoding: "utf8" },
   );
@@ -178,7 +184,7 @@ function stageViaUguu(localFile) {
 function stageViaTmpfiles(localFile) {
   console.log(`\nSubiendo ${path.basename(localFile)} a enlace HTTPS directo (tmpfiles.org)...`);
   const raw = execFileSync(
-    "curl.exe",
+    CURL_BIN,
     ["-sS", "--fail", "--max-time", "180", "-F", `file=@${localFile}`, "https://tmpfiles.org/api/v1/upload"],
     { encoding: "utf8" },
   );
@@ -193,7 +199,7 @@ function stageViaTmpfiles(localFile) {
 function stageViaX0At(localFile) {
   console.log(`\nSubiendo ${path.basename(localFile)} a enlace HTTPS directo (x0.at)...`);
   const url = execFileSync(
-    "curl.exe",
+    CURL_BIN,
     ["-sS", "--fail", "--max-time", "180", "-A", "PuraPruebaPublisher/1.0", "-F", `file=@${localFile}`, "https://x0.at/"],
     { encoding: "utf8" },
   ).trim();
@@ -205,7 +211,7 @@ function stageViaX0At(localFile) {
 function stageVia0x0St(localFile) {
   console.log(`\nSubiendo ${path.basename(localFile)} a enlace HTTPS directo (0x0.st)...`);
   const url = execFileSync(
-    "curl.exe",
+    CURL_BIN,
     ["-sS", "--fail", "--max-time", "180", "-A", "PuraPruebaPublisher/1.0", "-F", `file=@${localFile}`, "https://0x0.st"],
     { encoding: "utf8" },
   ).trim();
@@ -214,10 +220,34 @@ function stageVia0x0St(localFile) {
   return { url, cleanup: async () => {} };
 }
 
+function stageViaCatbox(localFile) {
+  console.log(`\nSubiendo ${path.basename(localFile)} a enlace HTTPS directo permanente (catbox.moe)...`);
+  const url = execFileSync(
+    CURL_BIN,
+    [
+      "-sS",
+      "--fail",
+      "--max-time",
+      "180",
+      "-A",
+      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
+      "-F",
+      "reqtype=fileupload",
+      "-F",
+      `fileToUpload=@${localFile}`,
+      "https://catbox.moe/user/api.php",
+    ],
+    { encoding: "utf8" },
+  ).trim();
+  if (!url.startsWith("https://")) throw new Error("catbox.moe no devolvió URL HTTPS");
+  console.log(`Enlace HTTPS listo (catbox.moe): ${url}`);
+  return { url, cleanup: async () => {} };
+}
+
 function stageViaLitterbox(localFile) {
   console.log(`\nSubiendo ${path.basename(localFile)} a enlace HTTPS directo (litterbox 72h)...`);
   const url = execFileSync(
-    "curl.exe",
+    CURL_BIN,
     [
       "-sS",
       "--fail",
@@ -285,12 +315,12 @@ async function stageViaLocalhostRunTunnel(localFile) {
   const port = srv.address().port;
 
   const sshProc = spawn(
-    "ssh.exe",
+    SSH_BIN,
     [
       "-o",
       "StrictHostKeyChecking=no",
       "-o",
-      "UserKnownHostsFile=NUL",
+      `UserKnownHostsFile=${NULL_DEV}`,
       "-o",
       "ServerAliveInterval=15",
       "-T",
@@ -457,16 +487,20 @@ function scheduleWindowsTaskForInstagram(targetIsoDate) {
   });
   fs.writeFileSync(queueFile, JSON.stringify(filtered, null, 2) + "\n", "utf8");
 
-  // Registrar tarea programada nativa en Windows con reintentos automáticos si falla o despierta sin red
-  const psCmd = [
-    `$action = New-ScheduledTaskAction -Execute '${nodeExe.replace(/'/g, "''")}' -Argument '"${scriptPath}" "${outDir}" --provider meta-direct --platforms instagram --ig-immediate' -WorkingDirectory '${KF_ROOT.replace(/'/g, "''")}';`,
-    `$trigger = New-ScheduledTaskTrigger -Once -At ([datetime]::Parse('${dt.toISOString()}'));`,
-    `$settings = New-ScheduledTaskSettingsSet -StartWhenAvailable -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries -WakeToRun -RestartCount 3 -RestartInterval (New-TimeSpan -Minutes 5);`,
-    `Register-ScheduledTask -TaskName '${taskName}' -Action $action -Trigger $trigger -Settings $settings -Force | Out-Null;`,
-  ].join(" ");
-
-  execFileSync("powershell.exe", ["-NoProfile", "-Command", psCmd], { stdio: "inherit" });
-  console.log(`✓ [Instagram Reels Programado en Windows] tarea=${taskName} · fecha=${dt.toISOString()} (${sd})`);
+  if (process.platform === "win32") {
+    const psCmd = [
+      `$action = New-ScheduledTaskAction -Execute '${nodeExe.replace(/'/g, "''")}' -Argument '"${scriptPath}" "${outDir}" --provider meta-direct --platforms instagram --ig-immediate' -WorkingDirectory '${KF_ROOT.replace(/'/g, "''")}';`,
+      `$trigger = New-ScheduledTaskTrigger -Once -At ([datetime]::Parse('${dt.toISOString()}'));`,
+      `$settings = New-ScheduledTaskSettingsSet -StartWhenAvailable -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries -WakeToRun -RestartCount 3 -RestartInterval (New-TimeSpan -Minutes 5);`,
+      `Register-ScheduledTask -TaskName '${taskName}' -Action $action -Trigger $trigger -Settings $settings -Force | Out-Null;`,
+    ].join(" ");
+    execFileSync("powershell.exe", ["-NoProfile", "-Command", psCmd], { stdio: "inherit" });
+  } else {
+    const delayMs = Math.max(1000, dt.getTime() - Date.now());
+    const runner = `setTimeout(() => { require("node:child_process").spawnSync(${JSON.stringify(nodeExe)}, [${JSON.stringify(scriptPath)}, ${JSON.stringify(outDir)}, "--provider", "meta-direct", "--platforms", "instagram", "--ig-immediate"], { cwd: ${JSON.stringify(KF_ROOT)}, stdio: "ignore" }); }, ${delayMs});`;
+    spawn(nodeExe, ["-e", runner], { cwd: KF_ROOT, detached: true, stdio: "ignore" }).unref();
+  }
+  console.log(`✓ [Instagram Reels Programado] tarea=${taskName} · fecha=${dt.toISOString()} (${sd})`);
 }
 
 async function waitForInternet(maxWaitMs = 120000) {
@@ -639,10 +673,157 @@ async function publishMetaInstagramReel(igUserId, pageToken) {
   console.log(`✓ [Instagram Reels Oficial] media_id=${pubId} · estado=PUBLISHED`);
 }
 
+async function autoRefreshMetaTokenFromChrome(targetPageId) {
+  const chromeCli = "/Applications/Antigravity.app/Contents/Resources/app.asar.unpacked/node_modules/chrome-devtools-mcp/build/src/bin/chrome-devtools.js";
+  if (!fs.existsSync(chromeCli)) return null;
+  const runCli = (cliArgs) => {
+    try {
+      return execFileSync(process.execPath, [chromeCli, ...cliArgs], { encoding: "utf8", timeout: 45000 });
+    } catch (e) {
+      return (e.stdout ? String(e.stdout) : "") + "\n" + (e.stderr ? String(e.stderr) : "");
+    }
+  };
+  try {
+    let pagesOut = runCli(["list_pages"]);
+    let explorerTabId = null;
+    for (const ln of pagesOut.split(/\r?\n/)) {
+      const m = ln.match(/^(\d+):\s+(.+)$/);
+      if (m && /developers\.facebook\.com\/tools\/explorer/i.test(m[2])) explorerTabId = m[1];
+    }
+    if (!explorerTabId) {
+      const appId = env.META_APP_ID || "1828644828457446";
+      runCli(["new_page", `https://developers.facebook.com/tools/explorer/?app_id=${appId}`]);
+      await sleep(6000);
+      pagesOut = runCli(["list_pages"]);
+      for (const ln of pagesOut.split(/\r?\n/)) {
+        const m = ln.match(/^(\d+):\s+(.+)$/);
+        if (m && /developers\.facebook\.com\/tools\/explorer/i.test(m[2])) explorerTabId = m[1];
+      }
+    }
+    if (!explorerTabId) return null;
+
+    const readJs = `() => {
+      const inputs = Array.from(document.querySelectorAll('input'));
+      for (const inp of inputs) {
+        if (inp.value && inp.value.startsWith('EAA') && inp.value.length > 50) return inp.value.trim();
+      }
+      return "";
+    }`;
+    const clickGenJs = `() => {
+      const btns = Array.from(document.querySelectorAll('button, div[role="button"], span'));
+      const genBtn = btns.find(b => /^(Generate Access Token|Generar token de acceso)$/i.test((b.innerText || '').trim()));
+      if (genBtn) { genBtn.click(); return "CLICKED"; }
+      return "NO_BTN";
+    }`;
+
+    let rawTok = runCli(["evaluate_script", readJs, `--pageId=${explorerTabId}`]);
+    let mTok = rawTok.match(/EAA[A-Za-z0-9]+/);
+    const tryExchange = async (cand) => {
+      if (!cand) return null;
+      const r = await fetch(
+        `https://graph.facebook.com/v21.0/me/accounts?fields=id,name,access_token&access_token=${encodeURIComponent(cand)}`
+      );
+      const j = await r.json();
+      const found = (j?.data || []).find((p) => p.id === targetPageId || /puraprueba/i.test(p.name || "")) || (j?.data || [])[0];
+      return found?.access_token ? found : null;
+    };
+
+    let pageObj = await tryExchange(mTok ? mTok[0] : "");
+    if (!pageObj) {
+      runCli(["evaluate_script", clickGenJs, `--pageId=${explorerTabId}`]);
+      await sleep(5000);
+      const afterPages = runCli(["list_pages"]);
+      for (const ln of afterPages.split(/\r?\n/)) {
+        const m = ln.match(/^(\d+):\s+(.+)$/);
+        if (m && m[1] !== explorerTabId && /facebook\.com/i.test(m[2])) {
+          const confirmJs = `() => {
+            const btns = Array.from(document.querySelectorAll('div[role="button"], button, span, a'));
+            const t = btns.find(b => /^(Continuar como|Continue as|Continuar|Continue|Reconectar|Reconnect|Aceptar|Confirmar)/i.test((b.innerText || '').trim()));
+            if (t) { t.click(); return "CLICKED"; }
+            return "NONE";
+          }`;
+          runCli(["evaluate_script", confirmJs, `--pageId=${m[1]}`]);
+          await sleep(4000);
+        }
+      }
+      rawTok = runCli(["evaluate_script", readJs, `--pageId=${explorerTabId}`]);
+      mTok = rawTok.match(/EAA[A-Za-z0-9]+/);
+      pageObj = await tryExchange(mTok ? mTok[0] : "");
+    }
+    if (pageObj?.access_token) {
+      env.META_PAGE_ACCESS_TOKEN = pageObj.access_token;
+      const lines = fs.existsSync(ENV_PATH)
+        ? fs.readFileSync(ENV_PATH, "utf8").split(/\r?\n/).filter((l) => l && !l.startsWith("META_PAGE_ACCESS_TOKEN="))
+        : [];
+      lines.push(`META_PAGE_ACCESS_TOKEN=${pageObj.access_token}`);
+      fs.writeFileSync(ENV_PATH, lines.join("\n") + "\n", { mode: 0o600 });
+      console.log(`✓ [Auto-Refresh Meta Token] Token renovado automáticamente desde Chrome para ${pageObj.name} (${pageObj.id})`);
+      return pageObj.access_token;
+    }
+  } catch (_) {}
+  return null;
+}
+
 async function publishMetaDirect() {
-  const pageId = env.META_PAGE_ID;
-  const igUserId = env.META_IG_USER_ID;
-  const pageToken = env.META_PAGE_ACCESS_TOKEN;
+  let pageId = env.META_PAGE_ID;
+  let igUserId = env.META_IG_USER_ID;
+  let pageToken = env.META_PAGE_ACCESS_TOKEN;
+
+  if (pageId && pageToken) {
+    try {
+      const chk = await fetch(
+        `https://graph.facebook.com/v21.0/${encodeURIComponent(pageId)}?fields=id,name&access_token=${encodeURIComponent(pageToken)}`
+      );
+      if (!chk.ok) {
+        console.log("  [Meta Auto-Heal]: El token en .env.local expiró; renovando automáticamente desde Chrome...");
+        const refreshed = await autoRefreshMetaTokenFromChrome(pageId);
+        if (refreshed) pageToken = refreshed;
+      }
+    } catch (_) {}
+  }
+
+  if (!pageToken) {
+    throw new Error("Falta META_PAGE_ACCESS_TOKEN en .env.local para publicar vía Meta Graph API oficial.");
+  }
+
+  if (!pageId) {
+    try {
+      const accRes = await fetch(
+        `https://graph.facebook.com/v21.0/me/accounts?fields=id,name,access_token,instagram_business_account{id,username}&access_token=${encodeURIComponent(pageToken)}`,
+      );
+      const accJson = await accRes.json();
+      const firstPage = accJson?.data?.[0];
+      if (firstPage?.id) {
+        pageId = firstPage.id;
+        if (firstPage.access_token) pageToken = firstPage.access_token;
+        if (firstPage.instagram_business_account?.id) igUserId = firstPage.instagram_business_account.id;
+      } else {
+        const meRes = await fetch(
+          `https://graph.facebook.com/v21.0/me?fields=id,name,instagram_business_account{id,username}&access_token=${encodeURIComponent(pageToken)}`,
+        );
+        const meJson = await meRes.json();
+        if (meJson?.id) {
+          pageId = meJson.id;
+          if (meJson.instagram_business_account?.id) igUserId = meJson.instagram_business_account.id;
+        }
+      }
+      if (pageId) {
+        env.META_PAGE_ID = pageId;
+        if (igUserId) env.META_IG_USER_ID = igUserId;
+        env.META_PAGE_ACCESS_TOKEN = pageToken;
+        const lines = fs.existsSync(ENV_PATH)
+          ? fs.readFileSync(ENV_PATH, "utf8").split(/\r?\n/).filter((l) => l && !l.startsWith("META_PAGE_ID=") && !l.startsWith("META_IG_USER_ID=") && !l.startsWith("META_PAGE_ACCESS_TOKEN="))
+          : [];
+        lines.push(`META_PAGE_ID=${pageId}`);
+        if (igUserId) lines.push(`META_IG_USER_ID=${igUserId}`);
+        lines.push(`META_PAGE_ACCESS_TOKEN=${pageToken}`);
+        fs.writeFileSync(ENV_PATH, lines.join("\n") + "\n", { mode: 0o600 });
+        console.log(`✓ [Meta Auto-Discovery] Page ID=${pageId}${igUserId ? " · IG User ID=" + igUserId : ""} guardado en .env.local`);
+      }
+    } catch (e) {
+      console.warn("Aviso auto-discovery Meta:", e.message);
+    }
+  }
 
   if (!pageId || !pageToken) {
     throw new Error("Faltan META_PAGE_ID o META_PAGE_ACCESS_TOKEN en .env.local para publicar vía Meta Graph API oficial.");
@@ -689,6 +870,35 @@ async function publishBuffer(filterPlatforms = platforms, forceImmediate = false
   const apiKey = env.BUFFER_API_KEY;
   if (!apiKey) {
     throw new Error("Falta BUFFER_API_KEY en .env.local (obtenla gratis en https://publish.buffer.com/settings/api)");
+  }
+
+  // Guardia contra videos descartados de otros estilos/nichos o timers antiguos cancelados
+  const blockedSlugs = [
+    "chicken-wash",
+    "premium-gas",
+    "water-chug",
+    "knuckle-myth",
+    "cafe-despertar",
+    "alarma-cinco-minutos",
+    "platos-mano-agua",
+  ];
+  if (blockedSlugs.some((b) => outDir.toLowerCase().includes(b))) {
+    console.log(`  [Guardia de nicho]: se bloqueó publicación de carpeta descartada (${outDir}).`);
+    return;
+  }
+
+  if (bufferImmediate) {
+    const queueFile = path.join(__dirname, "buffer_schedule_queue.json");
+    if (fs.existsSync(queueFile)) {
+      try {
+        const q = JSON.parse(fs.readFileSync(queueFile, "utf8"));
+        const inQueue = Array.isArray(q) && q.some((item) => path.resolve(KF_ROOT, item.outDir) === outDir);
+        if (!inQueue) {
+          console.log(`  [Guardia de cola]: disparo diferido antiguo ignorado porque ${outDir} ya no está en buffer_schedule_queue.json.`);
+          return;
+        }
+      } catch {}
+    }
   }
 
   if (bufferImmediate || forceImmediate) {
@@ -738,13 +948,17 @@ async function publishBuffer(filterPlatforms = platforms, forceImmediate = false
     return 0;
   });
 
-  // Limpiar cualquier post programado duplicado del mismo episodio antes de publicar/reprogramar
+  // Guardia estricta anti-duplicados:
+  // 1) Si el video YA fue publicado (status === "sent") en un canal, JAMÁS volver a publicarlo ni programarlo ahí (salvo --force-repost).
+  // 2) Si existe algún post programado previo (status === "scheduled") del mismo video, eliminarlo antes de programar uno nuevo (o saltar si es disparo --buffer-immediate).
+  const forceRepost = args.includes("--force-repost");
+  const alreadySentServices = new Set();
   try {
     const existingPosts = await bufferGraphql(
       apiKey,
       `query($orgId: OrganizationId!) {
-        posts(first: 40, input: { organizationId: $orgId }) {
-          edges { node { id status channelService text } }
+        posts(first: 100, input: { organizationId: $orgId }) {
+          edges { node { id status channelService text dueAt } }
         }
       }`,
       { orgId },
@@ -753,21 +967,43 @@ async function publishBuffer(filterPlatforms = platforms, forceImmediate = false
     const firstPrefix = firstLine.slice(0, 42).toLowerCase();
     for (const edge of existingPosts?.posts?.edges || []) {
       const node = edge?.node;
-      if (
-        node &&
-        node.status === "scheduled" &&
-        targetServices.has(String(node.channelService || "").toLowerCase()) &&
-        String(node.text || "").toLowerCase().startsWith(firstPrefix)
-      ) {
-        await bufferGraphql(
-          apiKey,
-          `mutation($input: DeletePostInput!) { deletePost(input: $input) { __typename } }`,
-          { input: { id: node.id } },
-        );
-        console.log(`  [Buffer limpieza anti-duplicado]: eliminado post previo ${node.id} (${node.channelService})`);
+      if (!node) continue;
+      const svc = String(node.channelService || "").toLowerCase();
+      if (!targetServices.has(svc)) continue;
+      const matchesVideo = String(node.text || "").toLowerCase().startsWith(firstPrefix);
+      if (!matchesVideo) continue;
+
+      if (node.status === "sent" && !forceRepost) {
+        alreadySentServices.add(svc);
+      } else if (node.status === "scheduled") {
+        if (bufferImmediate && !forceRepost) {
+          alreadySentServices.add(svc);
+          console.log(`  [Guardia anti-duplicado]: ya existe post programado en Buffer (${node.id}, ${svc}); se omite disparo local.`);
+        } else {
+          await bufferGraphql(
+            apiKey,
+            `mutation($input: DeletePostInput!) { deletePost(input: $input) { __typename } }`,
+            { input: { id: node.id } },
+          );
+          console.log(`  [Buffer limpieza anti-duplicado]: eliminado post programado previo ${node.id} (${svc})`);
+        }
       }
     }
-  } catch (_) {}
+  } catch (dedupErr) {
+    console.warn("  [Aviso verificación anti-duplicado]:", dedupErr.message);
+  }
+
+  for (let i = targetChannels.length - 1; i >= 0; i--) {
+    const svc = String(targetChannels[i].service || "").toLowerCase();
+    if (alreadySentServices.has(svc)) {
+      console.log(`  ✓ [Guardia anti-duplicado]: "${firstLine.slice(0, 48)}..." ya fue publicado en ${svc}; se omite para no repetir.`);
+      targetChannels.splice(i, 1);
+    }
+  }
+  if (targetChannels.length === 0) {
+    console.log(`✓ Todos los canales solicitados ya tienen publicado este video (0 duplicados).`);
+    return;
+  }
 
   // Detectar dinámicamente esquema exacto de Buffer GraphQL (CreatePostInput, VideoAssetInput, enums y PostInputMetaData)
   let videoUrlField = "url";
@@ -1009,15 +1245,20 @@ async function publishBuffer(filterPlatforms = platforms, forceImmediate = false
     });
     fs.writeFileSync(queueFile, JSON.stringify(filtered, null, 2) + "\n", "utf8");
 
-    const psCmd = [
-      `$action = New-ScheduledTaskAction -Execute '${nodeExe.replace(/'/g, "''")}' -Argument '"${scriptPath}" "${outDir}" --provider buffer --platforms ${platArg} --buffer-immediate' -WorkingDirectory '${KF_ROOT.replace(/'/g, "''")}';`,
-      `$trigger = New-ScheduledTaskTrigger -Once -At ([datetime]::Parse('${dt.toISOString()}'));`,
-      `$settings = New-ScheduledTaskSettingsSet -StartWhenAvailable -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries -WakeToRun -RestartCount 3 -RestartInterval (New-TimeSpan -Minutes 5);`,
-      `Register-ScheduledTask -TaskName '${taskName}' -Action $action -Trigger $trigger -Settings $settings -Force | Out-Null;`,
-    ].join(" ");
-
-    execFileSync("powershell.exe", ["-NoProfile", "-Command", psCmd], { stdio: "inherit" });
-    console.log(`✓ [Buffer (${platArg}) Programado en Windows sin expiración URL] tarea=${taskName} · fecha=${dt.toISOString()} (${sd})`);
+    if (process.platform === "win32") {
+      const psCmd = [
+        `$action = New-ScheduledTaskAction -Execute '${nodeExe.replace(/'/g, "''")}' -Argument '"${scriptPath}" "${outDir}" --provider buffer --platforms ${platArg} --buffer-immediate' -WorkingDirectory '${KF_ROOT.replace(/'/g, "''")}';`,
+        `$trigger = New-ScheduledTaskTrigger -Once -At ([datetime]::Parse('${dt.toISOString()}'));`,
+        `$settings = New-ScheduledTaskSettingsSet -StartWhenAvailable -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries -WakeToRun -RestartCount 3 -RestartInterval (New-TimeSpan -Minutes 5);`,
+        `Register-ScheduledTask -TaskName '${taskName}' -Action $action -Trigger $trigger -Settings $settings -Force | Out-Null;`,
+      ].join(" ");
+      execFileSync("powershell.exe", ["-NoProfile", "-Command", psCmd], { stdio: "inherit" });
+    } else {
+      const delayMs = Math.max(1000, dt.getTime() - Date.now());
+      const runner = `setTimeout(() => { try { const q = JSON.parse(require("node:fs").readFileSync(${JSON.stringify(queueFile)}, "utf8")); if (!q.some(x => x.taskName === ${JSON.stringify(taskName)})) process.exit(0); } catch {} require("node:child_process").spawnSync(${JSON.stringify(nodeExe)}, [${JSON.stringify(scriptPath)}, ${JSON.stringify(outDir)}, "--provider", "buffer", "--platforms", ${JSON.stringify(platArg)}, "--buffer-immediate"], { cwd: ${JSON.stringify(KF_ROOT)}, stdio: "ignore" }); }, ${delayMs});`;
+      spawn(nodeExe, ["-e", runner], { cwd: KF_ROOT, detached: true, stdio: "ignore" }).unref();
+    }
+    console.log(`✓ [Buffer (${platArg}) Programado sin expiración URL] tarea=${taskName} · fecha=${dt.toISOString()} (${sd})`);
   }
 
   // 2. Proveedores escalonados de enlace HTTPS directo compatible con los servidores AWS de Buffer.
@@ -1033,19 +1274,21 @@ async function publishBuffer(filterPlatforms = platforms, forceImmediate = false
         ...(cliVideoUrl || env.PUBLIC_VIDEO_URL
           ? [async () => ({ url: cliVideoUrl || env.PUBLIC_VIDEO_URL, cleanup: async () => {} })]
           : []),
+        ...(hoursUntilDue <= 60 ? [async () => stageViaLitterbox(mp4Path)] : []),
+        async () => stageViaCatbox(mp4Path),
         async () => stageVia0x0St(mp4Path),
         async () => stageViaX0At(mp4Path),
-        ...(hoursUntilDue <= 60 ? [async () => stageViaLitterbox(mp4Path)] : []),
       ]
     : [
         ...(cliVideoUrl || env.PUBLIC_VIDEO_URL
           ? [async () => ({ url: cliVideoUrl || env.PUBLIC_VIDEO_URL, cleanup: async () => {} })]
           : []),
+        async () => stageViaLitterbox(mp4Path),
+        async () => stageViaCatbox(mp4Path),
         async () => stageViaUguu(mp4Path),
         async () => stageViaTmpfiles(mp4Path),
         async () => stageViaX0At(mp4Path),
         async () => stageVia0x0St(mp4Path),
-        async () => stageViaLitterbox(mp4Path),
         async () => await stageViaLocalhostRunTunnel(mp4Path),
       ];
 
@@ -1084,18 +1327,18 @@ async function publishBuffer(filterPlatforms = platforms, forceImmediate = false
 
   let stagedCoverUrl = null;
   if (coverPath) {
-    try {
-      if (isLongSchedule) {
-        const sc = stageViaLitterbox(coverPath);
-        stagedCoverUrl = sc?.url || null;
-      } else {
-        stagedCoverUrl = stageTempPublicFile(coverPath, ".jpg");
-      }
-    } catch (_) {
-      stagedCoverUrl = null;
+    for (const coverFn of [stageViaCatbox, stageViaLitterbox, (p) => ({ url: stageTempPublicFile(p, ".jpg") })]) {
+      try {
+        const sc = coverFn(coverPath);
+        if (sc?.url) {
+          stagedCoverUrl = sc.url;
+          break;
+        }
+      } catch (_) {}
     }
   }
 
+  const completedServices = new Set();
   try {
     // 3. Publicar / programar en cada canal conectado (Instagram + TikTok + YouTube Shorts)
     for (const ch of targetChannels) {
@@ -1165,7 +1408,8 @@ async function publishBuffer(filterPlatforms = platforms, forceImmediate = false
             const msg = postRes?.createPost?.message || JSON.stringify(postRes?.createPost);
             if (typeName !== "PostActionSuccess") {
               candErrors.push(`cand#${ci + 1} (${typeName}): ${msg}`);
-              if (/video could not be read|could not.*download|unable to fetch/i.test(String(msg))) {
+              const hasThumb = Boolean(cand?.assets?.[0]?.video?.thumbnailUrl);
+              if (/video could not be read|could not.*download|unable to fetch/i.test(String(msg)) && !hasThumb) {
                 urlUnreadable = true;
                 break;
               }
@@ -1173,6 +1417,7 @@ async function publishBuffer(filterPlatforms = platforms, forceImmediate = false
             }
             console.log(`✓ [${ch.service} · ${ch.name}] ->`, JSON.stringify(postRes?.createPost));
             published = true;
+            completedServices.add(svc);
             break;
           } catch (err) {
             candErrors.push(`cand#${ci + 1} (GQL): ${err.message}`);
@@ -1189,8 +1434,13 @@ async function publishBuffer(filterPlatforms = platforms, forceImmediate = false
 
       if (!published) {
         if (isLongSchedule && (!videoUrl || candErrors.some((e) => /video could not be read|could not.*download|unable to fetch/i.test(e)))) {
-          console.warn("  Los hosts públicos largos bloquearon la IP AWS de Buffer; registrando tarea programada local exacta (shareNow a la hora programada, 0% riesgo HTTP 404)...");
-          scheduleWindowsTaskForBuffer(effectiveScheduleAt, filterPlatforms);
+          const remainingPlats = targetChannels
+            .map((c) => String(c.service || "").toLowerCase())
+            .filter((s) => !completedServices.has(s));
+          console.warn(`  Los hosts públicos largos bloquearon la IP AWS de Buffer; registrando tarea programada local exacta para canales pendientes (${remainingPlats.join(",")})...`);
+          if (remainingPlats.length > 0) {
+            scheduleWindowsTaskForBuffer(effectiveScheduleAt, remainingPlats);
+          }
           return;
         }
         throw new Error(`No se pudo programar en ${ch.service}: ${candErrors.join(" | ")}`);
@@ -1256,7 +1506,7 @@ async function publishUploadPost() {
   if (scheduleAt) {
     curlArgs.push("-F", `scheduled_date=${scheduleAt}`);
   }
-  const out = execFileSync("curl.exe", curlArgs, { encoding: "utf8" });
+  const out = execFileSync(CURL_BIN, curlArgs, { encoding: "utf8" });
   console.log("\nRespuesta Upload-Post:\n", out);
 }
 
@@ -1268,7 +1518,7 @@ async function publishPostiz() {
     throw new Error("Faltan POSTIZ_API_KEY o POSTIZ_CHANNEL_IDS en .env.local");
   }
   const upRaw = execFileSync(
-    "curl.exe",
+    CURL_BIN,
     ["-sS", "-X", "POST", `${baseUrl}/upload`, "-H", `Authorization: ${apiKey}`, "-F", `file=@${mp4Path}`],
     { encoding: "utf8" },
   );

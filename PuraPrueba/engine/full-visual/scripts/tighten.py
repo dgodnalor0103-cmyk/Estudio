@@ -10,10 +10,11 @@ it where the take ran straight through. The character times are shifted by exact
 was removed before them, so align.py afterwards is exact. The untouched take is kept as voice.raw.mp3 and
 voice.alignment.raw.json; running this again starts from those.
 """
-import json, re, shutil, subprocess, sys
+import json, os, re, shutil, subprocess, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+os.environ["PATH"] = f"{ROOT.parent.parent / 'node_modules' / '.bin'}:/usr/local/bin:" + os.environ.get("PATH", "")
 
 
 def silences(mp3):
@@ -44,17 +45,18 @@ if __name__ == "__main__":
     sys.path.insert(0, str(ROOT / "scripts"))
     from voice import force_align
     v3 = doc.get("voice", {}).get("model") == "eleven_v3"
+    v4 = doc.get("voice", {}).get("model") == "eleven_v4"
     text = re.sub(r"\n{2,}", "\n\n", (reel / "script.txt").read_text().strip())
     if v3:
         al = doc["alignment"] = force_align(raw, text)
         chars = "".join(al["characters"])
     # the pauses written on purpose, placed by the first character of the phrase
-    held = {phrase: (al["character_start_times_seconds"][chars.find(phrase)], float(sec)) for phrase, sec in keep.items()}
+    held = {phrase: (al["character_start_times_seconds"][chars.find(phrase)], float(sec)) for phrase, sec in keep.items() if chars.find(phrase) >= 0}
 
     cuts, adds = [], []  # removed (from, to) and inserted (at, seconds), in raw time
-    if v3:
-        # v3 voices breathe between sentences and a breath reads as sound to an energy detector: the pauses are the
-        # gaps between words in the forced alignment. At a held pause the whole gap is replaced by clean silence.
+    if v3 or v4:
+        # v3/v4 voices breathe between sentences and a breath reads as sound to an energy detector: the pauses are the
+        # gaps between words in the alignment. At a held pause the whole gap is replaced by clean silence.
         st, en = al["character_start_times_seconds"], al["character_end_times_seconds"]
         hook_end = chars.find("\n\n") if "\n\n" in chars else 0
         sil = []
@@ -64,12 +66,11 @@ if __name__ == "__main__":
             p = k - 1
             while p > 0 and chars[p].isspace():
                 p -= 1
-            # the hook (first paragraph) is never cut, and neither is a gap beside a number: the alignment is made
-            # against digits ("700") while the voice says words ("seven hundred"), so its timing there is unreliable
             near = chars[max(0, chars.rfind(" ", 0, p) + 1):chars.find(" ", k) if chars.find(" ", k) > 0 else len(chars)]
-            if k < hook_end or any(ch.isdigit() for ch in near):
+            is_held = any(abs(st[k] - t) < 0.05 for t, _ in held.values())
+            if not is_held and (k < hook_end or any(ch.isdigit() for ch in near)):
                 continue
-            if p > 0 and (st[k] - en[p] > 0.12 or any(abs(st[k] - t) < 0.05 for t, _ in held.values())):
+            if p > 0 and (st[k] - en[p] > 0.12 or is_held):
                 sil.append((en[p], st[k]))
         placed = set()
         for a, b in sil:

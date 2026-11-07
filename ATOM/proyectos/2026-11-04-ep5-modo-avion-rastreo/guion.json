@@ -1,0 +1,61 @@
+{
+  "titulo": "Por qué el Modo Avión no apaga el rastreo de tu celular",
+  "idioma": "es",
+  "subtitulos": "arriba",
+  "voz": {
+    "id": "gWaDC0oXAheKoZfljzuI",
+    "modelo": "eleven_v4",
+    "estabilidad": 0.4,
+    "similitud": 0.8,
+    "estilo": 0,
+    "velocidad": 1.12
+  },
+  "frases": [
+    {
+      "texto": "¿Sabías que poner tu celular en modo avión no impide que siga registrando por dónde caminas?",
+      "clave": "caminas",
+      "hook": true
+    },
+    {
+      "texto": "El ícono del avión apaga tus llamadas y tu internet, pero no apaga el chip que lee tu ubicación.",
+      "clave": "ubicación",
+      "hook": true
+    },
+    {
+      "texto": "El modo avión solo corta las antenas que emiten ondas para no interferir con la cabina del vuelo.",
+      "clave": "emiten"
+    },
+    {
+      "texto": "Pero el chip GPS de tu celular no emite nada: solo escucha en silencio los satélites del cielo.",
+      "clave": "escucha"
+    },
+    {
+      "texto": "Es como taparte la boca con cinta para no hablar, pero seguir con los ojos abiertos anotando cada calle en una libreta.",
+      "clave": "libreta"
+    },
+    {
+      "texto": "Además, aunque entres a un túnel, el giroscopio y el barómetro cuentan tus pasos, tus giros y qué piso subiste.",
+      "clave": "pasos"
+    },
+    {
+      "texto": "Todo ese mapa se guarda con hora exacta en la memoria interna y se sube apenas quitas el modo avión.",
+      "clave": "guarda"
+    },
+    {
+      "texto": "Por eso, si de verdad no quieres dejar rastro de tu ruta, el botón del avión no alcanza.",
+      "clave": "rastro"
+    },
+    {
+      "texto": "Entra primero a Ajustes y apaga el interruptor general de Ubicación antes de activar el modo avión.",
+      "clave": "Ubicación"
+    },
+    {
+      "texto": "Envíaselo a ese amigo que pone el modo avión creyendo que así su celular se vuelve invisible.",
+      "clave": "amigo"
+    },
+    {
+      "texto": "Y mañana, episodio seis: por qué activar la RAM virtual vuelve más lento tu celular.",
+      "clave": "lento"
+    }
+  ]
+}

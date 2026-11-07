@@ -1,0 +1,70 @@
+{
+  "tema": "oscuro",
+  "subtitulos": "arriba",
+  "frases": [
+    {
+      "texto": "La pantalla de tu celular reacciona al toque más leve de tu dedo, pero ignora un bolígrafo aunque presiones con fuerza.",
+      "clave": "dedo"
+    },
+    {
+      "texto": "¿Entonces qué está sintiendo realmente? En realidad no siente presión: detecta la electricidad que hay en tu cuerpo.",
+      "clave": "electricidad"
+    },
+    {
+      "texto": "Imagina que afuera hace mucho frío e intentas contestar una llamada urgente con los guantes puestos.",
+      "clave": "guantes"
+    },
+    {
+      "texto": "Debajo del cristal de tu pantalla hay una cuadrícula invisible: filas hacia un lado y columnas hacia el otro.",
+      "clave": "cuadrícula"
+    },
+    {
+      "texto": "En cada punto donde una fila cruza una columna, el teléfono sostiene una diminuta carga eléctrica.",
+      "clave": "carga"
+    },
+    {
+      "texto": "Y revisa cada uno de esos cruces una y otra vez, ciento veinte veces por segundo.",
+      "clave": "segundo"
+    },
+    {
+      "texto": "Tu cuerpo está lleno de agua con sal, así que conduce la electricidad de forma natural.",
+      "clave": "conduce"
+    },
+    {
+      "texto": "Cuando la yema de tu dedo se acerca al cristal, absorbe una pequeña parte de esa carga justo debajo.",
+      "clave": "cristal"
+    },
+    {
+      "texto": "El teléfono detecta la caída exacta en esos cruces y dice al instante: tocaron justo aquí.",
+      "clave": "exacta"
+    },
+    {
+      "texto": "Y como revisa cada cruce por separado, puede seguir dos dedos a la vez cuando haces zoom.",
+      "clave": "zoom"
+    },
+    {
+      "texto": "Un guante de lana no conduce nada y mantiene tu piel demasiado lejos de la superficie del vidrio.",
+      "clave": "lana"
+    },
+    {
+      "texto": "Aunque presiones fuerte, la carga nunca cambia; para el teléfono, nadie tocó la pantalla.",
+      "clave": "nadie"
+    },
+    {
+      "texto": "Por eso también tu pantalla se vuelve loca bajo la lluvia: el agua conduce y cada gota parece un dedo.",
+      "clave": "lluvia"
+    },
+    {
+      "texto": "Y por eso funcionan los guantes táctiles: tienen hilos conductores tejidos en la punta que conectan tu piel.",
+      "clave": "conductores"
+    },
+    {
+      "texto": "Así que tu celular nunca sintió tu dedo: solo sintió que una diminuta carga eléctrica desapareció.",
+      "clave": "nunca"
+    },
+    {
+      "texto": "Envía este video a esa persona a la que siempre se le vuelve loca la pantalla con las manos mojadas.",
+      "clave": "mojadas"
+    }
+  ]
+}
